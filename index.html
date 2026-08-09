@@ -1,0 +1,1303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Trip Plan (6-12 Sept 2026)</title>
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      /* Colors matched to the NYC borough map (green=Manhattan, red=Bronx, orange=Queens, yellow=Brooklyn, purple=SI) */
+      --region-lower:   #1b5e20;   /* darkest green — Lower Manhattan */
+      --region-midtown: #2e7d32;   /* mid green — Midtown */
+      --region-uptown:  #558b2f;   /* lighter olive green — Uptown */
+      --region-brooklyn:#f9a825;
+      --region-brooklyn-text: #333;
+      --region-queens:  #e65100;
+      --region-bronx:   #c62828;
+      --region-si:      #6a1b9a;
+      --region-nj:      #00695c;
+      --cp-bg: #f7f4ef;
+      --cp-bg-elevated: #fcfbf8;
+      --cp-surface: #ffffff;
+      --cp-surface-soft: #f5f5f5;
+      --cp-border: #dedede;
+      --cp-border-strong: #919191;
+      --cp-text: #242424;
+      --cp-text-muted: #5c5c5c;
+      --cp-text-soft: #6f6f6f;
+      --cp-accent: #b11f4b;
+      --cp-accent-hover: #9a1a41;
+      --cp-accent-soft: rgba(177, 31, 75, 0.08);
+      --cp-accent-fg: #ffffff;
+      --cp-success: #16a34a;
+      --cp-danger: #dc2626;
+      --cp-warning: #f59e0b;
+      --cp-link: #0078d4;
+      --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+      --cp-overlay: rgba(255, 255, 255, 0.8);
+      --cp-panel: rgba(255, 255, 255, 0.86);
+      --cp-panel-strong: rgba(255, 255, 255, 0.96);
+      --cp-sheen: rgba(255, 255, 255, 0.55);
+      --cp-highlight: rgba(177, 31, 75, 0.12);
+    }
+    html[data-theme="dark"] {
+      color-scheme: dark;
+      /* Dark mode: same hue family, brightened */
+      --region-lower:   #43a047;   /* bright green — Lower */
+      --region-midtown: #66bb6a;   /* medium-bright green — Midtown */
+      --region-uptown:  #9ccc65;   /* light lime green — Uptown */
+      --region-brooklyn:#fdd835;
+      --region-brooklyn-text: #222;
+      --region-queens:  #ffa726;
+      --region-bronx:   #ef5350;
+      --region-si:      #ce93d8;
+      --region-nj:      #4db6ac;
+      --cp-bg: #3d3b3a;
+      --cp-bg-elevated: #343231;
+      --cp-surface: #292929;
+      --cp-surface-soft: #2e2e2e;
+      --cp-border: #474747;
+      --cp-border-strong: #5f5f5f;
+      --cp-text: #dedede;
+      --cp-text-muted: #919191;
+      --cp-text-soft: #b0b0b0;
+      --cp-accent: #fd8ea1;
+      --cp-accent-hover: #fb7b91;
+      --cp-accent-soft: rgba(253, 142, 161, 0.14);
+      --cp-accent-fg: #1a1a1a;
+      --cp-success: #4ade80;
+      --cp-danger: #f87171;
+      --cp-warning: #fbbf24;
+      --cp-link: #4da6ff;
+      --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+      --cp-overlay: rgba(41, 41, 41, 0.88);
+      --cp-panel: rgba(41, 41, 41, 0.72);
+      --cp-panel-strong: rgba(41, 41, 41, 0.96);
+      --cp-sheen: rgba(255, 255, 255, 0.04);
+      --cp-highlight: rgba(253, 142, 161, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--cp-bg);
+      color: var(--cp-text);
+      line-height: 1.45;
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .hero, .panel, .day, .hood, .food, .mapbox {
+      background: var(--cp-surface);
+      border: 1px solid var(--cp-border);
+      border-radius: 16px;
+    }
+    .hero {
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+    h1 { margin: 0 0 8px; font-size: 1.5rem; }
+    h2 { margin: 0 0 10px; font-size: 1.2rem; }
+    h3 { margin: 0 0 8px; font-size: 1.05rem; }
+    p, li { color: var(--cp-text-muted); }
+    .meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .chip {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 4px 10px;
+      border: 1px solid var(--cp-border);
+      background: var(--cp-surface-soft);
+      color: var(--cp-text);
+      font-size: 0.85rem;
+    }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0;
+    }
+    .tab {
+      border: 1px solid var(--cp-border);
+      background: var(--cp-surface);
+      color: var(--cp-text);
+      border-radius: 10px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .tab[aria-selected="true"] {
+      background: var(--cp-accent-soft);
+      border-color: var(--cp-accent);
+      color: var(--cp-text);
+    }
+    .day { display: none; padding: 16px; }
+    .day.active { display: block; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 12px;
+    }
+    .grid > .food {
+      grid-column: 1 / -1;
+    }
+    .food-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .food-col h4 {
+      margin: 0 0 8px;
+      font-size: 0.95rem;
+    }
+    .food-col ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .food-col li {
+      margin: 5px 0;
+      font-size: 0.92rem;
+      color: var(--cp-text-muted);
+    }
+    @media (max-width: 700px) {
+      .food-columns { grid-template-columns: 1fr; }
+    }
+    .hood, .food, .panel, .mapbox { padding: 12px; }
+    .hood { padding: 0; overflow: hidden; border-left: 5px solid var(--cp-border); }
+    .hood.r-lower    { border-left-color: var(--region-lower); }
+    .hood.r-midtown  { border-left-color: var(--region-midtown); }
+    .hood.r-uptown   { border-left-color: var(--region-uptown); }
+    .hood.r-brooklyn { border-left-color: var(--region-brooklyn); }
+    .hood.r-queens   { border-left-color: var(--region-queens); }
+    .hood.r-bronx    { border-left-color: var(--region-bronx); }
+    .hood.r-si       { border-left-color: var(--region-si); }
+    .hood.r-nj       { border-left-color: var(--region-nj); }
+    .hood-inner { padding: 12px; }
+    .region-tag {
+      display: inline-flex; align-items: center; gap: 5px;
+      border-radius: 999px; padding: 3px 10px;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;
+      text-transform: uppercase; color: #fff; margin-bottom: 8px;
+    }
+    .r-lower    .region-tag { background: var(--region-lower); color: #fff; }
+    .r-midtown  .region-tag { background: var(--region-midtown); color: #fff; }
+    .r-uptown   .region-tag { background: var(--region-uptown); color: #fff; }
+    .r-brooklyn .region-tag { background: var(--region-brooklyn); color: var(--region-brooklyn-text); }
+    .r-queens   .region-tag { background: var(--region-queens); color: #fff; }
+    .r-bronx    .region-tag { background: var(--region-bronx); color: #fff; }
+    .r-si       .region-tag { background: var(--region-si); color: #fff; }
+    .r-nj       .region-tag { background: var(--region-nj); color: #fff; }
+    .food, .panel, .mapbox { padding: 12px; }
+    .badge {
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border: 1px solid var(--cp-border);
+      margin-right: 6px;
+    }
+    .ch {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--cp-text-soft);
+      background: var(--cp-surface-soft);
+      border: 1px solid var(--cp-border);
+      border-radius: 4px;
+      padding: 0px 5px;
+      margin-left: 5px;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .must { background: var(--cp-accent-soft); color: var(--cp-text); border-color: var(--cp-accent); }
+    .nice { background: var(--cp-surface-soft); color: var(--cp-text); }
+    .skip { background: var(--cp-surface-soft); color: var(--cp-text-soft); }
+    .timeline { margin: 0 0 10px; padding-left: 0; list-style: none; }
+    .timeline li { padding: 4px 0 4px 0; border-left: 2px solid var(--cp-border); margin-left: 8px; padding-left: 12px; }
+    .transit-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      margin-top: 10px; padding: 5px 11px;
+      border: 1px solid var(--cp-border); border-radius: 999px;
+      background: var(--cp-surface-soft); color: var(--cp-text-soft);
+      font-size: 0.8rem; font-weight: 600; cursor: pointer;
+    }
+    .transit-btn:hover { border-color: var(--cp-link); color: var(--cp-link); background: var(--cp-surface); }
+    .modal-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.45); z-index: 1000;
+      align-items: center; justify-content: center; padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background: var(--cp-surface); border-radius: 16px;
+      border: 1px solid var(--cp-border); padding: 20px;
+      max-width: 500px; width: 100%;
+      box-shadow: var(--cp-shadow); position: relative;
+    }
+    .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+    .modal-title { font-weight: 700; font-size: 1rem; margin: 0; }
+    .modal-close {
+      background: none; border: 1px solid var(--cp-border); border-radius: 50%;
+      width: 28px; height: 28px; cursor: pointer; font-size: 1rem;
+      color: var(--cp-text-muted); display: flex; align-items: center; justify-content: center;
+    }
+    .modal-close:hover { background: var(--cp-surface-soft); }
+    .modal-body p { margin: 6px 0; font-size: 0.9rem; color: var(--cp-text-muted); }
+    .modal-body strong { color: var(--cp-text); }
+    .modal-body .step { margin: 8px 0; padding: 8px 10px; background: var(--cp-surface-soft); border-radius: 8px; border-left: 3px solid var(--cp-link); font-size: 0.88rem; color: var(--cp-text-muted); }
+    .subway-line {
+      display: inline-block;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      font-size: 0.7rem;
+      font-weight: 900;
+      text-align: center;
+      line-height: 18px;
+      color: #fff;
+      margin: 0 2px;
+      vertical-align: middle;
+    }
+    .sl-ace  { background: #0039a6; }
+    .sl-123  { background: #ee352e; }
+    .sl-nqrw { background: #fccc0a; color: #000; }
+    .sl-456  { background: #00933c; }
+    .sl-l    { background: #a7a9ac; }
+    .sl-7    { background: #b933ad; }
+    .sl-bd   { background: #ff6319; }
+    .sl-jmz  { background: #996633; }
+    .sl-s    { background: #808183; }
+    .sl-ferry { background: var(--region-nj); }
+    a { color: var(--cp-link); }
+    .small { font-size: 0.9rem; color: var(--cp-text-soft); }
+    .map-link {
+      margin-left: 6px;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+    .day { overflow: hidden; }
+
+    /* ── Day map ─────────────────────────────────────── */
+    .day-map {
+      position: relative; display: inline-block;
+      float: right; margin: 0 0 12px 16px;
+      border: 2px solid var(--cp-border); border-radius: 10px;
+      overflow: hidden; width: 200px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+    .day-map img { display: block; width: 100%; height: auto; }
+    .day-map img { cursor: zoom-in; }
+    .day-map .map-overlays {
+      position: absolute; inset: 0; pointer-events: none;
+    }
+    /* SVG overlay paths dim non-active areas */
+    .day-map .dim {
+      fill: rgba(0,0,0,0.45);
+    }
+    /* Pin dots */
+    .map-pin {
+      position: absolute; transform: translate(-50%,-50%);
+      width: 18px; height: 18px; border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.6rem; font-weight: 900; color: #fff;
+    }
+    .day-map .map-label {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: rgba(0,0,0,0.55); color: #fff;
+      font-size: 0.65rem; font-weight: 700; text-align: center;
+      padding: 3px 4px; letter-spacing: 0.04em;
+    }
+    @media (max-width: 600px) {
+      .day-map { float: none; width: 100%; margin: 0 0 12px 0; }
+    }
+
+    .img-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1100;
+      background: rgba(0, 0, 0, 0.78);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .img-lightbox.open { display: flex; }
+    .img-lightbox img {
+      max-width: min(1200px, 95vw);
+      max-height: 90vh;
+      width: auto;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid var(--cp-border);
+      background: #fff;
+      box-shadow: var(--cp-shadow);
+    }
+    .img-lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid var(--cp-border);
+      background: var(--cp-surface);
+      color: var(--cp-text);
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .img-lightbox .day-map {
+      float: none;
+      margin: 0;
+      width: min(1200px, 95vw);
+    }
+    .img-lightbox .day-map img {
+      width: 100%;
+      max-height: 90vh;
+      object-fit: contain;
+      cursor: default;
+    }
+    .img-lightbox .map-pin {
+      width: 42px;
+      height: 42px;
+      border-width: 3px;
+      font-size: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+    }
+    .img-lightbox .map-label {
+      font-size: 1rem;
+      padding: 8px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>New York Plan (6-12 September 2026)</h1>
+      <p>
+        Optimized for minimal zig-zag travel from <strong>SpringHill Suites by Marriott New York Queens</strong>, with
+        subway-heavy routing, full days, and budget-friendly food options for 2 teenagers.
+      </p>
+      <div class="meta">
+        <span class="chip">Boroughs included: Manhattan, Brooklyn, Queens, Bronx (+ Staten Island ferry)</span>
+        <span class="chip">Typical day: 08:00 → 21:30</span>
+        <span class="chip">Transit: Subway + occasional bus</span>
+      </div>
+      <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;">
+        <span style="font-size:0.8rem;color:var(--cp-text-soft);margin-right:4px;">Neighborhood colors:</span>
+        <span style="background:var(--region-lower);color:#fff;border-radius:999px;padding:2px 9px;font-size:0.75rem;font-weight:700;">Lower Manhattan</span>
+        <span style="background:var(--region-midtown);color:#fff;border-radius:999px;padding:2px 9px;font-size:0.75rem;font-weight:700;">Midtown Manhattan</span>
+        <span style="background:var(--region-uptown);color:#fff;border-radius:999px;padding:2px 9px;font-size:0.75rem;font-weight:700;">Uptown Manhattan</span>
+        <span style="background:var(--region-brooklyn);color:var(--region-brooklyn-text);border-radius:999px;padding:2px 9px;font-size:0.75rem;font-weight:700;">Brooklyn</span>
+        <span style="background:var(--region-queens);color:#fff;border-radius:999px;padding:2px 9px;font-size:0.75rem;font-weight:700;">Queens</span>
+        <span style="background:var(--region-bronx);color:#fff;border-radius:999px;padding:2px 9px;font-size:0.75rem;font-weight:700;">Bronx</span>
+        <span style="background:var(--region-si);color:#fff;border-radius:999px;padding:2px 9px;font-size:0.75rem;font-weight:700;">Staten Island</span>
+        <span style="background:var(--region-queens);color:#fff;border-radius:999px;padding:2px 9px;font-size:0.75rem;font-weight:700;">Hotel base (Queens)</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Transit baseline (from hotel)</h2>
+      <ul>
+        <li><strong>Fastest start:</strong> walk to Queensboro Plaza / Queens Plaza, then subway.</li>
+        <li><strong>Backup:</strong> short taxi/Uber to the nearest major subway hub if needed.</li>
+        <li><strong>Inside NYC:</strong> use subway for long jumps, walk for same-neighborhood clusters.</li>
+      </ul>
+    </section>
+
+    <div class="tabs" role="tablist" aria-label="Trip days">
+      <button class="tab" role="tab" aria-selected="true" data-day="d1">Sun 6 Sep</button>
+      <button class="tab" role="tab" aria-selected="false" data-day="d2">Mon 7 Sep</button>
+      <button class="tab" role="tab" aria-selected="false" data-day="d3">Tue 8 Sep</button>
+      <button class="tab" role="tab" aria-selected="false" data-day="d4">Wed 9 Sep</button>
+      <button class="tab" role="tab" aria-selected="false" data-day="d5">Thu 10 Sep</button>
+      <button class="tab" role="tab" aria-selected="false" data-day="d6">Fri 11 Sep</button>
+      <button class="tab" role="tab" aria-selected="false" data-day="d7">Sat 12 Sep</button>
+    </div>
+
+    <section class="day active" id="d1" role="tabpanel">
+      <h2>Day 1 — Arrival + West Midtown + Times Square</h2>
+      <p class="small" style="margin-top:-2px;margin-bottom:10px;">
+        Hotel: <strong>SpringHill Suites by Marriott New York Queens</strong>, 38-39 9th St, Long Island City, NY 11101
+        (<a href="https://www.google.com/maps/search/?api=1&query=SpringHill+Suites+by+Marriott+New+York+Queens+38-39+9th+St+Long+Island+City+NY+11101" target="_blank" rel="noreferrer">open in Google Maps</a>).
+      </p>
+      <div class="day-map">
+        <img src="nyc_boroughs_map.png" alt="NYC boroughs map">
+        <div class="map-overlays">
+          <div class="map-pin" style="left:48%;top:42%;background:#388e3c;">M</div>
+          <div class="map-pin" style="left:61%;top:41%;background:#e65100;">H</div>
+        </div>
+        <div class="map-label">Queens base + Midtown Manhattan</div>
+      </div>
+      <ul class="timeline">
+        <li>~13:00 land JFK → clear immigration/bags (typically 60-120 min)</li>
+        <li>~14:30-15:30 transfer JFK → hotel (public transit: AirTrain JFK to Jamaica, then E to Queens Plaza, then 10-15 min walk/taxi to hotel)</li>
+        <li>~15:30-16:15 hotel check-in + short reset</li>
+        <li>16:30–18:30 Chelsea / Hudson Yards / Meatpacking</li>
+        <li>18:30–19:30 Walk up 5th Ave → Apple Store (59th St) → walk south back to Times Sq</li>
+        <li>19:45–22:00 Times Square / Bryant Park / TKTS booth</li>
+        <li>20:30+ <strong>Optional:</strong> 🎭 Broadway show (September = peak season; pre-book or try TKTS day-of discounts)</li>
+      </ul>
+      <div class="grid">
+        <article class="hood r-queens" id="d1-queensbase">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Queens — Long Island City (hotel base)</div>
+          <h3>Long Island City / hotel arrival buffer</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Quick local orientation around the hotel + subway stations</li>
+            <li><span class="badge nice">nice-to-see</span>Optional LIC waterfront sunset if energy allows</li>
+            <li><span class="badge skip">could-skip</span>Any long detour before your first Manhattan evening</li>
+          </ul>
+          <button class="transit-btn" data-id="d1-jfk">✈️ JFK → hotel</button>
+          </div>
+        </article>
+        <article class="hood r-midtown" id="d1-chelsea">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Midtown Manhattan</div>
+          <h3>Chelsea / Hudson Yards / Meatpacking</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>High Line (Gansevoort St &amp; Washington St, Manhattan)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=High+Line+Gansevoort+St+Washington+St+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§24</span></li>
+            <li><span class="badge must">must-see</span>Chelsea Market (75 9th Ave, New York, NY 10011)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Chelsea+Market+75+9th+Ave+New+York+NY+10011" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§22</span></li>
+            <li><span class="badge nice">nice-to-see</span>Little Island (Pier 55, Hudson River Greenway)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Little+Island+Pier+55+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a></li>
+            <li><span class="badge nice">nice-to-see</span>Hudson Yards + Vessel exterior (20 Hudson Yards)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=20+Hudson+Yards+New+York+NY+10001" target="_blank" rel="noreferrer">🗺 map</a></li>
+            <li><span class="badge skip">could-skip</span>Paid deck if you plan Top of the Rock/Empire later</li>
+          </ul>
+          <button class="transit-btn" data-id="d1-chelsea">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="hood r-midtown" id="d1-timessq">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Midtown Manhattan</div>
+          <h3>Times Square / Bryant Park</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Times Square at night (Broadway &amp; 7th Ave, around W 47th St)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Times+Square+Broadway+7th+Ave+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§28</span></li>
+            <li><span class="badge must">must-see</span>Bryant Park + NY Public Library exterior (Bryant Park / 476 5th Ave)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Bryant+Park+New+York+NY+10018" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§29</span></li>
+            <li><span class="badge nice">nice-to-see</span>Grand Central quick peek (89 E 42nd St)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Grand+Central+Terminal+89+E+42nd+St+New+York+NY+10017" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§30</span></li>
+            <li><span class="badge must">must-see</span>Apple Store Fifth Avenue (767 5th Ave — open 24/7)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Apple+Fifth+Avenue+767+5th+Ave+New+York+NY+10153" target="_blank" rel="noreferrer">🗺 map</a></li>
+            <li><span class="badge must">must-see</span>🎭 Broadway show — Theatre District (42nd–53rd St &amp; 8th Ave)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Theatre+District+42nd+to+53rd+St+8th+Ave+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a>. Pre-book: <a href="https://www.broadway.com" target="_blank" rel="noreferrer">broadway.com</a> | Day-of: <strong>TKTS booth</strong>, 47th St &amp; Broadway (opens 15:00)</li>
+          </ul>
+          <button class="transit-btn" data-id="d1-timessq">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="food">
+          <h3>Food (budget, teen-friendly)</h3>
+          <div class="food-columns">
+            <div class="food-col">
+              <h4>Lunch (Chelsea / Hudson Yards)</h4>
+              <ul>
+                <li>Los Tacos No.1 — 75 9th Ave, New York, NY 10011</li>
+                <li>Chelsea Papaya — 171 7th Ave, New York, NY 10011</li>
+                <li>Los Mariscos — 409 W 15th St, New York, NY 10011</li>
+                <li>Friedman's — 450 10th Ave, New York, NY 10018</li>
+                <li>Fuku — 10 Hudson Yards, New York, NY 10001</li>
+                <li>Alidoro — 105 Hudson St, New York, NY 10013</li>
+              </ul>
+            </div>
+            <div class="food-col">
+              <h4>Dinner (Times Square / Midtown West)</h4>
+              <ul>
+                <li>Joe's Pizza — 1435 Broadway, New York, NY 10018</li>
+                <li>Urban Hawker — 135 W 50th St, New York, NY 10020</li>
+                <li>Schnipper's — 620 8th Ave, New York, NY 10018</li>
+                <li>Los Tacos No.1 — 229 W 43rd St, New York, NY 10036</li>
+                <li>7th Street Burger — 485 7th Ave, New York, NY 10018</li>
+                <li>Empanada Mama — 763 9th Ave, New York, NY 10019</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="day" id="d2" role="tabpanel">
+      <h2>Day 2 — Downtown Manhattan + Harbor + Brooklyn Bridge</h2>
+      <div class="day-map">
+        <img src="nyc_boroughs_map.png" alt="NYC boroughs map">
+        <div class="map-overlays">
+          <div class="map-pin" style="left:46%;top:63%;background:#1b5e20;">L</div>
+          <div class="map-pin" style="left:50%;top:69%;background:#f9a825;color:#333;">B</div>
+        </div>
+        <div class="map-label">Lower Manhattan + Brooklyn</div>
+      </div>
+      <ul class="timeline">
+        <li>08:00 depart hotel</li>
+        <li>09:15–12:30 Battery Park / Harbor (Statue of Liberty ferry takes ~3h round trip, book ahead!)</li>
+        <li>12:30–15:30 Financial District / WTC / Seaport</li>
+        <li>16:00–21:30 DUMBO / Brooklyn Heights</li>
+      </ul>
+      <div class="grid">
+        <article class="hood r-lower" id="d2-battery">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Lower Manhattan</div>
+          <h3>Battery Park / Harbor</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Battery Park <span class="ch">§01</span></li>
+            <li><span class="badge must">must-see</span>Statue of Liberty + Ellis Island ferry <span class="ch">§03</span></li>
+            <li><span class="badge nice">nice-to-see</span>Governors Island (if weather/time is great) <span class="ch">§02</span></li>
+          </ul>
+          <button class="transit-btn" data-id="d2-battery">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="hood r-lower" id="d2-fidi">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Lower Manhattan — Financial District</div>
+          <h3>Financial District / WTC</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>9/11 Memorial + Oculus <span class="ch">§11</span></li>
+            <li><span class="badge must">must-see</span>Wall Street + NYSE + Charging Bull <span class="ch">§05</span></li>
+            <li><span class="badge nice">nice-to-see</span>Bowling Green <span class="ch">§04</span> + Stone Street <span class="ch">§06</span></li>
+            <li><span class="badge nice">nice-to-see</span>Trinity Church + St. Paul's Chapel (quick, meaningful stops near Wall St/WTC)</li>
+            <li><span class="badge nice">nice-to-see</span>One World Observatory (sunset slot only if you skip another observatory)</li>
+            <li><span class="badge skip">could-skip</span>Extra observatory here (save for Midtown)</li>
+          </ul>
+          <button class="transit-btn" data-id="d2-fidi">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="hood r-brooklyn" id="d2-dumbo">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Brooklyn — DUMBO / Brooklyn Heights</div>
+          <h3>Seaport + Brooklyn Heights / DUMBO</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>South Street Seaport <span class="ch">§08</span></li>
+            <li><span class="badge must">must-see</span>Brooklyn Bridge walk (golden hour) <span class="ch">§09</span></li>
+            <li><span class="badge must">must-see</span>DUMBO waterfront + Washington St view <span class="ch">§52</span></li>
+            <li><span class="badge must">must-see</span>Brooklyn Bridge Park lawns/piers for skyline photos</li>
+            <li><span class="badge nice">nice-to-see</span>Brooklyn Heights Promenade <span class="ch">§51</span></li>
+            <li><span class="badge nice">nice-to-see</span>Jane's Carousel + Time Out rooftop if you want a relaxed break</li>
+          </ul>
+          <button class="transit-btn" data-id="d2-dumbo">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="food">
+          <h3>Food</h3>
+          <div class="food-columns">
+            <div class="food-col">
+              <h4>Lunch (FiDi / Seaport)</h4>
+              <ul>
+                <li>Pisillo Italian Panini — 97 Nassau St, New York, NY 10038</li>
+                <li>Xi'an Famous Foods — 8 Liberty Pl, New York, NY 10038</li>
+                <li>Nish Nush — 88 Reade St, New York, NY 10013</li>
+                <li>Leo's Bagels — 3 Hanover Sq, New York, NY 10004</li>
+                <li>Joe's Pizza — 124 Fulton St, New York, NY 10038</li>
+                <li>Los Tacos No.1 — 136 Church St, New York, NY 10007</li>
+              </ul>
+            </div>
+            <div class="food-col">
+              <h4>Dinner (DUMBO / Brooklyn Heights)</h4>
+              <ul>
+                <li>Juliana's Pizza — 19 Old Fulton St, Brooklyn, NY 11201</li>
+                <li>Time Out Market — 55 Water St, Brooklyn, NY 11201</li>
+                <li>Front Street Pizza — 80 Front St, Brooklyn, NY 11201</li>
+                <li>Shake Shack DUMBO — 2 Water St, Brooklyn, NY 11201</li>
+                <li>Luke's Lobster DUMBO — 11 Water St, Brooklyn, NY 11201</li>
+                <li>AlMar — 111 Front St, Brooklyn, NY 11201</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="day" id="d3" role="tabpanel">
+      <h2>Day 3 — Lower Manhattan neighborhoods (walk + street food)</h2>
+      <div class="day-map">
+        <img src="nyc_boroughs_map.png" alt="NYC boroughs map">
+        <div class="map-overlays">
+          <div class="map-pin" style="left:47%;top:56%;background:#1b5e20;">L</div>
+          <div class="map-pin" style="left:46%;top:63%;background:#1b5e20;">L</div>
+        </div>
+        <div class="map-label">Lower Manhattan</div>
+      </div>
+      <ul class="timeline">
+        <li>08:00 depart hotel</li>
+        <li>09:00–13:30 SoHo / Nolita / Little Italy / Chinatown</li>
+        <li>14:00–18:00 Lower East Side / East Village / Bowery</li>
+        <li>18:00–21:30 Greenwich Village / West Village / Union Square</li>
+      </ul>
+      <div class="grid">
+        <article class="hood r-lower" id="d3-soho">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Lower Manhattan — SoHo / Chinatown</div>
+          <h3>SoHo / Nolita / Little Italy / Chinatown</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>SoHo cast-iron blocks <span class="ch">§17</span></li>
+            <li><span class="badge must">must-see</span>Chinatown core streets <span class="ch">§13</span></li>
+            <li><span class="badge nice">nice-to-see</span>Nolita + Little Italy <span class="ch">§16</span></li>
+            <li><span class="badge skip">could-skip</span>Long shopping queues</li>
+          </ul>
+          <button class="transit-btn" data-id="d3-soho">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="hood r-lower" id="d3-les">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Lower Manhattan — LES / East Village</div>
+          <h3>LES / Bowery / East Village</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Lower East Side street grid + markets <span class="ch">§14</span></li>
+            <li><span class="badge must">must-see</span>Tenement Museum (book a timed tour)</li>
+            <li><span class="badge must">must-see</span>East Village + St. Mark's Place <span class="ch">§20</span></li>
+            <li><span class="badge nice">nice-to-see</span>Katz's Delicatessen / Essex Market for classic LES food culture</li>
+            <li><span class="badge nice">nice-to-see</span>Bowery + New Museum exterior <span class="ch">§15</span></li>
+          </ul>
+          <button class="transit-btn" data-id="d3-les">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="hood r-lower" id="d3-village">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Lower Manhattan — Village</div>
+          <h3>Greenwich / West Village / Union Square</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Washington Square Park + Greenwich Village <span class="ch">§18</span></li>
+            <li><span class="badge must">must-see</span>West Village brownstone streets <span class="ch">§19</span></li>
+            <li><span class="badge nice">nice-to-see</span>Union Square + Strand Book Store <span class="ch">§21</span></li>
+            <li><span class="badge nice">nice-to-see</span>Stonewall Inn (historic landmark) + Bleecker Street wander</li>
+            <li><span class="badge nice">nice-to-see</span>Village jazz clubs (Blue Note / Village Vanguard / Smalls) if you want a late set</li>
+          </ul>
+          <button class="transit-btn" data-id="d3-village">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="food">
+          <h3>Food</h3>
+          <div class="food-columns">
+            <div class="food-col">
+              <h4>Lunch (Chinatown / LES)</h4>
+              <ul>
+                <li>Vanessa's Dumpling House — 118A Eldridge St, New York, NY 10002</li>
+                <li>Tasty Hand-Pulled Noodles II — 1 Doyers St, New York, NY 10013</li>
+                <li>Mei Lai Wah — 62 Bayard St, New York, NY 10013</li>
+                <li>Wah Fung No. 1 — 79 Chrystie St, New York, NY 10002</li>
+                <li>Katz's Delicatessen — 205 E Houston St, New York, NY 10002</li>
+                <li>Scarr's Pizza — 35 Orchard St, New York, NY 10002</li>
+              </ul>
+            </div>
+            <div class="food-col">
+              <h4>Dinner (Village / East Village)</h4>
+              <ul>
+                <li>Mamoun's Falafel — 119 MacDougal St, New York, NY 10012</li>
+                <li>Joe's Pizza — 7 Carmine St, New York, NY 10014</li>
+                <li>7th Street Burger — 91 E 10th St, New York, NY 10003</li>
+                <li>Prince Street Pizza — 27 Prince St A, New York, NY 10012</li>
+                <li>Pommes Frites — 128 MacDougal St, New York, NY 10012</li>
+                <li>Veselka — 144 2nd Ave, New York, NY 10003</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="day" id="d4" role="tabpanel">
+      <h2>Day 4 — Midtown icon day</h2>
+      <div class="day-map">
+        <img src="nyc_boroughs_map.png" alt="NYC boroughs map">
+        <div class="map-overlays">
+          <div class="map-pin" style="left:48%;top:45%;background:#388e3c;">M</div>
+          <div class="map-pin" style="left:48%;top:51%;background:#2e7d32;">M</div>
+        </div>
+        <div class="map-label">Midtown Manhattan</div>
+      </div>
+      <ul class="timeline">
+        <li>08:00 depart hotel</li>
+        <li>09:00–11:30 Empire State Building + Flatiron / Madison Square Park (walk south on 5th Ave to 23rd St, ~10 min)</li>
+        <li>11:30–14:30 Grand Central / Chrysler exterior</li>
+        <li>14:30–17:30 Rockefeller Center / Top of the Rock / MoMA (MoMA is 2 min walk from Rockefeller)</li>
+        <li>17:30–21:30 Times Square / Fifth Ave corridor evening</li>
+      </ul>
+      <div class="grid">
+        <article class="hood r-midtown" id="d4-flatiron">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Midtown Manhattan — Flatiron / Herald Square</div>
+          <h3>Midtown South / Flatiron</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Empire State Building <span class="ch">§27</span></li>
+            <li><span class="badge must">must-see</span>Madison Square Park + Flatiron exterior <span class="ch">§26</span></li>
+            <li><span class="badge nice">nice-to-see</span>Gramercy surroundings <span class="ch">§25</span></li>
+          </ul>
+          <button class="transit-btn" data-id="d4-flatiron">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="hood r-midtown" id="d4-midtown">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Midtown Manhattan — Core</div>
+          <h3>Midtown Core</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Grand Central Terminal <span class="ch">§30</span> + Chrysler exterior <span class="ch">§31</span></li>
+            <li><span class="badge must">must-see</span>Rockefeller Center + Top of the Rock <span class="ch">§33</span></li>
+            <li><span class="badge nice">nice-to-see</span>St. Patrick's Cathedral exterior <span class="ch">§35</span></li>
+            <li><span class="badge skip">could-skip</span>Doing 2-3 observatories in one day</li>
+          </ul>
+          <button class="transit-btn" data-id="d4-midtown">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="hood r-midtown" id="d4-culture">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Midtown Manhattan — Museum Row</div>
+          <h3>Culture stop</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>MoMA <span class="ch">§34</span></li>
+            <li><span class="badge nice">nice-to-see</span>UN HQ exterior pass <span class="ch">§32</span></li>
+          </ul>
+          <button class="transit-btn" data-id="d4-culture">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="food">
+          <h3>Food</h3>
+          <div class="food-columns">
+            <div class="food-col">
+              <h4>Lunch (Midtown)</h4>
+              <ul>
+                <li>Urban Hawker — 135 W 50th St, New York, NY 10020</li>
+                <li>Adel's Famous Halal Food — W 49th St & 6th Ave, New York, NY 10020</li>
+                <li>Margon — 136 W 46th St, New York, NY 10036</li>
+                <li>Los Tacos No.1 — 229 W 43rd St, New York, NY 10036</li>
+                <li>JoJu — 185 W 38th St, New York, NY 10018</li>
+                <li>Toasties — 1369 6th Ave, New York, NY 10019</li>
+              </ul>
+            </div>
+            <div class="food-col">
+              <h4>Dinner (Midtown / Koreatown)</h4>
+              <ul>
+                <li>Tonchin — 13 W 36th St, New York, NY 10018</li>
+                <li>NY Pizza Suprema — 413 8th Ave, New York, NY 10001</li>
+                <li>Woorijip — 12 W 32nd St, New York, NY 10001</li>
+                <li>BCD Tofu House — 5 W 32nd St, New York, NY 10001</li>
+                <li>Turntable Chicken Jazz — 20 W 33rd St, New York, NY 10001</li>
+                <li>99 Favor Taste — 285 7th Ave, New York, NY 10001</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="day" id="d5" role="tabpanel">
+      <h2>Day 5 — Uptown Manhattan + Bronx</h2>
+      <div class="day-map">
+        <img src="nyc_boroughs_map.png" alt="NYC boroughs map">
+        <div class="map-overlays">
+          <div class="map-pin" style="left:49%;top:31%;background:#558b2f;">U</div>
+          <div class="map-pin" style="left:61%;top:18%;background:#c62828;">Bx</div>
+        </div>
+        <div class="map-label">Uptown Manhattan + Bronx</div>
+      </div>
+      <ul class="timeline">
+        <li>08:00 depart hotel</li>
+        <li>09:00–14:00 Central Park / UWS / Museum (The Met: 86th St &amp; 5th Ave; AMNH: 81st St &amp; CPW)</li>
+        <li>15:00–20:30 Bronx: Arthur Avenue / Belmont. For Bronx Zoo: continue on <span class="subway-line sl-bd">B</span><span class="subway-line sl-bd">D</span> to Pelham Pkwy (2 more stops) then walk 5 min</li>
+      </ul>
+      <div class="grid">
+        <article class="hood r-uptown" id="d5-uptown">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Uptown Manhattan — UWS / UES / Central Park</div>
+          <h3>Central Park / Upper West Side / UES</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Central Park core loop (Bethesda, Bow Bridge, Sheep Meadow) <span class="ch">§37</span></li>
+            <li><span class="badge must">must-see</span>Pick one major museum: The Met <span class="ch">§44</span> or AMNH <span class="ch">§40</span></li>
+            <li><span class="badge must">must-see</span>Strawberry Fields + The Mall/Literary Walk while crossing the park</li>
+            <li><span class="badge nice">nice-to-see</span>Belvedere Castle / Conservatory Water if you have extra park time</li>
+            <li><span class="badge nice">nice-to-see</span>Museum Mile add-ons: Guggenheim or Frick (only if museum energy remains)</li>
+            <li><span class="badge nice">nice-to-see</span>Roosevelt Tram + Roosevelt Island <span class="ch">§41</span></li>
+            <li><span class="badge nice">nice-to-see</span>Lincoln Center + Columbus Circle at dusk</li>
+            <li><span class="badge nice">nice-to-see</span>Upper West Side <span class="ch">§39</span> / Upper East Side <span class="ch">§42</span></li>
+          </ul>
+          <button class="transit-btn" data-id="d5-uptown">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="hood r-bronx" id="d5-bronx">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Bronx — Belmont / Bronx Park</div>
+          <h3>Bronx (real local experience)</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Arthur Avenue / Belmont (Little Italy Bronx) <span class="ch">§70</span></li>
+            <li><span class="badge must">must-see</span>Bronx Zoo <span class="ch">§70</span> <span class="small">(if interested, can be half-day)</span></li>
+            <li><span class="badge nice">nice-to-see</span>New York Botanical Garden <span class="ch">§70</span></li>
+            <li><span class="badge nice">nice-to-see</span>Yankee Stadium exterior / game if schedule fits <span class="ch">§69</span></li>
+            <li><span class="badge skip">could-skip</span>Pelham Bay + City Island on same day (too far) <span class="ch">§72–73</span></li>
+          </ul>
+          <button class="transit-btn" data-id="d5-bronx">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="food">
+          <h3>Food</h3>
+          <div class="food-columns">
+            <div class="food-col">
+              <h4>Lunch (UWS / UES)</h4>
+              <ul>
+                <li>Gray's Papaya — 2090 Broadway, New York, NY 10023</li>
+                <li>Absolute Bagels — 2788 Broadway, New York, NY 10025</li>
+                <li>Mama's TOO! — 2750 Broadway, New York, NY 10025</li>
+                <li>Dig — 2884 Broadway, New York, NY 10025</li>
+                <li>Lenwich — 1218 Lexington Ave, New York, NY 10028</li>
+                <li>Shake Shack UWS — 366 Columbus Ave, New York, NY 10024</li>
+              </ul>
+            </div>
+            <div class="food-col">
+              <h4>Dinner (Bronx — Belmont / Arthur Ave)</h4>
+              <ul>
+                <li>Mike's Deli — 2344 Arthur Ave, Bronx, NY 10458</li>
+                <li>Casa Della Mozzarella — 604 E 187th St, Bronx, NY 10458</li>
+                <li>Zero Otto Nove — 2357 Arthur Ave, Bronx, NY 10458</li>
+                <li>Madonia Bakery — 2348 Arthur Ave, Bronx, NY 10458</li>
+                <li>Randazzo's Seafood — 2327 Arthur Ave, Bronx, NY 10458</li>
+                <li>Prince Coffee House — 2306 Arthur Ave, Bronx, NY 10458</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="day" id="d6" role="tabpanel">
+      <h2>Day 6 — Brooklyn + Queens full crossover day</h2>
+      <div class="day-map">
+        <img src="nyc_boroughs_map.png" alt="NYC boroughs map">
+        <div class="map-overlays">
+          <div class="map-pin" style="left:50%;top:69%;background:#f9a825;color:#333;">Bk</div>
+          <div class="map-pin" style="left:66%;top:43%;background:#e65100;">Q</div>
+        </div>
+        <div class="map-label">Brooklyn + Queens</div>
+      </div>
+      <ul class="timeline">
+        <li>08:00 depart hotel</li>
+        <li>09:30–11:30 Williamsburg waterfront / Domino Park</li>
+        <li>11:30–14:00 Greenpoint / Bushwick</li>
+        <li>14:30–17:30 Long Island City / Gantry Plaza</li>
+        <li>17:30–21:30 Astoria food streets / evening</li>
+      </ul>
+      <div class="grid">
+        <article class="hood r-brooklyn" id="d6-brooklyn">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Brooklyn — Williamsburg / Greenpoint</div>
+          <h3>Brooklyn</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Williamsburg waterfront + Domino Park <span class="ch">§55</span></li>
+            <li><span class="badge must">must-see</span>Prospect Park (short loop) <span class="ch">§58</span> or Brooklyn Heights <span class="ch">§51</span> if missed</li>
+            <li><span class="badge nice">nice-to-see</span>Greenpoint streets/cafes <span class="ch">§55</span></li>
+            <li><span class="badge nice">nice-to-see</span>Bushwick street art pocket <span class="ch">§56</span></li>
+          </ul>
+          <button class="transit-btn" data-id="d6-brooklyn">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="hood r-queens" id="d6-queens">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Queens — Long Island City / Astoria</div>
+          <h3>Queens</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Long Island City: Gantry Plaza State Park skyline <span class="ch">§64</span></li>
+            <li><span class="badge must">must-see</span>Astoria food streets <span class="ch">§63</span></li>
+            <li><span class="badge nice">nice-to-see</span>Socrates Sculpture Park / Noguchi area <span class="ch">§64</span></li>
+            <li><span class="badge skip">could-skip</span>Flushing detour this day (better as separate day) <span class="ch">§66</span></li>
+          </ul>
+          <button class="transit-btn" data-id="d6-queens">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="food">
+          <h3>Food</h3>
+          <div class="food-columns">
+            <div class="food-col">
+              <h4>Lunch (Williamsburg / Greenpoint)</h4>
+              <ul>
+                <li>L'Industrie Pizzeria — 254 S 2nd St, Brooklyn, NY 11211</li>
+                <li>Taqueria Ramirez — 94 Franklin St, Brooklyn, NY 11222</li>
+                <li>Birria-Landia — 77 N 10th St, Brooklyn, NY 11249</li>
+                <li>Paulie Gee's Slice Shop — 110 Franklin St, Brooklyn, NY 11222</li>
+                <li>Vanessa's Dumpling House — 310 Bedford Ave, Brooklyn, NY 11249</li>
+                <li>Ceremonia Bakeshop — 743 Driggs Ave, Brooklyn, NY 11211</li>
+              </ul>
+            </div>
+            <div class="food-col">
+              <h4>Dinner (LIC / Astoria)</h4>
+              <ul>
+                <li>King of Falafel & Shawarma — 30-15 Broadway, Astoria, NY 11106</li>
+                <li>Arepas Cafe — 33-07 36th Ave, Astoria, NY 11106</li>
+                <li>BZ Grill — 27-02 Astoria Blvd, Astoria, NY 11102</li>
+                <li>SVL Bar — 30-18 Astoria Blvd, Astoria, NY 11102</li>
+                <li>Tacombi — 27-10 43rd Ave, Long Island City, NY 11101</li>
+                <li>Xi'an Famous Foods — 26-19 Jackson Ave, Long Island City, NY 11101</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="day" id="d7" role="tabpanel">
+      <h2>Day 7 — Departure day (light sightseeing, low-risk timing)</h2>
+      <div class="day-map">
+        <img src="nyc_boroughs_map.png" alt="NYC boroughs map">
+        <div class="map-overlays">
+          <div class="map-pin" style="left:45%;top:65%;background:#1b5e20;">L</div>
+          <div class="map-pin" style="left:16%;top:82%;background:#6a1b9a;">SI</div>
+        </div>
+        <div class="map-label">Lower Manhattan + Staten Island</div>
+      </div>
+      <ul class="timeline">
+        <li>08:00 checkout-ready (luggage stored at hotel or brought to station)</li>
+        <li>09:30–12:00 Staten Island Ferry (free! departs Whitehall Terminal every 30 min) → round trip, harbor views</li>
+        <li>12:00–13:00 Battery Park City riverside walk</li>
+        <li>13:00 back for bags / transfer</li>
+        <li>15:00–15:30 target arrival at JFK for 18:00 flight</li>
+      </ul>
+      <div class="grid">
+        <article class="hood r-lower" id="d7-battery">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Lower Manhattan — Battery / Whitehall</div>
+          <h3>Lower Manhattan / Staten Island ferry</h3>
+          <ul>
+            <li><span class="badge must">must-see</span>Staten Island Ferry round-trip skyline cruise <span class="ch">§74</span></li>
+            <li><span class="badge nice">nice-to-see</span>Battery Park City riverside walk <span class="ch">§10</span></li>
+            <li><span class="badge skip">could-skip</span>Any timed museum/attraction today</li>
+          </ul>
+          <button class="transit-btn" data-id="d7-battery">🚇 Getting here</button>
+          </div>
+        </article>
+        <article class="hood r-queens" id="d7-queens">
+          <div class="hood-inner">
+          <div class="region-tag">📍 Queens — LIC / Astoria (near hotel)</div>
+          <h3>Alternative ultra-safe option</h3>
+          <ul>
+            <li><span class="badge nice">nice-to-see</span>Only do close-by LIC / Astoria if you want zero transfer stress</li>
+            <li><span class="badge skip">could-skip</span>Cross-borough deep detours before flight</li>
+          </ul>
+          </div>
+        </article>
+        <article class="food">
+          <h3>Food</h3>
+          <div class="food-columns">
+            <div class="food-col">
+              <h4>Lunch (Whitehall / FiDi or LIC fallback)</h4>
+              <ul>
+                <li>Leo's Bagels — 3 Hanover Sq, New York, NY 10004</li>
+                <li>Pisillo Italian Panini — 97 Nassau St, New York, NY 10038</li>
+                <li>Xi'an Famous Foods — 8 Liberty Pl, New York, NY 10038</li>
+                <li>Nish Nush — 88 Reade St, New York, NY 10013</li>
+                <li>Court Square Diner — 45-30 23rd St, Long Island City, NY 11101</li>
+                <li>Xi'an Famous Foods LIC — 26-19 Jackson Ave, Long Island City, NY 11101</li>
+              </ul>
+            </div>
+            <div class="food-col">
+              <h4>Dinner (early, en route / JFK)</h4>
+              <ul>
+                <li>Los Tacos No.1 (Grand Central) — Dining Concourse, New York, NY 10017</li>
+                <li>Shake Shack (JFK T4) — JFK Airport Terminal 4, Queens, NY 11430</li>
+                <li>Deep Indian Kitchen (JFK T4) — JFK Airport Terminal 4, Queens, NY 11430</li>
+                <li>JikJi Cafe (JFK T5) — JFK Airport Terminal 5, Queens, NY 11430</li>
+                <li>Pizza Vino (JFK T8) — JFK Airport Terminal 8, Queens, NY 11430</li>
+                <li>Le Grand Comptoir (JFK T4) — JFK Airport Terminal 4, Queens, NY 11430</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="spacer"></div>
+    <section class="mapbox">
+      <h2>Google Map (all places) — ready file</h2>
+      <p>
+        I created <strong>nyc_google_mymaps_places_sep6_sep12_2026_colored.csv</strong> in the same folder.
+        Import it into <a href="https://www.google.com/maps/d/u/0/" target="_blank" rel="noreferrer">Google My Maps</a>
+        to get one map with all stops.
+      </p>
+      <ol>
+        <li>Open Google My Maps → Create new map.</li>
+        <li>Click <strong>Import</strong> on a layer.</li>
+        <li>Upload the CSV file.</li>
+        <li>Choose <strong>Place</strong> as title column and <strong>AddressExact</strong> for location.</li>
+      </ol>
+      <p class="small">
+        Tip: style markers by <strong>RegionGroup</strong> for color-coded neighborhoods. I also created a separate restaurants layer file: <strong>nyc_google_mymaps_restaurants_sep6_sep12_2026.csv</strong>.
+      </p>
+    </section>
+  <div class="modal-overlay" id="transitModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <p class="modal-title" id="modalTitle">Getting here</p>
+        <button class="modal-close" id="modalClose" aria-label="Close">&#x2715;</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+  <div class="img-lightbox" id="imgLightbox" aria-modal="true" role="dialog" aria-label="Expanded map image">
+    <button class="img-lightbox-close" id="imgLightboxClose" aria-label="Close image">&#x2715;</button>
+    <div id="imgLightboxContent"></div>
+  </div>
+  </div>
+
+  <script>
+    const tabs = Array.from(document.querySelectorAll(".tab"));
+    const days = Array.from(document.querySelectorAll(".day"));
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.getAttribute("data-day");
+        tabs.forEach((t) => t.setAttribute("aria-selected", "false"));
+        tab.setAttribute("aria-selected", "true");
+        days.forEach((d) => d.classList.toggle("active", d.id === target));
+      });
+    });
+
+    document.querySelectorAll(".food-col li").forEach((li) => {
+      const query = li.textContent.trim();
+      if (!query) return;
+      const map = document.createElement("a");
+      map.className = "map-link";
+      map.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+      map.target = "_blank";
+      map.rel = "noreferrer";
+      map.textContent = "🗺 map";
+      li.append(" ", map);
+    });
+
+    const mk = (line, label) => `<span class="subway-line ${line}">${label}</span>`;
+    const L7 = mk("sl-7", "7");
+    const LN = mk("sl-nqrw", "N");
+    const LW = mk("sl-nqrw", "W");
+    const LR = mk("sl-nqrw", "R");
+    const LQ = mk("sl-nqrw", "Q");
+    const L1 = mk("sl-123", "1");
+    const L2 = mk("sl-123", "2");
+    const L3 = mk("sl-123", "3");
+    const L4 = mk("sl-456", "4");
+    const L5 = mk("sl-456", "5");
+    const L6 = mk("sl-456", "6");
+    const LA = mk("sl-ace", "A");
+    const LC = mk("sl-ace", "C");
+    const LE = mk("sl-ace", "E");
+    const LF = mk("sl-ace", "F");
+    const LL = mk("sl-l", "L");
+    const LB = mk("sl-bd", "B");
+    const LD = mk("sl-bd", "D");
+    const stationLink = (label, query) =>
+      `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}" target="_blank" rel="noreferrer">${label}</a>`;
+    const S_QueensPlaza = stationLink("Queens Plaza station", "Queens Plaza subway station, New York, NY");
+    const S_QueensboroPlaza = stationLink("Queensboro Plaza station", "Queensboro Plaza subway station, New York, NY");
+    const S_14_8 = stationLink("14 St / 8 Av station", "14 St - 8 Av subway station, New York, NY");
+    const S_5Av53 = stationLink("5 Av/53 St station", "5 Av/53 St subway station, New York, NY");
+    const S_Whitehall = stationLink("Whitehall St-South Ferry station", "Whitehall St-South Ferry subway station, New York, NY");
+    const S_HighSt = stationLink("High St station", "High St subway station Brooklyn NY");
+    const S_YorkSt = stationLink("York St station", "York St subway station Brooklyn NY");
+    const S_Canal = stationLink("Canal St station", "Canal St subway station Manhattan NY");
+    const S_UnionSq = stationLink("14 St-Union Sq station", "14 St-Union Sq subway station, New York, NY");
+    const S_34Herald = stationLink("34 St-Herald Sq station", "34 St-Herald Sq subway station, New York, NY");
+    const S_23St = stationLink("23 St station", "23 St subway station Lexington Ave Line, New York, NY");
+    const S_GCT = stationLink("Grand Central-42 St station", "Grand Central-42 St subway station, New York, NY");
+    const S_59Lex = stationLink("59 St-Lexington Av station", "59 St-Lexington Av subway station, New York, NY");
+    const S_125St = stationLink("125 St station", "125 St subway station Lexington Ave Line, New York, NY");
+    const S_Fordham = stationLink("Fordham Rd station", "Fordham Rd subway station Grand Concourse, Bronx, NY");
+    const S_Bedford = stationLink("Bedford Ave station", "Bedford Av subway station, Brooklyn, NY");
+    const S_Lorimer = stationLink("Metropolitan Av/Lorimer St station", "Metropolitan Av/Lorimer St subway station, Brooklyn, NY");
+    const S_CourtSq = stationLink("Court Sq station", "Court Sq subway station, Long Island City, NY");
+    const S_30Av = stationLink("30 Av station", "30 Av subway station Astoria NY");
+    const S_Ditmars = stationLink("Astoria-Ditmars Blvd station", "Astoria-Ditmars Blvd subway station, Queens, NY");
+
+    const TRANSIT = {
+      "d1-jfk": {
+        title: "JFK → SpringHill Suites Queens (Day 1 arrival)",
+        body: `
+          <p class="step"><strong>Hotel address:</strong> 38-39 9th St, Long Island City, NY 11101.</p>
+          <p class="step"><strong>Route A (best value, ~60-85 min):</strong> AirTrain JFK from your terminal to Jamaica Station → transfer to ${LE} toward Manhattan → exit at Queens Plaza → 10-15 min walk (or short taxi) to hotel.</p>
+          <p class="step"><strong>Typical cost per person:</strong> AirTrain fare + subway fare (pay contactless/OMNY for subway; AirTrain is separate payment).</p>
+          <p class="step"><strong>Route B (lowest stress with luggage):</strong> yellow cab/rideshare directly to hotel (~35-60+ min depending on traffic).</p>
+          <p class="step"><strong>Tip:</strong> if everyone is tired after the flight, Route B may be worth it on Day 1.</p>
+        `
+      },
+      "d1-chelsea": {
+        title: "Hotel (Queens) → Chelsea / High Line",
+        body: `
+          <p class="step"><strong>Start:</strong> walk 8-12 min to ${S_QueensPlaza}.</p>
+          <p class="step"><strong>Ride:</strong> take ${LE} toward Manhattan to ${S_14_8}.</p>
+          <p class="step"><strong>Walk:</strong> 10-12 min southwest to High Line south entrance (Gansevoort St &amp; Washington St).</p>
+        `
+      },
+      "d1-timessq": {
+        title: "Chelsea → Apple Store → Times Square",
+        body: `
+          <p class="step"><strong>Start:</strong> from Chelsea / High Line, go to ${S_14_8}.</p>
+          <p class="step"><strong>Ride:</strong> take ${LA}${LC}${LE} to ${S_5Av53}, then walk 10 min to Apple Fifth Ave (767 5th Ave).</p>
+          <p class="step"><strong>Next stop:</strong> walk south on 5th Ave to Bryant Park, then continue west to Times Square for evening.</p>
+        `
+      },
+      "d2-battery": {
+        title: "Hotel (Queens) → Battery Park",
+        body: `
+          <p class="step"><strong>Start:</strong> walk to ${S_QueensPlaza}.</p>
+          <p class="step"><strong>Ride:</strong> take ${LR}${LW} southbound to ${S_Whitehall}.</p>
+          <p class="step"><strong>Walk:</strong> 5-8 min to Battery Park / Statue City Cruises departure point.</p>
+        `
+      },
+      "d2-fidi": {
+        title: "Battery Park → 9/11 + Wall Street",
+        body: `
+          <p class="step"><strong>Walk:</strong> Battery Park → Charging Bull / Wall Street (about 10 min).</p>
+          <p class="step"><strong>Walk:</strong> Wall Street area → 9/11 Memorial + Oculus (about 10-12 min).</p>
+        `
+      },
+      "d2-dumbo": {
+        title: "FiDi → Brooklyn Bridge → DUMBO",
+        body: `
+          <p class="step"><strong>Start:</strong> from FiDi/WTC, walk to Brooklyn Bridge pedestrian entrance (Centre St side, about 10-15 min).</p>
+          <p class="step"><strong>Walk:</strong> cross Brooklyn Bridge to DUMBO (about 30 min with photo stops).</p>
+          <p class="step"><strong>End of section:</strong> in DUMBO, use ${S_HighSt} (${LA}${LC}) or ${S_YorkSt} (${LF}) when ready to move on.</p>
+        `
+      },
+      "d3-soho": {
+        title: "Hotel (Queens) → SoHo / Chinatown",
+        body: `
+          <p class="step"><strong>Start:</strong> walk to ${S_QueensboroPlaza}.</p>
+          <p class="step"><strong>Ride:</strong> take ${LN}${LW} to ${S_Canal}.</p>
+          <p class="step"><strong>Walk:</strong> start in SoHo (northwest of Canal) then continue to Chinatown (east/southeast of Canal).</p>
+        `
+      },
+      "d3-les": {
+        title: "Chinatown → LES → East Village",
+        body: `
+          <p class="step"><strong>Walk sequence:</strong> Chinatown → Essex/Delancey (LES) → St. Mark's Place (East Village).</p>
+          <p class="step"><strong>Typical walk segments:</strong> 10-20 min between each stop.</p>
+          <p class="step"><strong>If tired:</strong> use ${LF} from East Broadway to 2 Av for a short hop into East Village.</p>
+        `
+      },
+      "d3-village": {
+        title: "East Village → West Village / Union Square",
+        body: `
+          <p class="step"><strong>Walk:</strong> East Village → Washington Square Park → West Village.</p>
+          <p class="step"><strong>Last stop:</strong> finish at Union Square (walk, or use ${L4}${L5}${L6} for one short hop).</p>
+          <p class="step"><strong>End-of-day return:</strong> from ${S_UnionSq} take ${LN}${LW} to ${S_QueensboroPlaza}, then walk to hotel.</p>
+        `
+      },
+      "d4-flatiron": {
+        title: "Hotel (Queens) → Empire State / Flatiron",
+        body: `
+          <p class="step"><strong>Start:</strong> walk to ${S_QueensboroPlaza}.</p>
+          <p class="step"><strong>Ride:</strong> take ${LN}${LW} to ${S_34Herald}.</p>
+          <p class="step"><strong>Walk:</strong> Empire State Building first, then walk south on 5th Ave to Flatiron / Madison Square Park.</p>
+        `
+      },
+      "d4-midtown": {
+        title: "Flatiron → Grand Central → Rockefeller",
+        body: `
+          <p class="step"><strong>Start:</strong> from Flatiron, take ${L6} at ${S_23St} to ${S_GCT}.</p>
+          <p class="step"><strong>Walk:</strong> Grand Central / Chrysler exterior, then walk ~12-15 min to Rockefeller Center.</p>
+        `
+      },
+      "d4-culture": {
+        title: "Rockefeller / MoMA → Times Square",
+        body: `
+          <p class="step"><strong>Start:</strong> finish MoMA / Rockefeller area.</p>
+          <p class="step"><strong>Walk:</strong> 12-18 min to Times Square and the Broadway district for evening plans.</p>
+        `
+      },
+      "d5-uptown": {
+        title: "Hotel (Queens) → Central Park / Uptown",
+        body: `
+          <p class="step"><strong>Start:</strong> walk to ${S_QueensboroPlaza}.</p>
+          <p class="step"><strong>Ride:</strong> take ${LN}${LW} to ${S_59Lex}.</p>
+          <p class="step"><strong>For The Met route:</strong> transfer to ${L4}${L5}${L6} and exit at 86 St.</p>
+          <p class="step"><strong>For AMNH route:</strong> from 59 St, take crosstown bus/taxi to Central Park West around 81 St.</p>
+        `
+      },
+      "d5-bronx": {
+        title: "Uptown Manhattan → Bronx (Arthur Ave)",
+        body: `
+          <p class="step"><strong>Start:</strong> from Uptown Manhattan, reach ${S_125St}.</p>
+          <p class="step"><strong>Ride:</strong> take ${LB}${LD} to ${S_Fordham}.</p>
+          <p class="step"><strong>Walk:</strong> 12-18 min to Arthur Ave / Belmont (or short local bus).</p>
+          <p class="step"><strong>End-of-day return:</strong> take ${LD} downtown to 59 St-Columbus Circle, then ${LN}${LW} back to ${S_QueensboroPlaza}.</p>
+        `
+      },
+      "d6-brooklyn": {
+        title: "Hotel (Queens) → Williamsburg",
+        body: `
+          <p class="step"><strong>Start:</strong> walk to ${S_QueensboroPlaza}.</p>
+          <p class="step"><strong>Ride:</strong> take ${LN}${LW} to ${S_UnionSq}, transfer to ${LL} to ${S_Bedford}.</p>
+          <p class="step"><strong>Walk:</strong> short walk to Domino Park / waterfront.</p>
+        `
+      },
+      "d6-queens": {
+        title: "Brooklyn → LIC / Astoria",
+        body: `
+          <p class="step"><strong>Start:</strong> from Williamsburg, take ${LL} to ${S_Lorimer}, then switch to the <strong>G train</strong> toward ${S_CourtSq} in LIC.</p>
+          <p class="step"><strong>LIC segment:</strong> Gantry Plaza area from ${S_CourtSq} / Vernon Blvd-Jackson Av.</p>
+          <p class="step"><strong>Astoria segment:</strong> take ${LN}${LW} from ${S_QueensboroPlaza} to ${S_30Av} or ${S_Ditmars}.</p>
+          <p class="step"><strong>End-of-day return:</strong> reverse ${LN}${LW} back to ${S_QueensboroPlaza} and walk to hotel.</p>
+        `
+      },
+      "d7-battery": {
+        title: "Hotel (Queens) → Staten Island Ferry",
+        body: `
+          <p class="step"><strong>Start:</strong> walk to ${S_QueensPlaza}.</p>
+          <p class="step"><strong>Ride:</strong> take ${LR}${LW} to ${S_Whitehall}.</p>
+          <p class="step"><strong>Ferry:</strong> Staten Island Ferry is free; do a round trip and return to Whitehall.</p>
+          <p class="step"><strong>Return:</strong> take ${LR}${LW} back to ${S_QueensPlaza} for bag pickup / JFK transfer.</p>
+        `
+      }
+    };
+
+    const overlay = document.getElementById("transitModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalBody = document.getElementById("modalBody");
+    const closeBtn = document.getElementById("modalClose");
+    const imgLightbox = document.getElementById("imgLightbox");
+    const imgLightboxContent = document.getElementById("imgLightboxContent");
+    const imgLightboxClose = document.getElementById("imgLightboxClose");
+
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest(".transit-btn");
+      if (!btn) return;
+      const id = btn.getAttribute("data-id");
+      const data = TRANSIT[id];
+      if (!data) return;
+      modalTitle.textContent = data.title;
+      modalBody.innerHTML = data.body;
+      overlay.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", () => overlay.classList.remove("open"));
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) overlay.classList.remove("open");
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") overlay.classList.remove("open");
+    });
+
+    document.addEventListener("click", (e) => {
+      const dayMap = e.target.closest(".day-map");
+      if (!dayMap || imgLightbox.contains(dayMap)) return;
+      imgLightboxContent.innerHTML = "";
+      imgLightboxContent.appendChild(dayMap.cloneNode(true));
+      imgLightbox.classList.add("open");
+    });
+
+    imgLightboxClose.addEventListener("click", () => {
+      imgLightbox.classList.remove("open");
+      imgLightboxContent.innerHTML = "";
+    });
+    imgLightbox.addEventListener("click", (e) => {
+      if (e.target === imgLightbox) {
+        imgLightbox.classList.remove("open");
+        imgLightboxContent.innerHTML = "";
+      }
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        imgLightbox.classList.remove("open");
+        imgLightboxContent.innerHTML = "";
+      }
+    });
+  </script>
+</body>
+</html>
