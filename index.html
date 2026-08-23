@@ -311,7 +311,7 @@
     /* Pin dots */
     .map-pin {
       position: absolute; transform: translate(-50%,-50%);
-      width: 18px; height: 18px; border-radius: 50%;
+      min-width: 18px; height: 18px; padding: 0 4px; border-radius: 10px;
       border: 2px solid #fff;
       box-shadow: 0 2px 6px rgba(0,0,0,0.5);
       display: flex; align-items: center; justify-content: center;
@@ -454,10 +454,11 @@
       <div class="day-map">
         <img src="nyc_boroughs_map.png" alt="NYC boroughs map" class="enlarge-map" tabindex="0" role="button" aria-label="Enlarge NYC boroughs map">
         <div class="map-overlays">
-          <div class="map-pin" style="left:48%;top:42%;background:#388e3c;">M</div>
-          <div class="map-pin" style="left:61%;top:41%;background:#e65100;">H</div>
+          <div class="map-pin" style="left:61%;top:40%;background:#c62828;">Bx</div>
+          <div class="map-pin" style="left:48%;top:42%;background:#388e3c;">MS</div>
+          <div class="map-pin" style="left:49%;top:35%;background:#2e7d32;">MN</div>
         </div>
-        <div class="map-label">South Bronx base + Midtown South + Midtown North</div>
+        <div class="map-label">JFK → South Bronx → Midtown South → Midtown North</div>
       </div>
       <ul class="timeline">
         <li>~13:00 land JFK → clear immigration/bags (typically 60-120 min)</li>
@@ -548,10 +549,11 @@
       <div class="day-map">
         <img src="nyc_boroughs_map.png" alt="NYC boroughs map" class="enlarge-map" tabindex="0" role="button" aria-label="Enlarge NYC boroughs map">
         <div class="map-overlays">
-          <div class="map-pin" style="left:46%;top:63%;background:#1b5e20;">L</div>
-          <div class="map-pin" style="left:50%;top:69%;background:#f9a825;color:#333;">B</div>
+          <div class="map-pin" style="left:46%;top:63%;background:#1b5e20;">H</div>
+          <div class="map-pin" style="left:47%;top:58%;background:#2e7d32;">FD</div>
+          <div class="map-pin" style="left:50%;top:69%;background:#f9a825;color:#333;">Bk</div>
         </div>
-        <div class="map-label">Lower Manhattan + Brooklyn</div>
+        <div class="map-label">Harbor → Financial District / Seaport → DUMBO</div>
       </div>
       <ul class="timeline">
         <li>08:00 <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to Chambers St, then walk approximately 12–15 minutes to Battery Park / Castle Clinton</li>
@@ -639,10 +641,11 @@
       <div class="day-map">
         <img src="nyc_boroughs_map.png" alt="NYC boroughs map" class="enlarge-map" tabindex="0" role="button" aria-label="Enlarge NYC boroughs map">
         <div class="map-overlays">
-          <div class="map-pin" style="left:47%;top:56%;background:#1b5e20;">L</div>
-          <div class="map-pin" style="left:46%;top:63%;background:#1b5e20;">L</div>
+          <div class="map-pin" style="left:47%;top:56%;background:#1b5e20;">SO</div>
+          <div class="map-pin" style="left:46%;top:61%;background:#2e7d32;">LES</div>
+          <div class="map-pin" style="left:44%;top:53%;background:#388e3c;">V</div>
         </div>
-        <div class="map-label">Lower Manhattan</div>
+        <div class="map-label">SoHo / Chinatown → LES / East Village → Villages</div>
       </div>
       <ul class="timeline">
         <li>08:00 <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to Chambers St, transfer to the <strong>E train</strong> to Canal St, then walk north into SoHo</li>
@@ -733,10 +736,10 @@
       <div class="day-map">
         <img src="nyc_boroughs_map.png" alt="NYC boroughs map" class="enlarge-map" tabindex="0" role="button" aria-label="Enlarge NYC boroughs map">
         <div class="map-overlays">
-          <div class="map-pin" style="left:48%;top:45%;background:#388e3c;">M</div>
-          <div class="map-pin" style="left:48%;top:51%;background:#2e7d32;">M</div>
+          <div class="map-pin" style="left:48%;top:49%;background:#388e3c;">MS</div>
+          <div class="map-pin" style="left:49%;top:38%;background:#2e7d32;">MN</div>
         </div>
-        <div class="map-label">Midtown South + Midtown North</div>
+        <div class="map-label">Midtown South → Midtown North → Broadway</div>
       </div>
       <ul class="timeline">
         <li>08:00 <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to 34 St–Penn Station, then walk east approximately 10 minutes to the Empire State Building</li>
@@ -824,10 +827,13 @@
       <div class="day-map">
         <img src="nyc_boroughs_map.png" alt="NYC boroughs map" class="enlarge-map" tabindex="0" role="button" aria-label="Enlarge NYC boroughs map">
         <div class="map-overlays">
-          <div class="map-pin" style="left:49%;top:31%;background:#558b2f;">U</div>
+          <div class="map-pin" style="left:49%;top:31%;background:#558b2f;">UES</div>
+          <div class="map-pin" style="left:48%;top:24%;background:#7cb342;">CP</div>
+          <div class="map-pin" style="left:47%;top:29%;background:#689f38;">UWS</div>
+          <div class="map-pin" style="left:48%;top:20%;background:#8bc34a;color:#333;">H</div>
           <div class="map-pin" style="left:61%;top:18%;background:#c62828;">Bx</div>
         </div>
-        <div class="map-label">Uptown Manhattan + Bronx</div>
+        <div class="map-label">UES / Central Park / UWS → Harlem → Bronx</div>
       </div>
       <ul class="timeline">
         <li>08:00 <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>4 or 5 train</strong> downtown to 86 St–Lexington Av, then walk east toward The Met / Museum Mile</li>
@@ -907,7 +913,7 @@
           <div class="map-pin" style="left:50%;top:69%;background:#f9a825;color:#333;">Bk</div>
           <div class="map-pin" style="left:66%;top:43%;background:#e65100;">Q</div>
         </div>
-        <div class="map-label">Brooklyn + Queens</div>
+        <div class="map-label">Williamsburg / Greenpoint → LIC → Astoria</div>
       </div>
       <ul class="timeline">
         <li>08:00 <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to 14 St, walk to Union Square, then take the <strong>L train</strong> to Bedford Av in Williamsburg</li>
@@ -978,10 +984,10 @@
       <div class="day-map">
         <img src="nyc_boroughs_map.png" alt="NYC boroughs map" class="enlarge-map" tabindex="0" role="button" aria-label="Enlarge NYC boroughs map">
         <div class="map-overlays">
-          <div class="map-pin" style="left:45%;top:65%;background:#1b5e20;">L</div>
+          <div class="map-pin" style="left:45%;top:65%;background:#1b5e20;">LM</div>
           <div class="map-pin" style="left:16%;top:82%;background:#6a1b9a;">SI</div>
         </div>
-        <div class="map-label">Lower Manhattan + Staten Island</div>
+        <div class="map-label">Whitehall / Harbor → Staten Island Ferry → JFK</div>
       </div>
       <ul class="timeline">
         <li>08:00 checkout-ready (luggage stored at hotel or brought to station); <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to Chambers St, transfer to the <strong>R or W train</strong> to Whitehall St–South Ferry, then walk to the Staten Island Ferry terminal</li>
