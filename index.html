@@ -180,6 +180,16 @@
     .food-col.r-brooklyn h4, .food-col.r-brooklyn li, .food-col.r-brooklyn li a { color: var(--region-brooklyn); }
     .food-col.r-queens h4, .food-col.r-queens li, .food-col.r-queens li a { color: var(--region-queens); }
     .food-col.r-bronx h4, .food-col.r-bronx li, .food-col.r-bronx li a { color: var(--region-bronx); }
+    .collapsible-panel { padding: 0; }
+    .collapsible-panel summary {
+      cursor: pointer;
+      padding: 12px 16px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      list-style-position: inside;
+    }
+    .collapsible-panel summary::marker { color: var(--cp-accent); }
+    .collapsible-panel ul { margin: 0; padding: 0 16px 14px 40px; }
     @media (max-width: 700px) {
       .food-columns { grid-template-columns: 1fr; }
     }
@@ -420,17 +430,17 @@
       </div>
     </section>
 
-    <section class="panel">
-      <h2>Transit baseline (from hotel)</h2>
+    <details class="panel collapsible-panel">
+      <summary>Transit baseline (from hotel)</summary>
       <ul>
         <li><strong>Fastest start:</strong> walk to <strong>3 Av–149 St</strong> (2/5) or <strong>149 St–Grand Concourse</strong> (2/4/5), then subway.</li>
         <li><strong>Best Manhattan spine:</strong> use the <strong>2 train</strong> for Times Square, Midtown South, Villages, and Lower Manhattan; use the <strong>4/5</strong> for Midtown North / Grand Central and Upper East Side connections.</li>
         <li><strong>Inside NYC:</strong> use subway for long jumps, walk for same-neighborhood clusters.</li>
       </ul>
-    </section>
+    </details>
 
-    <section class="panel">
-      <h2>Neighborhood coverage plan (6 full sightseeing days)</h2>
+    <details class="panel collapsible-panel">
+      <summary>Neighborhood coverage plan (6 full sightseeing days)</summary>
       <ul>
         <li><strong>Mon:</strong> <strong>Financial District</strong>, <strong>Tribeca</strong>, <strong>South Street Seaport</strong> + <strong>Statue of Liberty &amp; Ellis Island</strong> (first full day anchor).</li>
         <li><strong>Tue:</strong> <strong>Chinatown</strong>, <strong>Little Italy</strong>, <strong>SoHo</strong>, <strong>Lower East Side</strong>, <strong>East Village</strong>, <strong>Greenwich/West Village</strong>.</li>
@@ -439,7 +449,7 @@
         <li><strong>Fri:</strong> <strong>Brooklyn</strong> + <strong>Queens</strong>.</li>
         <li><strong>Sat:</strong> departure-light day or catch-up for any missed highlights.</li>
       </ul>
-    </section>
+    </details>
 
     <div class="tabs" role="tablist" aria-label="Trip days">
       <button class="tab" role="tab" aria-selected="true" data-day="d1">Sun 6 Sep</button>
