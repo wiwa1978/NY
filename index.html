@@ -1079,6 +1079,9 @@
   <script>
     const tabs = Array.from(document.querySelectorAll(".tab"));
     const days = Array.from(document.querySelectorAll(".day"));
+    document.querySelectorAll(".timeline a").forEach((link) => {
+      link.replaceWith(document.createTextNode(link.textContent));
+    });
     tabs.forEach((tab) => {
       tab.addEventListener("click", () => {
         const target = tab.getAttribute("data-day");
@@ -1139,6 +1142,7 @@
     const S_Bedford = stationLink("Bedford Ave station", "Bedford Av subway station, Brooklyn, NY");
     const S_Lorimer = stationLink("Metropolitan Av/Lorimer St station", "Metropolitan Av/Lorimer St subway station, Brooklyn, NY");
     const S_CourtSq = stationLink("Court Sq station", "Court Sq subway station, Long Island City, NY");
+    const S_QueensboroPlaza = stationLink("Queensboro Plaza station", "Queensboro Plaza subway station, Queens, NY");
     const S_30Av = stationLink("30 Av station", "30 Av subway station Astoria NY");
     const S_Ditmars = stationLink("Astoria-Ditmars Blvd station", "Astoria-Ditmars Blvd subway station, Queens, NY");
 
