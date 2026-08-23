@@ -174,6 +174,12 @@
       font-size: 0.92rem;
       color: var(--cp-text-muted);
     }
+    .food-col.r-lower h4, .food-col.r-lower li, .food-col.r-lower li a { color: var(--region-lower); }
+    .food-col.r-midtown h4, .food-col.r-midtown li, .food-col.r-midtown li a { color: var(--region-midtown); }
+    .food-col.r-uptown h4, .food-col.r-uptown li, .food-col.r-uptown li a { color: var(--region-uptown); }
+    .food-col.r-brooklyn h4, .food-col.r-brooklyn li, .food-col.r-brooklyn li a { color: var(--region-brooklyn); }
+    .food-col.r-queens h4, .food-col.r-queens li, .food-col.r-queens li a { color: var(--region-queens); }
+    .food-col.r-bronx h4, .food-col.r-bronx li, .food-col.r-bronx li a { color: var(--region-bronx); }
     @media (max-width: 700px) {
       .food-columns { grid-template-columns: 1fr; }
     }
@@ -517,7 +523,7 @@
         <article class="food">
           <h3>Food (budget, teen-friendly)</h3>
           <div class="food-columns">
-            <div class="food-col">
+            <div class="food-col r-midtown">
               <h4>Lunch (Chelsea / Hudson Yards)</h4>
               <ul>
                 <li>Los Tacos No.1 — 75 9th Ave, New York, NY 10011</li>
@@ -527,7 +533,7 @@
                 <li>Fuku — 10 Hudson Yards, New York, NY 10001</li>
               </ul>
             </div>
-            <div class="food-col">
+            <div class="food-col r-midtown">
               <h4>Dinner (Midtown North / Times Square)</h4>
               <ul>
                 <li>Joe's Pizza — 1435 Broadway, New York, NY 10018</li>
@@ -608,7 +614,7 @@
         <article class="food">
           <h3>Food</h3>
           <div class="food-columns">
-            <div class="food-col">
+            <div class="food-col r-lower">
               <h4>Lunch (FiDi / Seaport / Tribeca edge)</h4>
               <ul>
                 <li>Pisillo Italian Panini — 97 Nassau St, New York, NY 10038</li>
@@ -619,7 +625,7 @@
                 <li>Los Tacos No.1 — 136 Church St, New York, NY 10007</li>
               </ul>
             </div>
-            <div class="food-col">
+            <div class="food-col r-brooklyn">
               <h4>Dinner (DUMBO / Brooklyn Heights)</h4>
               <ul>
                 <li>Juliana's Pizza — 19 Old Fulton St, Brooklyn, NY 11201</li>
@@ -703,7 +709,7 @@
         <article class="food">
           <h3>Food</h3>
           <div class="food-columns">
-            <div class="food-col">
+            <div class="food-col r-lower">
               <h4>Lunch (Chinatown / LES)</h4>
               <ul>
                 <li>Vanessa's Dumpling House — 118A Eldridge St, New York, NY 10002</li>
@@ -714,7 +720,7 @@
                 <li>Scarr's Pizza — 35 Orchard St, New York, NY 10002</li>
               </ul>
             </div>
-            <div class="food-col">
+            <div class="food-col r-lower">
               <h4>Dinner (Village / East Village)</h4>
               <ul>
                 <li>Mamoun's Falafel — 119 MacDougal St, New York, NY 10012</li>
@@ -793,7 +799,7 @@
         <article class="food">
           <h3>Food</h3>
           <div class="food-columns">
-            <div class="food-col">
+            <div class="food-col r-midtown">
               <h4>Lunch (Midtown South / Midtown North)</h4>
               <ul>
                 <li>Urban Hawker — 135 W 50th St, New York, NY 10020</li>
@@ -804,7 +810,7 @@
                 <li>Toasties — 1369 6th Ave, New York, NY 10019</li>
               </ul>
             </div>
-            <div class="food-col">
+            <div class="food-col r-midtown">
               <h4>Dinner (Midtown South / Koreatown)</h4>
               <ul>
                 <li>Tonchin — 13 W 36th St, New York, NY 10018</li>
@@ -876,7 +882,7 @@
         <article class="food">
           <h3>Food</h3>
           <div class="food-columns">
-            <div class="food-col">
+            <div class="food-col r-uptown">
               <h4>Lunch (UWS / UES)</h4>
               <ul>
                 <li>Gray's Papaya — 2090 Broadway, New York, NY 10023</li>
@@ -887,7 +893,7 @@
                 <li>Shake Shack UWS — 366 Columbus Ave, New York, NY 10024</li>
               </ul>
             </div>
-            <div class="food-col">
+            <div class="food-col r-bronx">
               <h4>Dinner (Bronx — Belmont / Arthur Ave)</h4>
               <ul>
                 <li>Mike's Deli — 2344 Arthur Ave, Bronx, NY 10458</li>
@@ -950,7 +956,7 @@
         <article class="food">
           <h3>Food</h3>
           <div class="food-columns">
-            <div class="food-col">
+            <div class="food-col r-brooklyn">
               <h4>Lunch (Williamsburg / Greenpoint)</h4>
               <ul>
                 <li>L'Industrie Pizzeria — 254 S 2nd St, Brooklyn, NY 11211</li>
@@ -961,7 +967,7 @@
                 <li>Ceremonia Bakeshop — 743 Driggs Ave, Brooklyn, NY 11211</li>
               </ul>
             </div>
-            <div class="food-col">
+            <div class="food-col r-queens">
               <h4>Dinner (LIC / Astoria)</h4>
               <ul>
                 <li>King of Falafel & Shawarma — 30-15 Broadway, Astoria, NY 11106</li>
@@ -1020,7 +1026,7 @@
         <article class="food">
           <h3>Food</h3>
           <div class="food-columns">
-            <div class="food-col">
+            <div class="food-col r-lower">
               <h4>Lunch (Whitehall / FiDi or LIC fallback)</h4>
               <ul>
                 <li>Leo's Bagels — 3 Hanover Sq, New York, NY 10004</li>
@@ -1031,7 +1037,7 @@
                 <li>Xi'an Famous Foods LIC — 26-19 Jackson Ave, Long Island City, NY 11101</li>
               </ul>
             </div>
-            <div class="food-col">
+            <div class="food-col r-queens">
               <h4>Dinner (early, en route / JFK)</h4>
               <ul>
                 <li>Los Tacos No.1 (Grand Central) — Dining Concourse, New York, NY 10017</li>
