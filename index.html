@@ -147,7 +147,7 @@
       color: var(--cp-text);
     }
     .day { display: none; padding: 16px; }
-    .day.active { display: block; }
+    .day.active { display: flex; flex-direction: column; }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -309,10 +309,11 @@
 
     /* ── Day map ─────────────────────────────────────── */
     .day-map {
-      position: absolute; display: inline-block;
-      top: 16px; right: 16px; margin: 0;
+      position: relative; display: inline-block;
+      order: 99; align-self: center;
+      top: auto; right: auto; margin: 16px auto 0;
       border: 2px solid var(--cp-border); border-radius: 10px;
-      overflow: hidden; width: 200px;
+      overflow: hidden; width: min(420px, 100%);
       box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     }
     .day-map img { display: block; width: 100%; height: auto; }
@@ -340,7 +341,7 @@
       padding: 3px 4px; letter-spacing: 0.04em;
     }
     @media (max-width: 600px) {
-      .day-map { position: relative; top: auto; right: auto; width: 100%; margin: 0 0 12px 0; }
+      .day-map { width: 100%; margin: 16px auto 0; }
     }
 
     .img-lightbox {
@@ -480,10 +481,12 @@
         <li>~13:00 land JFK → clear immigration/bags (typically 60-120 min)</li>
         <li>~14:30-16:00 transfer JFK → hotel (AirTrain JFK to Jamaica → E to 42 St–Port Authority → walk to Times Square or transfer to the 2 train at Times Sq–42 St → 149 St–Grand Concourse, then short walk/taxi to hotel)</li>
         <li>~15:30-16:15 hotel check-in + short reset</li>
-        <li>16:30–18:45 — Midtown South: Hudson Yards → Chelsea → High Line south → Meatpacking</li>
+        <li>16:15–16:55 — <strong>Hotel → first stop</strong> (estimated 30–40 min): walk to 149 St–Grand Concourse, take the <strong>2 train</strong> to Times Sq–42 St, then the <strong>7 train</strong> to 34 St–Hudson Yards</li>
+        <li>16:55–18:45 — Midtown South: Hudson Yards → Chelsea → High Line south → Meatpacking</li>
         <li>18:45–19:30 — Subway to Midtown North / Times Square (save Midtown North core for Wednesday)</li>
         <li>19:45–22:00 — Times Square / Theater District lights + TKTS booth</li>
         <li>20:30+ — Optional Times Square evening + early night (save Broadway for Wednesday)</li>
+        <li>22:00–22:35 — <strong>Last stop → Hotel</strong> (estimated 30–40 min): take the <strong>2 train</strong> uptown from Times Sq–42 St to 149 St–Grand Concourse, then walk to the hotel</li>
       </ul>
       <p class="small" style="margin-top:-2px;">
         <strong>Mental map:</strong> stay on Manhattan's west edge first (Hudson Yards → Chelsea → Meatpacking), then do one clean north-east jump to Times Square for night atmosphere only.
@@ -571,10 +574,11 @@
         <div class="map-label">Harbor → Financial District / Seaport → DUMBO</div>
       </div>
       <ul class="timeline">
-        <li>08:00 <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to Chambers St, then walk approximately 12–15 minutes to Battery Park / Castle Clinton</li>
+        <li>08:00 <strong>Hotel → first stop</strong> (estimated 30–40 min): walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to Chambers St, then walk approximately 12–15 minutes to Battery Park / Castle Clinton</li>
         <li>09:00–12:30 — Battery Park / Harbor: Statue of Liberty + Ellis Island ferry</li>
         <li>12:30–15:30 — Financial District / WTC / Seaport</li>
         <li>16:00–21:30 — DUMBO / Brooklyn Heights</li>
+        <li>21:30–22:15 — <strong>Last stop → Hotel</strong> (estimated 35–45 min): walk to York St or High St, take the <strong>A/C train</strong> toward Manhattan, transfer to the <strong>2 train</strong> uptown, then walk from 149 St–Grand Concourse</li>
       </ul>
       <div class="grid">
         <article class="hood r-lower" id="d2-battery">
@@ -663,10 +667,11 @@
         <div class="map-label">SoHo / Chinatown → LES / East Village → Villages</div>
       </div>
       <ul class="timeline">
-        <li>08:00 <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to Chambers St, transfer to the <strong>E train</strong> to Canal St, then walk north into SoHo</li>
+        <li>08:00 <strong>Hotel → first stop</strong> (estimated 35–45 min): walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to Chambers St, transfer to the <strong>E train</strong> to Canal St, then walk north into SoHo</li>
         <li>09:00–13:30 — SoHo / Nolita / Little Italy / Chinatown</li>
         <li>14:00–18:00 — Lower East Side / East Village / Bowery</li>
         <li>18:00–21:30 — Greenwich Village (incl. Washington Square Park) / West Village / Union Square</li>
+        <li>21:30–22:10 — <strong>Last stop → Hotel</strong> (estimated 35–40 min): walk to 14 St–Union Sq, take the <strong>4/5/6 or 2/3 connection</strong> toward 149 St–Grand Concourse, then walk to the hotel</li>
       </ul>
       <p class="small" style="margin-top:-2px;">
         <strong>Mental map:</strong> move east-to-west in one sweep: Chinatown/SoHo in the morning, LES/East Village midday, then finish in Greenwich + West Village around sunset.
@@ -756,13 +761,14 @@
         <div class="map-label">Midtown South → Midtown North → Broadway</div>
       </div>
       <ul class="timeline">
-        <li>08:00 <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to 34 St–Penn Station, then walk east approximately 10 minutes to the Empire State Building</li>
+        <li>08:00 <strong>Hotel → first stop</strong> (estimated 30–40 min): walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to 34 St–Penn Station, then walk east approximately 10 minutes to the Empire State Building</li>
         <li>09:00–11:30 — Empire State Building + Flatiron / Madison Square Park</li>
         <li>11:30–14:30 — Grand Central / Chrysler exterior</li>
         <li>14:30–17:30 — Rockefeller Center / Top of the Rock / MoMA</li>
         <li>17:30–19:30 — Times Square / Fifth Ave corridor + dinner near Theater District</li>
         <li>19:30/20:00–22:00 — Broadway show (primary plan)</li>
         <li>22:30+ Optional late stand-up set (if energy remains)</li>
+        <li>22:00–22:40 — <strong>Last stop → Hotel</strong> (estimated 30–40 min): walk to Times Sq–42 St, take the <strong>2 train</strong> uptown to 149 St–Grand Concourse, then walk to the hotel</li>
       </ul>
       <div class="grid">
         <article class="hood r-midtown" id="d4-flatiron">
@@ -850,9 +856,10 @@
         <div class="map-label">UES / Central Park / UWS → Harlem → Bronx</div>
       </div>
       <ul class="timeline">
-        <li>08:00 <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>4 or 5 train</strong> downtown to 86 St–Lexington Av, then walk east toward The Met / Museum Mile</li>
+        <li>08:00 <strong>Hotel → first stop</strong> (estimated 30–40 min): walk to 149 St–Grand Concourse, take the <strong>4 or 5 train</strong> downtown to 86 St–Lexington Av, then walk east toward The Met / Museum Mile</li>
         <li>09:00–14:00 — Central Park by bicycle + UWS / UES museums</li>
         <li>15:00–20:30 — Bronx: Arthur Avenue / Belmont / Bronx Zoo option</li>
+        <li>20:30–21:15 — <strong>Last stop → Hotel</strong> (estimated 25–35 min): take the <strong>B/D or 4 train</strong> toward 149 St–Grand Concourse, then walk to the hotel</li>
       </ul>
       <div class="grid">
         <article class="hood r-uptown" id="d5-uptown">
@@ -930,11 +937,12 @@
         <div class="map-label">Williamsburg / Greenpoint → LIC → Astoria</div>
       </div>
       <ul class="timeline">
-        <li>08:00 <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to 14 St, walk to Union Square, then take the <strong>L train</strong> to Bedford Av in Williamsburg</li>
+        <li>08:00 <strong>Hotel → first stop</strong> (estimated 45–55 min): walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to 14 St, walk to Union Square, then take the <strong>L train</strong> to Bedford Av in Williamsburg</li>
         <li>09:30–11:30 — Williamsburg waterfront / Domino Park</li>
         <li>11:30–14:00 — Greenpoint / Bushwick</li>
         <li>14:30–17:30 — Long Island City / Gantry Plaza</li>
         <li>17:30–21:30 — Astoria food streets / evening</li>
+        <li>21:30–22:30 — <strong>Last stop → Hotel</strong> (estimated 45–60 min): take the <strong>N/W train</strong> from Astoria toward Manhattan, transfer to the <strong>2 train</strong> uptown, then walk from 149 St–Grand Concourse</li>
       </ul>
       <div class="grid">
         <article class="hood r-brooklyn" id="d6-brooklyn">
@@ -1004,11 +1012,12 @@
         <div class="map-label">Whitehall / Harbor → Staten Island Ferry → JFK</div>
       </div>
       <ul class="timeline">
-        <li>08:00 checkout-ready (luggage stored at hotel or brought to station); <strong>Hotel → first stop:</strong> walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to Chambers St, transfer to the <strong>R or W train</strong> to Whitehall St–South Ferry, then walk to the Staten Island Ferry terminal</li>
+        <li>08:00 checkout-ready (luggage stored at hotel or brought to station); <strong>Hotel → first stop</strong> (estimated 35–45 min): walk to 149 St–Grand Concourse, take the <strong>2 train</strong> downtown to Chambers St, transfer to the <strong>R or W train</strong> to Whitehall St–South Ferry, then walk to the Staten Island Ferry terminal</li>
         <li>09:30–12:00 — Staten Island Ferry (free; departs Whitehall Terminal every 30 min) → round trip, harbor views</li>
         <li>12:00–13:00 — Battery Park City riverside walk</li>
         <li>13:00 back for bags / transfer</li>
         <li>15:00–15:30 target arrival at JFK for 18:00 flight</li>
+        <li>13:00–15:00 — <strong>Last stop → JFK</strong> (estimated 90–120 min): collect bags, take the subway/taxi connection back toward Jamaica, then the AirTrain to the airport</li>
       </ul>
       <div class="grid">
         <article class="hood r-lower" id="d7-battery">
