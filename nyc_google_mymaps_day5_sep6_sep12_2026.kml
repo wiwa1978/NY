@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Day 5 - New York itinerary</name>
+    <Style id="day-pin">
+      <IconStyle>
+        <scale>1.1</scale>
+        <color>ff6B7900</color>
+        <Icon><href>http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Folder><name>Day 5</name>
+      <Placemark>
+        <name>Central Park full bike loop</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Central Park, New York, NY</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Central Park
+Borough: Manhattan
+Color: teal #00796B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Central Park</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Central Park, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Bethesda Terrace / Bow Bridge / Sheep Meadow</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Central Park, New York, NY</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Central Park
+Borough: Manhattan
+Color: teal #00796B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Central Park</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Central Park, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Strawberry Fields / The Mall</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Central Park, New York, NY</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Central Park
+Borough: Manhattan
+Color: teal #00796B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Central Park</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Central Park, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Loeb Boathouse rowboats / Tavern on the Green drink</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Central Park Boathouse, New York, NY 10028</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Central Park
+Borough: Manhattan
+Color: teal #00796B
+Notes: Only if weather is excellent and the bike loop is ahead of schedule</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Central Park</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Central Park Boathouse, New York, NY 10028</value></Data>
+          <Data name="Notes"><value>Only if weather is excellent and the bike loop is ahead of schedule</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Metropolitan Museum of Art</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1000 5th Ave, New York, NY 10028</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Upper East Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper East Side</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1000 5th Ave, New York, NY 10028</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Guggenheim Museum</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1071 5th Ave, New York, NY 10128</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Upper East Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: Choose one museum only after Central Park</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper East Side</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1071 5th Ave, New York, NY 10128</value></Data>
+          <Data name="Notes"><value>Choose one museum only after Central Park</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Frick Collection</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1 E 70th St, New York, NY 10021</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Upper East Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: Choose one museum only after Central Park</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper East Side</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1 E 70th St, New York, NY 10021</value></Data>
+          <Data name="Notes"><value>Choose one museum only after Central Park</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Silk Stocking District</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Upper East Side, New York, NY</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Upper East Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: Low priority after Central Park and The Met</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper East Side</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Upper East Side, New York, NY</value></Data>
+          <Data name="Notes"><value>Low priority after Central Park and The Met</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Lincoln Center / Columbus Circle</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Lincoln Center, New York, NY 10023</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Upper West Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper West Side</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Lincoln Center, New York, NY 10023</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Broadway to Riverside walk</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Riverside Park, New York, NY</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Upper West Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper West Side</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Riverside Park, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Apollo Theater / 125th Street</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Apollo Theater, 253 W 125th St, New York, NY 10027</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Harlem
+Borough: Manhattan
+Color: teal #00796B
+Notes: Keep Harlem focused; skip the Hamilton Heights extension</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Harlem</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Apollo Theater, 253 W 125th St, New York, NY 10027</value></Data>
+          <Data name="Notes"><value>Keep Harlem focused; skip the Hamilton Heights extension</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>NY Waterway Port Imperial / waterfront</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Port Imperial Ferry Terminal, Weehawken, NJ 07086</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Weehawken
+Borough: New Jersey
+Color: teal #00796B
+Notes: Substantial New Jersey detour after several skyline viewpoints</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Weehawken</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>New Jersey</value></Data>
+          <Data name="AddressExact"><value>Port Imperial Ferry Terminal, Weehawken, NJ 07086</value></Data>
+          <Data name="Notes"><value>Substantial New Jersey detour after several skyline viewpoints</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Hamilton Park viewpoint</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Hamilton Park, Weehawken, NJ 07086</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Weehawken
+Borough: New Jersey
+Color: teal #00796B
+Notes: Substantial New Jersey detour after several skyline viewpoints</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Weehawken</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>New Jersey</value></Data>
+          <Data name="AddressExact"><value>Hamilton Park, Weehawken, NJ 07086</value></Data>
+          <Data name="Notes"><value>Substantial New Jersey detour after several skyline viewpoints</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Lenwich</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1218 Lexington Ave, New York, NY 10028</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Upper East Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper East Side</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1218 Lexington Ave, New York, NY 10028</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shake Shack Upper East Side</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>154 E 86th St, New York, NY 10028</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Upper East Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: Easy option between subway and The Met</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper East Side</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>154 E 86th St, New York, NY 10028</value></Data>
+          <Data name="Notes"><value>Easy option between subway and The Met</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>H&amp;H Bagels Upper East Side</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1551 2nd Ave, New York, NY 10028</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Upper East Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: Quick breakfast/lunch near the 86th St subway</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper East Side</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1551 2nd Ave, New York, NY 10028</value></Data>
+          <Data name="Notes"><value>Quick breakfast/lunch near the 86th St subway</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Butterfield Market</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1150 Madison Ave, New York, NY 10028</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Upper East Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: Picnic provisions near The Met</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper East Side</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1150 Madison Ave, New York, NY 10028</value></Data>
+          <Data name="Notes"><value>Picnic provisions near The Met</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Central Park Boathouse</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Park Drive North &amp; E 72nd St, New York, NY 10021</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Central Park
+Borough: Manhattan
+Color: teal #00796B
+Notes: Friend-guide weather-dependent Central Park dining/drink option</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Central Park</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Park Drive North &amp; E 72nd St, New York, NY 10021</value></Data>
+          <Data name="Notes"><value>Friend-guide weather-dependent Central Park dining/drink option</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tavern on the Green</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>67th Street &amp; Central Park West, New York, NY 10023</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Central Park
+Borough: Manhattan
+Color: teal #00796B
+Notes: Friend-guide weather-dependent Central Park drink option</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Central Park</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>67th Street &amp; Central Park West, New York, NY 10023</value></Data>
+          <Data name="Notes"><value>Friend-guide weather-dependent Central Park drink option</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Zabar&apos;s</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>2245 Broadway, New York, NY 10024</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Upper West Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: Picnic provisions if finishing west</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper West Side</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>2245 Broadway, New York, NY 10024</value></Data>
+          <Data name="Notes"><value>Picnic provisions if finishing west</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Jacob&apos;s Pickles</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>680 Columbus Ave, New York, NY 10025</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Upper West Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: Good if choosing the UWS evening</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper West Side</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>680 Columbus Ave, New York, NY 10025</value></Data>
+          <Data name="Notes"><value>Good if choosing the UWS evening</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gray&apos;s Papaya</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>2090 Broadway, New York, NY 10023</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Upper West Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: Good if choosing the UWS evening</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper West Side</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>2090 Broadway, New York, NY 10023</value></Data>
+          <Data name="Notes"><value>Good if choosing the UWS evening</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Mama&apos;s TOO!</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>2750 Broadway, New York, NY 10025</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Upper West Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: Good if choosing the UWS evening</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper West Side</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>2750 Broadway, New York, NY 10025</value></Data>
+          <Data name="Notes"><value>Good if choosing the UWS evening</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Absolute Bagels</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>2788 Broadway, New York, NY 10025</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Upper West Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: Friend-guide/UWS option; check current name/status before going</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper West Side</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>2788 Broadway, New York, NY 10025</value></Data>
+          <Data name="Notes"><value>Friend-guide/UWS option; check current name/status before going</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shake Shack UWS</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>366 Columbus Ave, New York, NY 10024</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Upper West Side
+Borough: Manhattan
+Color: teal #00796B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Upper West Side</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>366 Columbus Ave, New York, NY 10024</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Sylvia&apos;s</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>328 Malcolm X Blvd, New York, NY 10027</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Harlem
+Borough: Manhattan
+Color: teal #00796B
+Notes: Good if choosing the Harlem evening</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Harlem</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>328 Malcolm X Blvd, New York, NY 10027</value></Data>
+          <Data name="Notes"><value>Good if choosing the Harlem evening</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Veselka</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>144 2nd Ave, New York, NY 10003</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: East Village
+Borough: Manhattan
+Color: teal #00796B
+Notes: Wrong geography for Day 5 unless plans shift downtown</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>East Village</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>144 2nd Ave, New York, NY 10003</value></Data>
+          <Data name="Notes"><value>Wrong geography for Day 5 unless plans shift downtown</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Woorijip</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>12 W 32nd St, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Koreatown
+Borough: Manhattan
+Color: teal #00796B
+Notes: Wrong geography for Day 5 unless plans shift Midtown</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Koreatown</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>12 W 32nd St, New York, NY 10001</value></Data>
+          <Data name="Notes"><value>Wrong geography for Day 5 unless plans shift Midtown</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tacombi Flatiron</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>30 W 24th St, New York, NY 10010</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Flatiron
+Borough: Manhattan
+Color: teal #00796B
+Notes: Wrong geography for Day 5 unless plans shift downtown</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 5</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Teal</value></Data>
+          <Data name="ColorHex"><value>#00796B</value></Data>
+          <Data name="Neighborhood"><value>Flatiron</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>30 W 24th St, New York, NY 10010</value></Data>
+          <Data name="Notes"><value>Wrong geography for Day 5 unless plans shift downtown</value></Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

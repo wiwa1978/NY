@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Day 6 - New York itinerary</name>
+    <Style id="day-pin">
+      <IconStyle>
+        <scale>1.1</scale>
+        <color>ff194AE6</color>
+        <Icon><href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Folder><name>Day 6</name>
+      <Placemark>
+        <name>South Street Seaport / Pier 15 / Pier 16</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>South Street Seaport, New York, NY 10038</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Seaport
+Borough: Manhattan
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Seaport</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>South Street Seaport, New York, NY 10038</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Brooklyn Bridge crossing</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Brooklyn Bridge, New York, NY</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Brooklyn Bridge
+Borough: New York
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Brooklyn Bridge</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>New York</value></Data>
+          <Data name="AddressExact"><value>Brooklyn Bridge, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>DUMBO / Washington Street view</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Washington St &amp; Water St, Brooklyn, NY 11201</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: DUMBO
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>DUMBO</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>Washington St &amp; Water St, Brooklyn, NY 11201</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Brooklyn Bridge Park / Promenade</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Brooklyn Heights Promenade, Brooklyn, NY 11201</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Brooklyn Heights
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Brooklyn Heights</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>Brooklyn Heights Promenade, Brooklyn, NY 11201</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Brooklyn Heights brownstone streets / waterfront piers</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Brooklyn Heights, Brooklyn, NY</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Brooklyn Heights
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: Friend-guide addition; best if timing allows</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Brooklyn Heights</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>Brooklyn Heights, Brooklyn, NY</value></Data>
+          <Data name="Notes"><value>Friend-guide addition; best if timing allows</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Downtown Brooklyn</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Downtown Brooklyn, NY</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Brooklyn
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: Use only as a transit connection, not as a destination</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Brooklyn</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>Downtown Brooklyn, NY</value></Data>
+          <Data name="Notes"><value>Use only as a transit connection, not as a destination</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Clinton Hill / Park Slope / Carroll Gardens</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Brooklyn, NY</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Brooklyn
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: Three extra neighborhoods would consume the Williamsburg and Greenpoint afternoon</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Brooklyn</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>Brooklyn, NY</value></Data>
+          <Data name="Notes"><value>Three extra neighborhoods would consume the Williamsburg and Greenpoint afternoon</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Williamsburg waterfront / Domino Park</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Domino Park, Brooklyn, NY 11249</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Williamsburg
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Williamsburg</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>Domino Park, Brooklyn, NY 11249</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Bedford Avenue</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Bedford Ave, Brooklyn, NY</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Williamsburg
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Williamsburg</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>Bedford Ave, Brooklyn, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Williamsburg Bridge crossing</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Williamsburg Bridge, New York, NY</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Williamsburg
+Borough: New York
+Color: orange #E64A19
+Notes: Brooklyn Bridge already supplies the bridge walk</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Williamsburg</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>New York</value></Data>
+          <Data name="AddressExact"><value>Williamsburg Bridge, New York, NY</value></Data>
+          <Data name="Notes"><value>Brooklyn Bridge already supplies the bridge walk</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Greenpoint waterfront / Franklin Street</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Franklin St, Brooklyn, NY 11222</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Greenpoint
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Greenpoint</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>Franklin St, Brooklyn, NY 11222</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Juliana&apos;s Pizza</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>19 Old Fulton St, Brooklyn, NY 11201</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: DUMBO
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>DUMBO</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>19 Old Fulton St, Brooklyn, NY 11201</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Industry Kitchen</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>70 South St, New York, NY 10038</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Seaport
+Borough: Manhattan
+Color: orange #E64A19
+Notes: Seaport fallback before the bridge</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Seaport</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>70 South St, New York, NY 10038</value></Data>
+          <Data name="Notes"><value>Seaport fallback before the bridge</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>The Fulton</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>89 South St, New York, NY 10038</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Seaport
+Borough: Manhattan
+Color: orange #E64A19
+Notes: Reserve if choosing a Seaport splurge</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Seaport</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>89 South St, New York, NY 10038</value></Data>
+          <Data name="Notes"><value>Reserve if choosing a Seaport splurge</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>The River Cafe</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1 Water St, Brooklyn, NY 11201</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: DUMBO
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: Friend-guide splurge; reserve and check dress code</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>DUMBO</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>1 Water St, Brooklyn, NY 11201</value></Data>
+          <Data name="Notes"><value>Friend-guide splurge; reserve and check dress code</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>L&apos;Industrie Pizzeria</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>254 S 2nd St, Brooklyn, NY 11211</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Williamsburg
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Williamsburg</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>254 S 2nd St, Brooklyn, NY 11211</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Misi</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>329 Kent Ave, Brooklyn, NY 11249</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Williamsburg
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: Reserve ahead or try an early bar seat</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Williamsburg</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>329 Kent Ave, Brooklyn, NY 11249</value></Data>
+          <Data name="Notes"><value>Reserve ahead or try an early bar seat</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Sunday in Brooklyn</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>348 Wythe Ave, Brooklyn, NY 11249</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Williamsburg
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: Friend-guide Williamsburg backup</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Williamsburg</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>348 Wythe Ave, Brooklyn, NY 11249</value></Data>
+          <Data name="Notes"><value>Friend-guide Williamsburg backup</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Taqueria Ramirez</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>94 Franklin St, Brooklyn, NY 11222</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Greenpoint
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Greenpoint</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>94 Franklin St, Brooklyn, NY 11222</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Birria-Landia</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>77 N 10th St, Brooklyn, NY 11249</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Williamsburg
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Williamsburg</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>77 N 10th St, Brooklyn, NY 11249</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Paulie Gee&apos;s Slice Shop</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>110 Franklin St, Brooklyn, NY 11222</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Greenpoint
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Greenpoint</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>110 Franklin St, Brooklyn, NY 11222</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Vanessa&apos;s Dumpling House</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>310 Bedford Ave, Brooklyn, NY 11249</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Williamsburg
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Williamsburg</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>310 Bedford Ave, Brooklyn, NY 11249</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Ceremonia Bakeshop</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>743 Driggs Ave, Brooklyn, NY 11211</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Williamsburg
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Williamsburg</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>743 Driggs Ave, Brooklyn, NY 11211</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Time Out Market</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>55 Water St, Brooklyn, NY 11201</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Brooklyn
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: Useful near DUMBO, but backward for Williamsburg or Greenpoint dinner</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Brooklyn</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>55 Water St, Brooklyn, NY 11201</value></Data>
+          <Data name="Notes"><value>Useful near DUMBO, but backward for Williamsburg or Greenpoint dinner</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Front Street Pizza</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>80 Front St, Brooklyn, NY 11201</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Brooklyn
+Borough: Brooklyn
+Color: orange #E64A19
+Notes: Fine near DUMBO, but backward if finishing in Williamsburg or Greenpoint</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 6</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Orange</value></Data>
+          <Data name="ColorHex"><value>#E64A19</value></Data>
+          <Data name="Neighborhood"><value>Brooklyn</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Brooklyn</value></Data>
+          <Data name="AddressExact"><value>80 Front St, Brooklyn, NY 11201</value></Data>
+          <Data name="Notes"><value>Fine near DUMBO, but backward if finishing in Williamsburg or Greenpoint</value></Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

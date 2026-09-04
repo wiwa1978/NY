@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Day 2 - New York itinerary</name>
+    <Style id="day-pin">
+      <IconStyle>
+        <scale>1.1</scale>
+        <color>ff3C8E38</color>
+        <Icon><href>http://maps.google.com/mapfiles/ms/icons/green-dot.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Folder><name>Day 2</name>
+      <Placemark>
+        <name>Battery Park / Castle Clinton</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Battery Park, New York, NY 10004</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Battery Park
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Battery Park</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Battery Park, New York, NY 10004</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Statue of Liberty</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Statue of Liberty, New York, NY 10004</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Harbor
+Borough: New York Harbor
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Harbor</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>New York Harbor</value></Data>
+          <Data name="AddressExact"><value>Statue of Liberty, New York, NY 10004</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Ellis Island</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Ellis Island, New York, NY 10004</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Harbor
+Borough: New York Harbor
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Harbor</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>New York Harbor</value></Data>
+          <Data name="AddressExact"><value>Ellis Island, New York, NY 10004</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Governors Island</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Governors Island, New York, NY 10004</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Harbor
+Borough: New York Harbor
+Color: green #388E3C
+Notes: Second ferry and bike excursion makes Labor Day schedule unreliable</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Harbor</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>New York Harbor</value></Data>
+          <Data name="AddressExact"><value>Governors Island, New York, NY 10004</value></Data>
+          <Data name="Notes"><value>Second ferry and bike excursion makes Labor Day schedule unreliable</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Wall Street / NYSE / Charging Bull</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Wall Street, New York, NY 10005</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Financial District
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Financial District</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Wall Street, New York, NY 10005</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Federal Hall / Trinity Church / Bowling Green</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Federal Hall, 26 Wall St, New York, NY 10005</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Financial District
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Financial District</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Federal Hall, 26 Wall St, New York, NY 10005</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Stone Street</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Stone St, New York, NY 10004</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Financial District
+Borough: Manhattan
+Color: green #388E3C
+Notes: Friend-guide addition; short historic street/bar pocket</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Financial District</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Stone St, New York, NY 10004</value></Data>
+          <Data name="Notes"><value>Friend-guide addition; short historic street/bar pocket</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>9/11 Memorial</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>180 Greenwich St, New York, NY 10007</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: World Trade Center
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>World Trade Center</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>180 Greenwich St, New York, NY 10007</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>9/11 Museum</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>180 Greenwich St, New York, NY 10007</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: World Trade Center
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>World Trade Center</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>180 Greenwich St, New York, NY 10007</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>One World Observatory</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>117 West St, New York, NY 10006</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: World Trade Center
+Borough: Manhattan
+Color: green #388E3C
+Notes: Choose one paid skyline deck; Top of the Rock remains the preferred option</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>World Trade Center</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>117 West St, New York, NY 10006</value></Data>
+          <Data name="Notes"><value>Choose one paid skyline deck; Top of the Rock remains the preferred option</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Oculus / Westfield</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>33-35 Vesey St, New York, NY 10007</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: World Trade Center
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>World Trade Center</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>33-35 Vesey St, New York, NY 10007</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tribeca / Hudson River Park / Staple Street</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Staple Street, New York, NY 10013</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Tribeca
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Tribeca</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Staple Street, New York, NY 10013</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Target</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>255 Greenwich St, New York, NY 10007</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Tribeca
+Borough: Manhattan
+Color: green #388E3C
+Notes: Use only for practical shopping, not as a scheduled attraction</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Tribeca</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>255 Greenwich St, New York, NY 10007</value></Data>
+          <Data name="Notes"><value>Use only for practical shopping, not as a scheduled attraction</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Pisillo Italian Panini</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>97 Nassau St, New York, NY 10038</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Financial District
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Financial District</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>97 Nassau St, New York, NY 10038</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Xi&apos;an Famous Foods</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>8 Liberty Pl, New York, NY 10038</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Financial District
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Financial District</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>8 Liberty Pl, New York, NY 10038</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Nish Nush</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>88 Reade St, New York, NY 10013</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Tribeca
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Tribeca</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>88 Reade St, New York, NY 10013</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Leo&apos;s Bagels</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>3 Hanover Sq, New York, NY 10004</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Financial District
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Financial District</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>3 Hanover Sq, New York, NY 10004</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Eataly Downtown</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>101 Liberty St, New York, NY 10007</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: World Trade Center
+Borough: Manhattan
+Color: green #388E3C
+Notes: Easy fallback near WTC/Oculus</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>World Trade Center</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>101 Liberty St, New York, NY 10007</value></Data>
+          <Data name="Notes"><value>Easy fallback near WTC/Oculus</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shake Shack Battery Park City</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>215 Murray St, New York, NY 10282</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Battery Park City
+Borough: Manhattan
+Color: green #388E3C
+Notes: Easy teen-friendly fallback</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Battery Park City</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>215 Murray St, New York, NY 10282</value></Data>
+          <Data name="Notes"><value>Easy teen-friendly fallback</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tin Building by Jean-Georges</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>96 South St, New York, NY 10038</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Seaport
+Borough: Manhattan
+Color: green #388E3C
+Notes: Recommended in PDF, but current 2026 reporting says it closed</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Seaport</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>96 South St, New York, NY 10038</value></Data>
+          <Data name="Notes"><value>Recommended in PDF, but current 2026 reporting says it closed</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Bubby&apos;s Tribeca</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>120 Hudson St, New York, NY 10013</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Tribeca
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Tribeca</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>120 Hudson St, New York, NY 10013</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Locanda Verde</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>377 Greenwich St, New York, NY 10013</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Tribeca
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Tribeca</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>377 Greenwich St, New York, NY 10013</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Frenchette</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>241 W Broadway, New York, NY 10013</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Tribeca
+Borough: Manhattan
+Color: green #388E3C
+Notes: Excellent but expensive and less teen/budget-aligned after a long day</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Tribeca</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>241 W Broadway, New York, NY 10013</value></Data>
+          <Data name="Notes"><value>Excellent but expensive and less teen/budget-aligned after a long day</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tamarind Tribeca</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>99 Hudson St, New York, NY 10013</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Tribeca
+Borough: Manhattan
+Color: green #388E3C
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 2</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Green</value></Data>
+          <Data name="ColorHex"><value>#388E3C</value></Data>
+          <Data name="Neighborhood"><value>Tribeca</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>99 Hudson St, New York, NY 10013</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

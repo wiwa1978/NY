@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Day 1 - New York itinerary</name>
+    <Style id="day-pin">
+      <IconStyle>
+        <scale>1.1</scale>
+        <color>ffD27619</color>
+        <Icon><href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Folder><name>Day 1</name>
+      <Placemark>
+        <name>The Melrose Hotel</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>444 East 149th Street, Bronx, NY 10455</address>
+        <description>Category: Activity
+Priority: base
+Neighborhood: Bronx
+Borough: Bronx
+Color: blue #1976D2
+Notes: Arrival and luggage base</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Bronx</value></Data>
+          <Data name="Priority"><value>base</value></Data>
+          <Data name="Borough"><value>Bronx</value></Data>
+          <Data name="AddressExact"><value>444 East 149th Street, Bronx, NY 10455</value></Data>
+          <Data name="Notes"><value>Arrival and luggage base</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Hudson Yards / Vessel</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>20 Hudson Yards, New York, NY 10001</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Hudson Yards
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Hudson Yards</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>20 Hudson Yards, New York, NY 10001</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>The Edge</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>30 Hudson Yards, New York, NY 10001</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Hudson Yards
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Skip the paid deck unless this becomes the one skyline splurge</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Hudson Yards</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>30 Hudson Yards, New York, NY 10001</value></Data>
+          <Data name="Notes"><value>Skip the paid deck unless this becomes the one skyline splurge</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>High Line</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>High Line, New York, NY</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Chelsea
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Chelsea</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>High Line, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Chelsea Market</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>75 9th Ave, New York, NY 10011</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Chelsea
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Chelsea</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>75 9th Ave, New York, NY 10011</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Starbucks Reserve Roastery New York</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>61 9th Ave, New York, NY 10011</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Chelsea
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Friend-guide addition; quick architecture/coffee stop next to Chelsea Market</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Chelsea</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>61 9th Ave, New York, NY 10011</value></Data>
+          <Data name="Notes"><value>Friend-guide addition; quick architecture/coffee stop next to Chelsea Market</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Meatpacking District</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Gansevoort Street, New York, NY</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Meatpacking
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Meatpacking</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Gansevoort Street, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>David Zwirner</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>537 W 20th St, New York, NY 10011</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Chelsea
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Only if an exhibition is interesting and timing works</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Chelsea</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>537 W 20th St, New York, NY 10011</value></Data>
+          <Data name="Notes"><value>Only if an exhibition is interesting and timing works</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Pier 57 rooftop food market</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>25 11th Ave, New York, NY 10011</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Chelsea
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Chelsea</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>25 11th Ave, New York, NY 10011</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Little Island</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Pier 55, New York, NY 10014</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Chelsea
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Chelsea</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Pier 55, New York, NY 10014</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Whitney Museum of American Art</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>99 Gansevoort St, New York, NY 10014</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Meatpacking
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Good location but too compressed for arrival evening</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Meatpacking</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>99 Gansevoort St, New York, NY 10014</value></Data>
+          <Data name="Notes"><value>Good location but too compressed for arrival evening</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Times Square</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Times Square, New York, NY</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Times Square
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Times Square</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Times Square, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Broadway Theater District</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Broadway &amp; W 45th St, New York, NY</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Times Square
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Times Square</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Broadway &amp; W 45th St, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Apple Fifth Avenue</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>767 5th Ave, New York, NY 10153</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Fifth Avenue
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Save for the Day 4 Fifth Avenue walk</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Fifth Avenue</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>767 5th Ave, New York, NY 10153</value></Data>
+          <Data name="Notes"><value>Save for the Day 4 Fifth Avenue walk</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Los Tacos No. 1 Chelsea Market</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>75 9th Ave, New York, NY 10011</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Chelsea
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Best route-friendly Chelsea Market option</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Chelsea</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>75 9th Ave, New York, NY 10011</value></Data>
+          <Data name="Notes"><value>Best route-friendly Chelsea Market option</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Los Mariscos</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>409 W 15th St, New York, NY 10011</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Chelsea
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Chelsea</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>409 W 15th St, New York, NY 10011</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Citizens of Chelsea</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>401 W 25th St, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Chelsea
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Friend-guide brunch/lunch idea</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Chelsea</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>401 W 25th St, New York, NY 10001</value></Data>
+          <Data name="Notes"><value>Friend-guide brunch/lunch idea</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Friedman&apos;s</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>450 10th Ave, New York, NY 10018</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Hudson Yards
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Hudson Yards</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>450 10th Ave, New York, NY 10018</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Chelsea Papaya</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>171 W 23rd St, New York, NY 10011</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Chelsea
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Corrected address; useful only if you want a quick hot-dog/papaya stop</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Chelsea</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>171 W 23rd St, New York, NY 10011</value></Data>
+          <Data name="Notes"><value>Corrected address; useful only if you want a quick hot-dog/papaya stop</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Pastis</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>52 Gansevoort St, New York, NY 10014</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Meatpacking
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Friend-guide optional reserve stop; better only if planned ahead</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Meatpacking</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>52 Gansevoort St, New York, NY 10014</value></Data>
+          <Data name="Notes"><value>Friend-guide optional reserve stop; better only if planned ahead</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>The Orchard Townhouse</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>242 10th Ave, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Chelsea
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Friend-guide optional stop; check first because current listings conflict/closure risk</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Chelsea</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>242 10th Ave, New York, NY 10001</value></Data>
+          <Data name="Notes"><value>Friend-guide optional stop; check first because current listings conflict/closure risk</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>RH Rooftop Restaurant</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>9 9th Ave, New York, NY 10014</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Meatpacking
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Friend-guide optional view/brunch idea; reserve/check timing</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Meatpacking</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>9 9th Ave, New York, NY 10014</value></Data>
+          <Data name="Notes"><value>Friend-guide optional view/brunch idea; reserve/check timing</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Peak with Priceless</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>30 Hudson Yards, 101st Floor, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Hudson Yards
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Friend-guide optional skyline restaurant/bar; only if making The Edge/Hudson Yards a splurge</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Hudson Yards</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>30 Hudson Yards, 101st Floor, New York, NY 10001</value></Data>
+          <Data name="Notes"><value>Friend-guide optional skyline restaurant/bar; only if making The Edge/Hudson Yards a splurge</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Schnipper&apos;s</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>620 8th Ave, New York, NY 10018</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Times Square
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Times Square</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>620 8th Ave, New York, NY 10018</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Los Tacos No. 1 Times Square</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>229 W 43rd St, New York, NY 10036</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Times Square
+Borough: Manhattan
+Color: blue #1976D2
+Notes: Fast, central dinner near Times Square</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Times Square</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>229 W 43rd St, New York, NY 10036</value></Data>
+          <Data name="Notes"><value>Fast, central dinner near Times Square</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Ellen&apos;s Stardust Diner</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1650 Broadway, New York, NY 10019</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Times Square
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Times Square</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1650 Broadway, New York, NY 10019</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>7th Street Burger</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>485 7th Ave, New York, NY 10018</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Times Square
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Times Square</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>485 7th Ave, New York, NY 10018</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Empanada Mama</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>763 9th Ave, New York, NY 10019</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Hell&apos;s Kitchen
+Borough: Manhattan
+Color: blue #1976D2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 1</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Blue</value></Data>
+          <Data name="ColorHex"><value>#1976D2</value></Data>
+          <Data name="Neighborhood"><value>Hell&apos;s Kitchen</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>763 9th Ave, New York, NY 10019</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

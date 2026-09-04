@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Day 3 - New York itinerary</name>
+    <Style id="day-pin">
+      <IconStyle>
+        <scale>1.1</scale>
+        <color>ffA21F7B</color>
+        <Icon><href>http://maps.google.com/mapfiles/ms/icons/purple-dot.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Folder><name>Day 3</name>
+      <Placemark>
+        <name>SoHo cast-iron district</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>SoHo, New York, NY</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: SoHo
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>SoHo</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>SoHo, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Nolita / Prince and Elizabeth Streets</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Nolita, New York, NY</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Nolita
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Nolita</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Nolita, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>SoHo friend-guide street spine</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Prince St &amp; Wooster St, New York, NY 10012</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: SoHo
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Elizabeth, Spring, Mott, Prince and Wooster streets</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>SoHo</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Prince St &amp; Wooster St, New York, NY 10012</value></Data>
+          <Data name="Notes"><value>Elizabeth, Spring, Mott, Prince and Wooster streets</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Little Italy / Mulberry Street</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Mulberry St, New York, NY 10013</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Little Italy
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Little Italy</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Mulberry St, New York, NY 10013</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Chinatown / Doyers Street / Mott Street</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Doyers St, New York, NY 10013</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Chinatown
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Chinatown</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Doyers St, New York, NY 10013</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Essex Market</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>88 Essex St, New York, NY 10002</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Lower East Side
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Lower East Side</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>88 Essex St, New York, NY 10002</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tenement Museum</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>103 Orchard St, New York, NY 10002</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Lower East Side
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Lower East Side</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>103 Orchard St, New York, NY 10002</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Astor Place / Cooper Union / St Mark&apos;s Place</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Astor Pl, New York, NY 10003</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: East Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>East Village</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Astor Pl, New York, NY 10003</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Bowery / Public Theater</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>The Public Theater, 425 Lafayette St, New York, NY 10003</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Bowery
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Bowery</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>The Public Theater, 425 Lafayette St, New York, NY 10003</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Renew Day Spa 2</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Renew Day Spa 2, Chinatown, New York, NY</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Chinatown
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Foot massage reset if the group needs a break</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Chinatown</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Renew Day Spa 2, Chinatown, New York, NY</value></Data>
+          <Data name="Notes"><value>Foot massage reset if the group needs a break</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Washington Square Park</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Washington Square, New York, NY 10012</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Greenwich Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Greenwich Village</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Washington Square, New York, NY 10012</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Stonewall Inn / Christopher Park / Sheridan Square</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Stonewall National Monument, New York, NY 10014</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: West Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>West Village</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Stonewall National Monument, New York, NY 10014</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Friends Apartment / Carrie Bradshaw Apartment exteriors</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>90 Bedford St, New York, NY 10014</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: West Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Pop-culture exterior stops only if the group wants them</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>West Village</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>90 Bedford St, New York, NY 10014</value></Data>
+          <Data name="Notes"><value>Pop-culture exterior stops only if the group wants them</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Patchin Place / Gay Street</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Patchin Pl, New York, NY 10014</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: West Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Attractive but too granular for the day</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>West Village</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Patchin Pl, New York, NY 10014</value></Data>
+          <Data name="Notes"><value>Attractive but too granular for the day</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Union Square / Strand Book Store</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Union Square, New York, NY 10003</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Union Square
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Union Square</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Union Square, New York, NY 10003</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Vanessa&apos;s Dumpling House</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>118A Eldridge St, New York, NY 10002</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Chinatown
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Chinatown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>118A Eldridge St, New York, NY 10002</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tasty Hand-Pulled Noodles II</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1 Doyers St, New York, NY 10013</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Chinatown
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Chinatown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1 Doyers St, New York, NY 10013</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Nom Wah Tea Parlor</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>13 Doyers St, New York, NY 10013</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Chinatown
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Friend-guide dumpling pick</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Chinatown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>13 Doyers St, New York, NY 10013</value></Data>
+          <Data name="Notes"><value>Friend-guide dumpling pick</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Joe&apos;s Shanghai</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>46 Bowery, New York, NY 10013</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Chinatown
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Friend-guide soup dumpling pick</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Chinatown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>46 Bowery, New York, NY 10013</value></Data>
+          <Data name="Notes"><value>Friend-guide soup dumpling pick</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Balthazar</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>80 Spring St, New York, NY 10012</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: SoHo
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Friend-guide SoHo food tip; reserve or use only if timing works</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>SoHo</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>80 Spring St, New York, NY 10012</value></Data>
+          <Data name="Notes"><value>Friend-guide SoHo food tip; reserve or use only if timing works</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Rice to Riches</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>37 Spring St, New York, NY 10012</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Nolita
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Friend-guide dessert stop near SoHo/Nolita</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Nolita</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>37 Spring St, New York, NY 10012</value></Data>
+          <Data name="Notes"><value>Friend-guide dessert stop near SoHo/Nolita</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Mei Lai Wah</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>62 Bayard St, New York, NY 10013</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Chinatown
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Chinatown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>62 Bayard St, New York, NY 10013</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Wah Fung No. 1</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>79 Chrystie St, New York, NY 10002</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: LES
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>LES</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>79 Chrystie St, New York, NY 10002</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Katz&apos;s Delicatessen</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>205 E Houston St, New York, NY 10002</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: LES
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>LES</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>205 E Houston St, New York, NY 10002</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Scarr&apos;s Pizza</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>35 Orchard St, New York, NY 10002</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: LES
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>LES</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>35 Orchard St, New York, NY 10002</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Mamoun&apos;s Falafel</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>119 MacDougal St, New York, NY 10012</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Greenwich Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Greenwich Village</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>119 MacDougal St, New York, NY 10012</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>L&apos;Industrie Pizza</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>104 Christopher St, New York, NY 10014</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: West Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>West Village</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>104 Christopher St, New York, NY 10014</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Faicco&apos;s Italian Specialties</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>260 Bleecker St, New York, NY 10014</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: West Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Friend-guide take-away sandwich pick</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>West Village</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>260 Bleecker St, New York, NY 10014</value></Data>
+          <Data name="Notes"><value>Friend-guide take-away sandwich pick</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Magnolia Bakery</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>401 Bleecker St, New York, NY 10014</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: West Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Banana pudding stop</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>West Village</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>401 Bleecker St, New York, NY 10014</value></Data>
+          <Data name="Notes"><value>Banana pudding stop</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Levain Bakery NoHo</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>340 Lafayette St, New York, NY 10012</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: NoHo
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Cookie stop if passing NoHo</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>NoHo</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>340 Lafayette St, New York, NY 10012</value></Data>
+          <Data name="Notes"><value>Cookie stop if passing NoHo</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>7th Street Burger</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>91 E 10th St, New York, NY 10003</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: East Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>East Village</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>91 E 10th St, New York, NY 10003</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Pommes Frites</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>128 MacDougal St, New York, NY 10012</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Greenwich Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Nice snack, but not essential unless passing MacDougal</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>Greenwich Village</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>128 MacDougal St, New York, NY 10012</value></Data>
+          <Data name="Notes"><value>Nice snack, but not essential unless passing MacDougal</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Veselka</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>144 2nd Ave, New York, NY 10003</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: East Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>East Village</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>144 2nd Ave, New York, NY 10003</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>L&apos;Artusi</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>228 W 10th St, New York, NY 10014</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: West Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Friend-guide reserve/splurge option</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>West Village</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>228 W 10th St, New York, NY 10014</value></Data>
+          <Data name="Notes"><value>Friend-guide reserve/splurge option</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Don Angie</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>103 Greenwich Ave, New York, NY 10014</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: West Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Friend-guide reserve/splurge option</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>West Village</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>103 Greenwich Ave, New York, NY 10014</value></Data>
+          <Data name="Notes"><value>Friend-guide reserve/splurge option</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>I Sodi</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>314 Bleecker St, New York, NY 10014</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: West Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Friend-guide reserve/splurge option</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>West Village</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>314 Bleecker St, New York, NY 10014</value></Data>
+          <Data name="Notes"><value>Friend-guide reserve/splurge option</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Via Carota</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>51 Grove St, New York, NY 10014</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: West Village
+Borough: Manhattan
+Color: purple #7B1FA2
+Notes: Friend-guide reserve/splurge option</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 3</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Purple</value></Data>
+          <Data name="ColorHex"><value>#7B1FA2</value></Data>
+          <Data name="Neighborhood"><value>West Village</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>51 Grove St, New York, NY 10014</value></Data>
+          <Data name="Notes"><value>Friend-guide reserve/splurge option</value></Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

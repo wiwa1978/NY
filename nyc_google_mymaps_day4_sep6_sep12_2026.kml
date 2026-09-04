@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Day 4 - New York itinerary</name>
+    <Style id="day-pin">
+      <IconStyle>
+        <scale>1.1</scale>
+        <color>ff2F2FD3</color>
+        <Icon><href>http://maps.google.com/mapfiles/ms/icons/red-dot.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Folder><name>Day 4</name>
+      <Placemark>
+        <name>Empire State Building</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>20 W 34th St, New York, NY 10001</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Midtown South
+Borough: Manhattan
+Color: red #D32F2F
+Notes: Exterior only; skip the observatory if Top of the Rock is planned</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown South</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>20 W 34th St, New York, NY 10001</value></Data>
+          <Data name="Notes"><value>Exterior only; skip the observatory if Top of the Rock is planned</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Koreatown</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>W 32nd St, New York, NY 10001</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Koreatown
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Koreatown</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>W 32nd St, New York, NY 10001</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Flatiron Building / Madison Square Park</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Flatiron Building, New York, NY 10010</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Flatiron
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Flatiron</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Flatiron Building, New York, NY 10010</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Harry Potter New York</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>935 Broadway, New York, NY 10010</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Flatiron
+Borough: Manhattan
+Color: red #D32F2F
+Notes: Only if the group is genuinely interested</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Flatiron</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>935 Broadway, New York, NY 10010</value></Data>
+          <Data name="Notes"><value>Only if the group is genuinely interested</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>NYPL / Morgan Library area</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>New York Public Library, 476 5th Ave, New York, NY 10018</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Midtown
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>New York Public Library, 476 5th Ave, New York, NY 10018</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Grand Central Terminal / Whispering Gallery</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>89 E 42nd St, New York, NY 10017</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Midtown East
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown East</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>89 E 42nd St, New York, NY 10017</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Chrysler Building exterior</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>405 Lexington Ave, New York, NY 10174</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Midtown East
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown East</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>405 Lexington Ave, New York, NY 10174</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>SUMMIT One Vanderbilt</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>45 E 42nd St, New York, NY 10017</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Midtown East
+Borough: Manhattan
+Color: red #D32F2F
+Notes: PDF idea, but duplicates the Top of the Rock paid-view plan</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown East</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>45 E 42nd St, New York, NY 10017</value></Data>
+          <Data name="Notes"><value>PDF idea, but duplicates the Top of the Rock paid-view plan</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>UN Plaza</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>United Nations Headquarters, New York, NY 10017</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Midtown East
+Borough: Manhattan
+Color: red #D32F2F
+Notes: Skip unless a UN tour is booked</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown East</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>United Nations Headquarters, New York, NY 10017</value></Data>
+          <Data name="Notes"><value>Skip unless a UN tour is booked</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Bryant Park</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Bryant Park, New York, NY 10018</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Midtown
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Bryant Park, New York, NY 10018</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Rockefeller Center / Top of the Rock</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>30 Rockefeller Plaza, New York, NY 10112</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Midtown North
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown North</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>30 Rockefeller Plaza, New York, NY 10112</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>St Patrick&apos;s Cathedral / Fifth Avenue</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>5th Ave, New York, NY 10022</address>
+        <description>Category: Activity
+Priority: nice-to-see
+Neighborhood: Midtown North
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown North</value></Data>
+          <Data name="Priority"><value>nice-to-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>5th Ave, New York, NY 10022</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>MoMA</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>11 W 53rd St, New York, NY 10019</address>
+        <description>Category: Activity
+Priority: suggested-skip
+Neighborhood: Midtown North
+Borough: Manhattan
+Color: red #D32F2F
+Notes: Wednesday timing is poor after the full Midtown route</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown North</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>11 W 53rd St, New York, NY 10019</value></Data>
+          <Data name="Notes"><value>Wednesday timing is poor after the full Midtown route</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Times Square / Broadway show</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Times Square, New York, NY</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Times Square
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Times Square</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Times Square, New York, NY</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Adel&apos;s Famous Halal Food</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>W 49th St &amp; 6th Ave, New York, NY 10020</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Midtown
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>W 49th St &amp; 6th Ave, New York, NY 10020</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Margon</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>136 W 46th St, New York, NY 10036</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Times Square
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Times Square</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>136 W 46th St, New York, NY 10036</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tacombi Flatiron</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>30 W 24th St, New York, NY 10010</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Flatiron
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Flatiron</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>30 W 24th St, New York, NY 10010</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Eataly Flatiron</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>200 5th Ave, New York, NY 10010</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Flatiron
+Borough: Manhattan
+Color: red #D32F2F
+Notes: Friend-guide Italian market stop</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Flatiron</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>200 5th Ave, New York, NY 10010</value></Data>
+          <Data name="Notes"><value>Friend-guide Italian market stop</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Urbanspace Vanderbilt</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>230 Park Ave, New York, NY 10169</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Midtown East
+Borough: Manhattan
+Color: red #D32F2F
+Notes: Practical Grand Central food hall stop</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown East</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>230 Park Ave, New York, NY 10169</value></Data>
+          <Data name="Notes"><value>Practical Grand Central food hall stop</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Los Tacos No. 1 Times Square</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>229 W 43rd St, New York, NY 10036</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Times Square
+Borough: Manhattan
+Color: red #D32F2F
+Notes: Fast pre-theater option</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Times Square</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>229 W 43rd St, New York, NY 10036</value></Data>
+          <Data name="Notes"><value>Fast pre-theater option</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Toasties</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1369 6th Ave, New York, NY 10019</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Midtown
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1369 6th Ave, New York, NY 10019</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tonchin</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>13 W 36th St, New York, NY 10018</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Koreatown
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Koreatown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>13 W 36th St, New York, NY 10018</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>NY Pizza Suprema</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>413 8th Ave, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Penn Station
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Penn Station</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>413 8th Ave, New York, NY 10001</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Woorijip</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>12 W 32nd St, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Koreatown
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Koreatown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>12 W 32nd St, New York, NY 10001</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>BCD Tofu House</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>5 W 32nd St, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Koreatown
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Koreatown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>5 W 32nd St, New York, NY 10001</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Turntable Chicken Jazz</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>20 W 33rd St, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Koreatown
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Koreatown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>20 W 33rd St, New York, NY 10001</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Anita La Mamma del Gelato</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1141 Broadway, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: NoMad
+Borough: Manhattan
+Color: red #D32F2F
+Notes: Friend-guide gelato stop</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>NoMad</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1141 Broadway, New York, NY 10001</value></Data>
+          <Data name="Notes"><value>Friend-guide gelato stop</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>99 Favor Taste</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>285 7th Ave, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggested-skip
+Neighborhood: Midtown
+Borough: Manhattan
+Color: red #D32F2F
+Notes: Better for a long relaxed meal than pre-Broadway</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Midtown</value></Data>
+          <Data name="Priority"><value>suggested-skip</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>285 7th Ave, New York, NY 10001</value></Data>
+          <Data name="Notes"><value>Better for a long relaxed meal than pre-Broadway</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Ellen&apos;s Stardust Diner</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1650 Broadway, New York, NY 10019</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Times Square
+Borough: Manhattan
+Color: red #D32F2F
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 4</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Red</value></Data>
+          <Data name="ColorHex"><value>#D32F2F</value></Data>
+          <Data name="Neighborhood"><value>Times Square</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1650 Broadway, New York, NY 10019</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

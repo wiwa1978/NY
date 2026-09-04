@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Day 7 - New York itinerary</name>
+    <Style id="day-pin">
+      <IconStyle>
+        <scale>1.1</scale>
+        <color>ff5B18C2</color>
+        <Icon><href>http://maps.google.com/mapfiles/ms/icons/pink-dot.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Folder><name>Day 7</name>
+      <Placemark>
+        <name>The Melrose Hotel / luggage pickup</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>444 East 149th Street, Bronx, NY 10455</address>
+        <description>Category: Activity
+Priority: base
+Neighborhood: Bronx
+Borough: Bronx
+Color: pink #C2185B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 7</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Pink</value></Data>
+          <Data name="ColorHex"><value>#C2185B</value></Data>
+          <Data name="Neighborhood"><value>Bronx</value></Data>
+          <Data name="Priority"><value>base</value></Data>
+          <Data name="Borough"><value>Bronx</value></Data>
+          <Data name="AddressExact"><value>444 East 149th Street, Bronx, NY 10455</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Yankee Stadium exterior / 161st Street</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1 E 161st St, Bronx, NY 10451</address>
+        <description>Category: Activity
+Priority: must-see
+Neighborhood: Bronx
+Borough: Bronx
+Color: pink #C2185B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 7</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Pink</value></Data>
+          <Data name="ColorHex"><value>#C2185B</value></Data>
+          <Data name="Neighborhood"><value>Bronx</value></Data>
+          <Data name="Priority"><value>must-see</value></Data>
+          <Data name="Borough"><value>Bronx</value></Data>
+          <Data name="AddressExact"><value>1 E 161st St, Bronx, NY 10451</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Penn Station / Herald Square alternative</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>New York Penn Station, New York, NY 10001</address>
+        <description>Category: Activity
+Priority: alternative
+Neighborhood: Midtown
+Borough: Manhattan
+Color: pink #C2185B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 7</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Pink</value></Data>
+          <Data name="ColorHex"><value>#C2185B</value></Data>
+          <Data name="Neighborhood"><value>Midtown</value></Data>
+          <Data name="Priority"><value>alternative</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>New York Penn Station, New York, NY 10001</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Newark Liberty Airport Station</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Newark Liberty International Airport Station, Newark, NJ 07114</address>
+        <description>Category: Activity
+Priority: transport
+Neighborhood: Newark
+Borough: New Jersey
+Color: pink #C2185B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 7</value></Data>
+          <Data name="Category"><value>Activity</value></Data>
+          <Data name="ColorName"><value>Pink</value></Data>
+          <Data name="ColorHex"><value>#C2185B</value></Data>
+          <Data name="Neighborhood"><value>Newark</value></Data>
+          <Data name="Priority"><value>transport</value></Data>
+          <Data name="Borough"><value>New Jersey</value></Data>
+          <Data name="AddressExact"><value>Newark Liberty International Airport Station, Newark, NJ 07114</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Lunch near Penn Station / Herald Square</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>Penn Station, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Penn Station
+Borough: Manhattan
+Color: pink #C2185B
+Notes: </description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 7</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Pink</value></Data>
+          <Data name="ColorHex"><value>#C2185B</value></Data>
+          <Data name="Neighborhood"><value>Penn Station</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>Penn Station, New York, NY 10001</value></Data>
+          <Data name="Notes"><value></value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>NY Pizza Suprema</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>413 8th Ave, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Penn Station
+Borough: Manhattan
+Color: pink #C2185B
+Notes: Fast, luggage-friendly Penn Station lunch</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 7</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Pink</value></Data>
+          <Data name="ColorHex"><value>#C2185B</value></Data>
+          <Data name="Neighborhood"><value>Penn Station</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>413 8th Ave, New York, NY 10001</value></Data>
+          <Data name="Notes"><value>Fast, luggage-friendly Penn Station lunch</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Los Tacos No. 1 Times Square</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>229 W 43rd St, New York, NY 10036</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Times Square
+Borough: Manhattan
+Color: pink #C2185B
+Notes: Short subway/walk from Penn if there is time</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 7</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Pink</value></Data>
+          <Data name="ColorHex"><value>#C2185B</value></Data>
+          <Data name="Neighborhood"><value>Times Square</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>229 W 43rd St, New York, NY 10036</value></Data>
+          <Data name="Notes"><value>Short subway/walk from Penn if there is time</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Woorijip</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>12 W 32nd St, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Koreatown
+Borough: Manhattan
+Color: pink #C2185B
+Notes: Easy pre-airport meal near Herald Square</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 7</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Pink</value></Data>
+          <Data name="ColorHex"><value>#C2185B</value></Data>
+          <Data name="Neighborhood"><value>Koreatown</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>12 W 32nd St, New York, NY 10001</value></Data>
+          <Data name="Notes"><value>Easy pre-airport meal near Herald Square</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shake Shack Herald Square</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>1333 Broadway, New York, NY 10018</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Herald Square
+Borough: Manhattan
+Color: pink #C2185B
+Notes: Simple teen-friendly fallback</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 7</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Pink</value></Data>
+          <Data name="ColorHex"><value>#C2185B</value></Data>
+          <Data name="Neighborhood"><value>Herald Square</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>1333 Broadway, New York, NY 10018</value></Data>
+          <Data name="Notes"><value>Simple teen-friendly fallback</value></Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Best Bagel &amp; Coffee</name>
+        <styleUrl>#day-pin</styleUrl>
+        <address>225 W 35th St A, New York, NY 10001</address>
+        <description>Category: Food
+Priority: suggestion
+Neighborhood: Penn Station
+Borough: Manhattan
+Color: pink #C2185B
+Notes: Fast bagel option near Penn</description>
+        <ExtendedData>
+          <Data name="Day"><value>Day 7</value></Data>
+          <Data name="Category"><value>Food</value></Data>
+          <Data name="ColorName"><value>Pink</value></Data>
+          <Data name="ColorHex"><value>#C2185B</value></Data>
+          <Data name="Neighborhood"><value>Penn Station</value></Data>
+          <Data name="Priority"><value>suggestion</value></Data>
+          <Data name="Borough"><value>Manhattan</value></Data>
+          <Data name="AddressExact"><value>225 W 35th St A, New York, NY 10001</value></Data>
+          <Data name="Notes"><value>Fast bagel option near Penn</value></Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
