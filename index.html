@@ -218,7 +218,15 @@
     .r-bronx    .region-tag { background: var(--region-bronx); color: #fff; }
     .r-si       .region-tag { background: var(--region-si); color: #fff; }
     .r-nj       .region-tag { background: var(--region-nj); color: #fff; }
-    .food, .panel, .mapbox { padding: 12px; }
+    .food, .panel, .mapbox, .guide-notes { padding: 12px; }
+    .guide-notes {
+      grid-column: 1 / -1;
+      border: 1px solid var(--cp-border);
+      border-radius: 8px;
+      background: var(--cp-panel);
+    }
+    .guide-notes h3 { margin-top: 0; }
+    .guide-notes ul { margin-bottom: 0; }
     .badge {
       border-radius: 999px;
       padding: 2px 8px;
@@ -243,6 +251,17 @@
     .must { background: var(--cp-accent-soft); color: var(--cp-text); border-color: var(--cp-accent); }
     .nice { background: var(--cp-surface-soft); color: var(--cp-text); }
     .skip { background: var(--cp-surface-soft); color: var(--cp-text-soft); }
+    .suggested-skip {
+      color: var(--cp-text-soft);
+      font-style: italic;
+      opacity: 0.72;
+    }
+    .suggested-skip .badge { font-style: normal; }
+    .review-note {
+      margin: 0;
+      color: var(--cp-text-muted);
+      font-size: 0.9rem;
+    }
     .timeline { margin: 0 0 10px; padding-left: 0; list-style: none; }
     .timeline li { padding: 4px 0 4px 0; border-left: 2px solid var(--cp-border); margin-left: 8px; padding-left: 12px; }
     .transit-btn {
@@ -410,6 +429,8 @@
   <div class="wrap">
     <section class="hero">
       <h1>New York Plan (6-12 September 2026)</h1>
+      <p class="review-note"><strong>Activity key:</strong> must-see items anchor the day; nice-to-see items are optional. <span class="suggested-skip"><span class="badge skip">suggested skip</span> Italic items are retained for review but should not be counted in the final schedule.</span></p>
+      <p class="review-note"><strong>Friend-guide merge:</strong> book popular dinners/brunches 2-3 weeks ahead, keep walking shoes central to the packing list, and check current hours before relying on any PDF-era recommendation.</p>
     </section>
 
     <div class="tabs" role="tablist" aria-label="Trip days and map files">
@@ -434,12 +455,12 @@
         <li>~14:30-16:00 direct transfer JFK → hotel (AirTrain JFK to Jamaica → LIRR to Penn Station → walk to 34 St–Penn Station → 2 train uptown to 3 Av–149 St → walk about 3 minutes to the hotel). Times Square is not part of this arrival route; save it for the evening.</li>
         <li>16:00–16:30 — <strong>Hotel check-in + short reset</strong></li>
         <li>16:30–17:10 — <strong>Hotel → Hudson Yards</strong> (estimated 30–40 min): walk about 3 minutes to 3 Av–149 St, take the <strong>2 train</strong> downtown to Times Sq–42 St, then transfer to the <strong>7 train</strong> to 34 St–Hudson Yards</li>
-        <li>17:10–18:00 — <strong>Hudson Yards + The Edge</strong> (20 Hudson Yards; reserve a timed Edge entry if going up)</li>
-        <li>18:00–19:30 — <strong>Walk south in sequence:</strong> enter the High Line at Hudson Yards → Chelsea Market → Meatpacking District → Pier 57 rooftop food market → Little Island</li>
+        <li>17:10–18:00 — <strong>Hudson Yards + Vessel exterior</strong> (keep The Edge area as the plaza stop; skip the paid deck unless this becomes your one skyline splurge)</li>
+        <li>18:00–19:30 — <strong>Walk south in sequence:</strong> enter the High Line at Hudson Yards → Chelsea Market / Starbucks Reserve Roastery → Meatpacking District → Pier 57 rooftop food market → Little Island</li>
         <li>19:30–20:00 — Subway to Midtown North / Times Square (save Midtown North core for Wednesday)</li>
-        <li>20:00–23:45 — Times Square / Theater District lights + TKTS booth + Stardust Diner option</li>
-        <li>23:45–00:15 — Be in Times Square around <strong>23:57</strong> for peak lights/atmosphere</li>
-        <li>00:15–00:55 — <strong>Last stop → Hotel</strong> (estimated 35–40 min): take the <strong>2 train</strong> uptown from Times Sq–42 St to 3 Av–149 St, then walk about 3 minutes to the hotel</li>
+        <li>20:00–22:30 — Times Square / Theater District lights + TKTS booth + Stardust Diner option</li>
+        <li class="suggested-skip"><span class="badge skip">suggested skip</span>23:45–00:15 — Stay for the 23:57 Times Square display; this is likely too late after the transatlantic arrival day</li>
+        <li>22:30–23:10 — <strong>Last stop → Hotel</strong> (estimated 35–40 min): take the <strong>2 train</strong> uptown from Times Sq–42 St to 3 Av–149 St, then walk about 3 minutes to the hotel</li>
       </ul>
       <p class="small" style="margin-top:-2px;">
         <strong>Mental map:</strong> stay on Manhattan's west edge first (Hudson Yards → Chelsea → Meatpacking), then do one clean north-east jump to Times Square for night atmosphere only.
@@ -463,10 +484,13 @@
             <li><span class="badge must">must-see</span>Hudson Yards + Vessel exterior + The Edge area (20 Hudson Yards)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=20+Hudson+Yards+New+York+NY+10001" target="_blank" rel="noreferrer">🗺 map</a></li>
             <li><span class="badge must">must-see</span>High Line southbound walk from Hudson Yards toward Chelsea / Meatpacking<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=High+Line+Hudson+Yards+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§24</span></li>
             <li><span class="badge must">must-see</span>Chelsea Market (75 9th Ave, New York, NY 10011)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Chelsea+Market+75+9th+Ave+New+York+NY+10011" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§22</span></li>
+            <li><span class="badge nice">nice-to-see</span>Starbucks Reserve Roastery New York — quick architectural/coffee stop next to Chelsea Market<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Starbucks+Reserve+Roastery+61+9th+Ave+New+York+NY+10011" target="_blank" rel="noreferrer">🗺 map</a></li>
             <li><span class="badge must">must-see</span>Meatpacking District / Gansevoort Street</li>
+            <li><span class="badge nice">nice-to-see</span>David Zwirner gallery if there is an exhibition you care about and it is still open</li>
             <li><span class="badge nice">nice-to-see</span>Pier 57 / rooftop food market next to Little Island</li>
             <li><span class="badge must">must-see</span>Little Island (Pier 55, Hudson River Greenway)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Little+Island+Pier+55+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a></li>
-            <li><span class="badge skip">could-skip</span>Paid deck if you plan Top of the Rock/Empire later</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Whitney Museum today — good location, but arrival evening is too compressed for a museum visit</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>The Edge paid observation deck — keep the Hudson Yards exterior, but save the paid skyline experience for Top of the Rock</li>
           </ul>
           <button class="transit-btn" data-id="d1-chelsea">🚇 Getting here</button>
           </div>
@@ -478,32 +502,42 @@
           <ul>
             <li><span class="badge must">must-see</span>Times Square at night (Broadway &amp; 7th Ave, around W 47th St)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Times+Square+Broadway+7th+Ave+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§28</span></li>
             <li><span class="badge nice">nice-to-see</span>Broadway theaters exterior loop (45th-49th St)</li>
-            <li><span class="badge must">must-see</span>Apple Store Fifth Avenue (767 5th Ave — open 24/7)<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Apple+Fifth+Avenue+767+5th+Ave+New+York+NY+10153" target="_blank" rel="noreferrer">🗺 map</a></li>
+            <li class="suggested-skip"><span class="badge skip">skip today</span>Apple Store Fifth Avenue — see it during the Day 4 Fifth Avenue walk instead of adding a Day 1 detour<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Apple+Fifth+Avenue+767+5th+Ave+New+York+NY+10153" target="_blank" rel="noreferrer">🗺 map</a></li>
           </ul>
           <button class="transit-btn" data-id="d1-timessq">🚇 Getting here</button>
           </div>
+        </article>
+        <article class="guide-notes">
+          <h3>Friend Guide Notes</h3>
+          <ul>
+            <li>The guide treats Hudson Yards → High Line → Chelsea Market → Meatpacking → Little Island as one of the cleanest walking sequences in Manhattan, which fits the arrival-day route well.</li>
+            <li>Chelsea Market is useful both as a food stop and a souvenir browse, while the Starbucks Reserve Roastery is called out as a worthwhile design/coffee stop next door.</li>
+            <li>Peak / The Edge is framed as a view experience; in this schedule it stays optional because Top of the Rock is the chosen paid skyline deck.</li>
+            <li>Restaurants like <strong>Pastis</strong>, <strong>L'Artusi</strong>, <strong>Don Angie</strong>, <strong>RH Rooftop</strong>, and <strong>The Orchard Townhouse</strong> are good friend-guide ideas, but they need advance planning and are better saved for a less jet-lagged meal.</li>
+          </ul>
         </article>
         <article class="food">
           <h3>Food (budget, teen-friendly)</h3>
           <div class="food-columns">
             <div class="food-col r-midtown">
-              <h4>Lunch (Chelsea / Hudson Yards)</h4>
+              <h4>Arrival snacks / early dinner (Chelsea / Hudson Yards)</h4>
               <ul>
-                <li>Chelsea Papaya — 171 7th Ave, New York, NY 10011</li>
+                <li>Los Tacos No. 1 — Chelsea Market, 75 9th Ave, New York, NY 10011</li>
                 <li>Los Mariscos — 409 W 15th St, New York, NY 10011</li>
+                <li><strong>Citizens of Chelsea</strong> — 401 W 25th St, New York, NY 10001</li>
                 <li>Friedman's — 450 10th Ave, New York, NY 10018</li>
-                <li>Fuku — 10 Hudson Yards, New York, NY 10001</li>
+                <li>Chelsea Papaya — 171 W 23rd St, New York, NY 10011</li>
+                <li class="suggested-skip"><span class="badge skip">reserve / optional</span><strong>Pastis</strong> or <strong>The Orchard Townhouse</strong> — excellent friend-guide picks, but better as a planned brunch/dinner than a tired arrival stop</li>
               </ul>
             </div>
             <div class="food-col r-midtown">
               <h4>Dinner (Midtown North / Times Square)</h4>
               <ul>
-                <li>Urban Hawker — 135 W 50th St, New York, NY 10020</li>
                 <li>Schnipper's — 620 8th Ave, New York, NY 10018</li>
-                <li>Tacombi at the Empire State Building — 23 W 33rd St, New York, NY 10001<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Tacombi+23+W+33rd+St+New+York+NY+10001" target="_blank" rel="noreferrer">🗺 map</a></li>
-                <li><strong>Ellen's Stardust Diner</strong> — 1650 Broadway, New York, NY 10019<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Ellens+Stardust+Diner+1650+Broadway+New+York+NY+10019" target="_blank" rel="noreferrer">🗺 map</a></li>
+                <li>Los Tacos No. 1 — 229 W 43rd St, New York, NY 10036</li>
                 <li>7th Street Burger — 485 7th Ave, New York, NY 10018</li>
                 <li>Empanada Mama — 763 9th Ave, New York, NY 10019</li>
+                <li><strong>Ellen's Stardust Diner</strong> — 1650 Broadway, New York, NY 10019; fun teen-friendly backup, but allow for a line<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Ellens+Stardust+Diner+1650+Broadway+New+York+NY+10019" target="_blank" rel="noreferrer">🗺 map</a></li>
               </ul>
             </div>
           </div>
@@ -512,11 +546,11 @@
     </section>
 
     <section class="day" id="d2" role="tabpanel">
-      <h2>Day 2 — First full day (Monday, Labor Day): Statue of Liberty + Governors Island + 9/11 Museum</h2>
+      <h2>Day 2 — First full day (Monday, Labor Day): Statue of Liberty + Ellis Island + 9/11 Museum</h2>
       <ul class="timeline">
-        <li><strong>Morning — 07:45–14:30:</strong> Hotel → Battery Park / Statue City Cruises (estimated 35–45 min), then <strong>Statue of Liberty + Ellis Island</strong> at 09:00, followed by <strong>Governors Island by bike</strong> from around 12:15</li>
-        <li><strong>Afternoon — 14:45–18:00:</strong> Financial District / WTC: 9/11 Memorial + <strong>9/11 Museum</strong> + One World Observatory</li>
-        <li><strong>Evening — 18:00–21:00:</strong> Oculus / Financial District waterfront walk, browse <strong>Target</strong> at 255 Greenwich St, then choose a relaxed Tribeca dinner</li>
+        <li><strong>Morning — 07:45–14:00:</strong> Hotel → Battery Park / Statue City Cruises (estimated 35–45 min), then <strong>Statue of Liberty + Ellis Island</strong> at 09:00</li>
+        <li><strong>Afternoon — 14:00–18:00:</strong> Financial District / WTC: Wall Street core walk, Stone Street if convenient, 9/11 Memorial, and <strong>9/11 Museum</strong></li>
+        <li><strong>Evening — 18:00–21:00:</strong> Oculus / Financial District waterfront if energy remains, then choose a relaxed Tribeca dinner</li>
         <li>21:00–21:45 — <strong>Financial District / WTC → Hotel</strong> (estimated 35–45 min): enter the connected WTC transit complex at Park Place, take the <strong>2 train</strong> uptown to 3 Av–149 St, then walk about 3 minutes to the hotel</li>
       </ul>
       <p class="small" style="margin-top:-2px;">
@@ -529,7 +563,7 @@
           <h3>Battery Park / Harbor</h3>
           <ul>
             <li><span class="badge must">must-see</span><strong>Statue of Liberty + Ellis Island</strong> (09:00 ticket; arrive early for security and ferry boarding) <a class="map-link" href="https://www.statuecruises.com/" target="_blank" rel="noreferrer">🎟 official tickets</a> <span class="ch">§03</span></li>
-            <li><span class="badge must">must-see</span><strong>Governors Island by bike</strong>: buy the ferry ticket online or at the Battery Maritime Building, then rent a bike near Soissons Landing; use Citi Bike in the app if bikes are available, or the island rental stand, and ride the full loop for harbor viewpoints <a class="map-link" href="https://www.govisland.com/plan-your-visit/ferry" target="_blank" rel="noreferrer">🎟 ferry tickets/info</a> <span class="ch">§02</span></li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span><strong>Governors Island by bike</strong> — a second ferry and bike excursion makes the Labor Day schedule unreliable; Central Park already provides a dedicated bike day <a class="map-link" href="https://www.govisland.com/plan-your-visit/ferry" target="_blank" rel="noreferrer">🎟 ferry tickets/info</a> <span class="ch">§02</span></li>
             <li><span class="badge nice">nice-to-see</span>Battery Park + Castle Clinton while waiting for or returning from the harbor ferries <span class="ch">§01</span></li>
           </ul>
           <button class="transit-btn" data-id="d2-battery">🚇 Getting here</button>
@@ -540,13 +574,14 @@
           <div class="region-tag">📍 Lower Manhattan — Financial District</div>
           <h3>Financial District / WTC</h3>
           <ul>
-            <li><span class="badge must">must-see</span>Walking tour start: National Museum of the American Indian / US Custom House</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>National Museum of the American Indian / US Custom House interior — keep only a quick exterior look if passing Bowling Green</li>
             <li><span class="badge must">must-see</span><strong>Financial District</strong>: Wall Street + NYSE + Charging Bull + Federal Hall + Trinity Church + Bowling Green <span class="ch">§04–05</span></li>
+            <li><span class="badge nice">nice-to-see</span>Stone Street — short historic street/bar pocket from the friend's guide; nice if the weather is good and you need a pause</li>
             <li><span class="badge must">must-see</span><strong>9/11 Memorial + 9/11 Museum</strong> <a class="map-link" href="https://www.911memorial.org/visit/memorial" target="_blank" rel="noreferrer">ℹ info</a> <a class="map-link" href="https://www.911memorial.org/visit/museum" target="_blank" rel="noreferrer">🎟 tickets</a> <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=9%2F11+Memorial+%26+Museum+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§11</span></li>
-            <li><span class="badge must">must-see</span><strong>One World Observatory</strong> at One World Trade Center <a class="map-link" href="https://www.oneworldobservatory.com/" target="_blank" rel="noreferrer">ℹ info</a> <a class="map-link" href="https://www.oneworldobservatory.com/tickets" target="_blank" rel="noreferrer">🎟 tickets</a> <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=One+World+Observatory+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a></li>
-            <li><span class="badge nice">nice-to-see</span>Museum of American Finance area + Marine Midland Building + Federal Reserve Bank exterior</li>
-            <li><span class="badge nice">nice-to-see</span>Fraunces Tavern + 40 Wall St (Trump Building) + John Street United Methodist Church</li>
-            <li><span class="badge skip">could-skip</span>St. Paul's Chapel (skip if your focus is 9/11 Museum + One World)</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span><strong>One World Observatory</strong> — choose one paid skyline deck for the trip; Top of the Rock gives the better all-round first-visit view <a class="map-link" href="https://www.oneworldobservatory.com/" target="_blank" rel="noreferrer">ℹ info</a> <a class="map-link" href="https://www.oneworldobservatory.com/tickets" target="_blank" rel="noreferrer">🎟 tickets</a> <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=One+World+Observatory+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a></li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Museum of American Finance area + Marine Midland Building + Federal Reserve Bank exterior — low-value micro-stops on an already full day</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Fraunces Tavern + 40 Wall St + John Street United Methodist Church checklist — see only what naturally falls on the Wall Street walk</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>St. Paul's Chapel if the focus remains the 9/11 Memorial and Museum</li>
           </ul>
           <button class="transit-btn" data-id="d2-fidi">🚇 Getting here</button>
           </div>
@@ -556,14 +591,23 @@
             <div class="region-tag">📍 Lower Manhattan — evening</div>
             <h3>Oculus / Waterfront / Tribeca</h3>
             <ul>
-              <li><span class="badge nice">nice-to-see</span>Oculus exterior and Westfield concourse after One World Observatory</li>
+              <li><span class="badge nice">nice-to-see</span>Oculus exterior and Westfield concourse after the 9/11 Museum</li>
               <li><span class="badge nice">nice-to-see</span>Short Financial District waterfront walk if energy remains</li>
               <li><span class="badge nice">nice-to-see</span><strong>Tribeca</strong> short loop before dinner: Hudson River Park, Staple Street, and quiet side streets</li>
-              <li><span class="badge nice">nice-to-see</span><strong>Target</strong> — 255 Greenwich St, convenient for a quick evening shop near the Oculus</li>
+              <li class="suggested-skip"><span class="badge skip">suggested skip</span><strong>Target</strong> as a scheduled attraction — enter only if you genuinely need shopping</li>
               <li><span class="badge nice">nice-to-see</span>Choose a relaxed dinner from the Tribeca options below before returning to the hotel</li>
             </ul>
             <button class="transit-btn" data-id="d2-fidi">🚇 Getting here</button>
           </div>
+        </article>
+        <article class="guide-notes">
+          <h3>Friend Guide Notes</h3>
+          <ul>
+            <li>The PDF combines Financial District, WTC, Brooklyn Bridge, DUMBO, and Brooklyn Heights into one intense day. We split that across Day 2 and Day 6 to avoid overload.</li>
+            <li>For this day, keep the friend-guide focus on Wall Street, the 9/11 Memorial/Museum, Oculus, One World Center exterior, and Stone Street as the optional warm-weather pause.</li>
+            <li><strong>Tin Building</strong> appears in the PDF as a must-visit food hall, but current 2026 reporting says it closed, so it is retained only as a warning not to rely on it.</li>
+            <li>After the museum, the guide's advice to eat close to the end point is sensible: Tribeca or the WTC/Oculus area beats adding another cross-town mission.</li>
+          </ul>
         </article>
         <article class="food">
           <h3>Food</h3>
@@ -575,17 +619,18 @@
                 <li>Xi'an Famous Foods — 8 Liberty Pl, New York, NY 10038</li>
                 <li>Nish Nush — 88 Reade St, New York, NY 10013</li>
                 <li>Leo's Bagels — 3 Hanover Sq, New York, NY 10004</li>
-                <li>L'Industrie Pizza (West Village / Brooklyn locations)</li>
-                <li>Tacombi (Lower Manhattan locations)</li>
+                <li>Eataly Downtown — 101 Liberty St, New York, NY 10007</li>
+                <li>Shake Shack Battery Park City — 215 Murray St, New York, NY 10282</li>
+                <li class="suggested-skip"><span class="badge skip">do not use</span><strong>Tin Building</strong> — recommended in the PDF, but current 2026 reporting says it has closed</li>
               </ul>
             </div>
             <div class="food-col r-lower">
               <h4>Dinner (Tribeca)</h4>
               <ul>
                 <li><strong>Bubby's Tribeca</strong> — 120 Hudson St, New York, NY 10013 <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Bubbys+Tribeca+120+Hudson+St+New+York+NY+10013" target="_blank" rel="noreferrer">🗺 map</a></li>
-                <li><strong>Locanda Verde</strong> — 377 Greenwich St, New York, NY 10013 <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Locanda+Verde+377+Greenwich+St+New+York+NY+10013" target="_blank" rel="noreferrer">🗺 map</a></li>
-                <li><strong>Frenchette</strong> — 241 W Broadway, New York, NY 10013 <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Frenchette+241+W+Broadway+New+York+NY+10013" target="_blank" rel="noreferrer">🗺 map</a></li>
-                <li><strong>Tamarind Tribeca</strong> — 99 Hudson St, New York, NY 10013 <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Tamarind+Tribeca+99+Hudson+St+New+York+NY+10013" target="_blank" rel="noreferrer">🗺 map</a></li>
+                <li><strong>Locanda Verde</strong> — 377 Greenwich St, New York, NY 10013; reserve if choosing this as the splurge dinner <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Locanda+Verde+377+Greenwich+St+New+York+NY+10013" target="_blank" rel="noreferrer">🗺 map</a></li>
+                <li><strong>Tamarind Tribeca</strong> — 99 Hudson St, New York, NY 10013; reserve ahead <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Tamarind+Tribeca+99+Hudson+St+New+York+NY+10013" target="_blank" rel="noreferrer">🗺 map</a></li>
+                <li class="suggested-skip"><span class="badge skip">suggested skip</span><strong>Frenchette</strong> — excellent, but expensive and less teen/budget-aligned after a long museum day <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Frenchette+241+W+Broadway+New+York+NY+10013" target="_blank" rel="noreferrer">🗺 map</a></li>
               </ul>
             </div>
           </div>
@@ -612,12 +657,14 @@
           <h3>SoHo / Nolita / Little Italy / Chinatown</h3>
           <ul>
             <li><span class="badge must">must-see</span><strong>Chinatown</strong> core streets + Doyers St + Mott/Pell <span class="ch">§13</span></li>
-            <li><span class="badge nice">nice-to-see</span>Edward Mooney House (quick exterior stop)</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Edward Mooney House — minor exterior stop compared with the surrounding Chinatown streets</li>
             <li><span class="badge must">must-see</span><strong>Little Italy</strong>: Mulberry St + Ferrara Bakery stop <span class="ch">§16</span></li>
             <li><span class="badge must">must-see</span><strong>SoHo</strong> cast-iron blocks + Greene/Wooster/Broadway pocket <span class="ch">§17</span></li>
-            <li><span class="badge nice">nice-to-see</span>SoHo landmarks: Cipriani Downtown + Performing Garage + Queen of Greene St + Little Singer Building</li>
+            <li><span class="badge nice">nice-to-see</span>Friend-guide SoHo street spine: Elizabeth St, Spring St, Mott St, Prince St, and Wooster St</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>SoHo landmark checklist: Cipriani Downtown + Performing Garage + Queen of Greene St + Little Singer Building — enjoy the cast-iron streets without hunting individual façades</li>
             <li><span class="badge nice">nice-to-see</span>Nolita detour + Prince/Elizabeth side streets</li>
-            <li><span class="badge skip">could-skip</span>Long shopping queues</li>
+            <li><span class="badge nice">nice-to-see</span><strong>Balthazar</strong> drink stop or <strong>Rice to Riches</strong> dessert if you want a break without changing neighborhoods</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Long shopping queues</li>
           </ul>
           <button class="transit-btn" data-id="d3-soho">🚇 Getting here</button>
           </div>
@@ -631,7 +678,8 @@
             <li><span class="badge must">must-see</span>Tenement Museum (book a timed tour)</li>
             <li><span class="badge must">must-see</span><strong>East Village</strong>: Astor Place + Cooper Union + St. Mark's Place / Alphabet City <span class="ch">§20</span></li>
             <li><span class="badge nice">nice-to-see</span>Katz's Delicatessen / Essex Market for classic LES food culture</li>
-            <li><span class="badge nice">nice-to-see</span>Bowery + Public Theater + Colonnade Row exterior <span class="ch">§15</span></li>
+            <li><span class="badge nice">nice-to-see</span>Renew Day Spa 2 foot massage in Chinatown if the group needs a reset; bring cash and tip</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Bowery + Public Theater + Colonnade Row exterior checklist — retain only if it lies naturally on the walk <span class="ch">§15</span></li>
           </ul>
           <button class="transit-btn" data-id="d3-les">🚇 Getting here</button>
           </div>
@@ -644,12 +692,23 @@
             <li><span class="badge must">must-see</span><strong>Greenwich Village</strong> + Washington Square Park <span class="ch">§18</span></li>
             <li><span class="badge must">must-see</span><strong>West Village</strong>: Stonewall Inn + Christopher Park + Sheridan Sq + Father Demo Sq <span class="ch">§19</span></li>
             <li><span class="badge must">must-see</span>Dinner at <strong>L'Industrie Pizza</strong> — 104 Christopher St, New York, NY 10014</li>
-            <li><span class="badge nice">nice-to-see</span>Patchin Place + Gay Street + Northern Dispensary micro-loop</li>
+            <li><span class="badge nice">nice-to-see</span>Friends apartment exterior + Carrie Bradshaw apartment exterior, only if the group actually wants the pop-culture stops</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Patchin Place + Gay Street + Northern Dispensary micro-loop — attractive, but too granular for this already long neighborhood day</li>
             <li><span class="badge nice">nice-to-see</span>Union Square + Strand Book Store <span class="ch">§21</span></li>
             <li><span class="badge nice">nice-to-see</span>Village jazz clubs (Blue Note / Village Vanguard / Smalls) if you want a late set</li>
           </ul>
           <button class="transit-btn" data-id="d3-village">🚇 Getting here</button>
           </div>
+        </article>
+        <article class="guide-notes">
+          <h3>Friend Guide Notes</h3>
+          <ul>
+            <li>The PDF's best Day 3 advice is not another checklist; it is the street texture: Elizabeth, Spring, Mott, Prince, Wooster, and Broadway for the contrast between local shops and bigger chains.</li>
+            <li>Use <strong>Balthazar</strong>, <strong>Rice to Riches</strong>, <strong>Levain</strong>, or <strong>Magnolia</strong> as break points rather than fixed appointments. They work best when someone needs a sit-down or sweet stop.</li>
+            <li>For Chinatown, the guide gives strong food detail: <strong>Nom Wah</strong> and <strong>Joe's Shanghai</strong> are both walk-in dumpling choices, so they belong as flexible lunch options.</li>
+            <li>West Village dinner can become a reservation game. L'Industrie stays the simple plan; <strong>L'Artusi</strong>, <strong>Don Angie</strong>, <strong>I Sodi</strong>, and <strong>Via Carota</strong> are better if booked early or if you are willing to try a 5 p.m. walk-in list.</li>
+            <li>Comedy Cellar / Village Underground and Village Vanguard are good late-night ideas, but keep them optional because this is already the longest neighborhood day.</li>
+          </ul>
         </article>
         <article class="food">
           <h3>Food</h3>
@@ -659,6 +718,8 @@
               <ul>
                 <li>Vanessa's Dumpling House — 118A Eldridge St, New York, NY 10002</li>
                 <li>Tasty Hand-Pulled Noodles II — 1 Doyers St, New York, NY 10013</li>
+                <li><strong>Nom Wah Tea Parlor</strong> — 13 Doyers St, New York, NY 10013</li>
+                <li><strong>Joe's Shanghai</strong> — 46 Bowery, New York, NY 10013</li>
                 <li>Mei Lai Wah — 62 Bayard St, New York, NY 10013</li>
                 <li>Wah Fung No. 1 — 79 Chrystie St, New York, NY 10002</li>
                 <li>Katz's Delicatessen — 205 E Houston St, New York, NY 10002</li>
@@ -670,9 +731,13 @@
               <ul>
                 <li>Mamoun's Falafel — 119 MacDougal St, New York, NY 10012</li>
                 <li>L'Industrie Pizza — 104 Christopher St, New York, NY 10014</li>
+                <li><strong>Faicco's Italian Specialties</strong> — 260 Bleecker St, New York, NY 10014</li>
+                <li><strong>Magnolia Bakery</strong> — 401 Bleecker St, New York, NY 10014; banana pudding stop</li>
+                <li><strong>Levain Bakery NoHo</strong> — 340 Lafayette St, New York, NY 10012; cookie stop if you pass NoHo</li>
                 <li>7th Street Burger — 91 E 10th St, New York, NY 10003</li>
-                <li><em>Skip:</em> Pommes Frites (not worth the detour/value)</li>
+                <li class="suggested-skip"><span class="badge skip">suggested skip</span>Pommes Frites — not worth a dedicated detour</li>
                 <li>Veselka — 144 2nd Ave, New York, NY 10003</li>
+                <li class="suggested-skip"><span class="badge skip">reserve / splurge</span><strong>L'Artusi</strong>, <strong>Don Angie</strong>, <strong>I Sodi</strong>, or <strong>Via Carota</strong> — great PDF picks, but only with advance planning and patience</li>
               </ul>
             </div>
           </div>
@@ -684,12 +749,11 @@
       <h2>Day 4 — Midtown South + Midtown North + Broadway night</h2>
       <ul class="timeline">
         <li>08:00 <strong>Hotel → first stop</strong> (estimated 30–40 min): walk about 3 minutes to 3 Av–149 St, take the <strong>2 train</strong> downtown to 34 St–Penn Station, then walk east approximately 10 minutes to the Empire State Building</li>
-        <li>09:00–11:30 — <strong>Empire State Building → Koreatown → Flatiron / Madison Square Park → Harry Potter Shop</strong> (walk south through Midtown South)</li>
-        <li>11:30–14:30 — <strong>Flatiron → Herald Square → NYPL / Morgan Library area → Grand Central</strong>, then Chrysler exterior + Whispering Gallery</li>
-        <li>14:30–17:30 — <strong>Grand Central → UN Plaza → Bryant Park → Rockefeller Center → St. Patrick’s Cathedral / Fifth Avenue → MoMA</strong></li>
-        <li>17:30–19:30 — <strong>MoMA / Rockefeller → Times Square</strong> + dinner near the Theater District</li>
+        <li>09:00–11:30 — <strong>Empire State Building exterior → Koreatown → Flatiron / Madison Square Park</strong> (walk south through Midtown South; Harry Potter New York only if the group wants it)</li>
+        <li>11:30–14:30 — <strong>Flatiron → Herald Square → quick NYPL visit → Grand Central</strong>, then Chrysler exterior + Whispering Gallery</li>
+        <li>14:30–17:30 — <strong>Grand Central → Bryant Park → Rockefeller Center / Top of the Rock → St. Patrick's Cathedral / Fifth Avenue</strong></li>
+        <li>17:30–19:30 — Dinner near the Theater District before the show</li>
         <li>19:30/20:00–22:00 — Broadway show (pre-book tickets)</li>
-        <li>22:30+ Optional late stand-up set (reserve in advance; arrive early)</li>
         <li>22:00–22:40 — <strong>Last stop → Hotel</strong> (estimated 30–40 min): walk to Times Sq–42 St, take the <strong>2 train</strong> uptown to 3 Av–149 St, then walk about 3 minutes to the hotel</li>
       </ul>
       <div class="grid">
@@ -698,12 +762,15 @@
           <div class="region-tag">📍 Midtown South — Flatiron / Herald Square</div>
           <h3>Midtown South / Flatiron</h3>
           <ul>
-            <li><span class="badge must">must-see</span>Empire State Building <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Empire+State+Building+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§27</span></li>
+            <li><span class="badge nice">nice-to-see</span>Empire State Building exterior <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Empire+State+Building+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§27</span></li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Empire State Building observatory — avoid buying a second skyline deck when Top of the Rock is already planned</li>
             <li><span class="badge must">must-see</span><strong>Koreatown</strong> — W 32nd St between Fifth and Sixth Avenues <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Koreatown+Manhattan+W+32nd+Street+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a></li>
             <li><span class="badge must">must-see</span>Madison Square Park + Flatiron exterior <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Flatiron+Building+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§26</span></li>
-            <li><span class="badge must">must-see</span>Harry Potter New York shop (quick interior stop even if you do not buy) <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Harry+Potter+New+York+935+Broadway+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a></li>
-            <li><span class="badge nice">nice-to-see</span>Ladies' Mile + Herald Square + NY Public Library + Morgan Library &amp; Museum <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=New+York+Public+Library+Stephen+A+Schwarzman+Building+New+York+NY" target="_blank" rel="noreferrer">🗺 NYPL</a> <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Morgan+Library+%26+Museum+New+York+NY" target="_blank" rel="noreferrer">🗺 Morgan</a></li>
-            <li><span class="badge nice">nice-to-see</span>Gramercy surroundings <span class="ch">§25</span></li>
+            <li><span class="badge nice">nice-to-see</span>Harry Potter New York shop, but only if the group is genuinely interested <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Harry+Potter+New+York+935+Broadway+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a></li>
+            <li><span class="badge nice">nice-to-see</span>Ladies' Mile + Herald Square + a quick New York Public Library visit <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=New+York+Public+Library+Stephen+A+Schwarzman+Building+New+York+NY" target="_blank" rel="noreferrer">🗺 NYPL</a></li>
+            <li><span class="badge nice">nice-to-see</span><strong>Eataly Flatiron</strong> and <strong>Anita La Mamma del Gelato</strong> if you want the friend-guide food stop while passing Flatiron / NoMad</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Morgan Library &amp; Museum interior — it needs dedicated time and competes with MoMA and Broadway <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Morgan+Library+%26+Museum+New+York+NY" target="_blank" rel="noreferrer">🗺 Morgan</a></li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Gramercy surroundings — a south/east detour from the day's main Midtown route <span class="ch">§25</span></li>
           </ul>
           <button class="transit-btn" data-id="d4-flatiron">🚇 Getting here</button>
           </div>
@@ -714,27 +781,39 @@
           <h3>Midtown Core</h3>
           <ul>
             <li><span class="badge must">must-see</span>Grand Central Terminal + Whispering Gallery + 42nd St corridor + Chrysler exterior <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Grand+Central+Terminal+New+York+NY" target="_blank" rel="noreferrer">🗺 Grand Central</a> <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Chrysler+Building+New+York+NY" target="_blank" rel="noreferrer">🗺 Chrysler</a> <span class="ch">§30–31</span></li>
-            <li><span class="badge nice">nice-to-see</span>UN Plaza <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=United+Nations+Headquarters+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§32</span></li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>UN Plaza unless a UN tour is booked — it pulls the route east and adds little as an exterior-only stop <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=United+Nations+Headquarters+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§32</span></li>
             <li><span class="badge nice">nice-to-see</span>Bryant Park <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Bryant+Park+New+York+NY+10018" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§29</span></li>
             <li><span class="badge must">must-see</span>Rockefeller Center + Top of the Rock <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Rockefeller+Center+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§33</span></li>
             <li><span class="badge nice">nice-to-see</span>St. Patrick's Cathedral + Fifth Avenue <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=St+Patricks+Cathedral+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a></li>
-            <li><span class="badge nice">nice-to-see</span>MoMA <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=The+Museum+of+Modern+Art+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§34</span></li>
+            <li><span class="badge nice">nice-to-see</span><strong>Urbanspace Vanderbilt</strong> as a practical Grand Central food hall stop</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>SUMMIT One Vanderbilt — good PDF idea, but it duplicates the Top of the Rock paid-view plan</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip today</span>MoMA — on Wednesday it closes at 17:30, so it cannot be a meaningful late-afternoon visit after the full Midtown route <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=The+Museum+of+Modern+Art+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a> <span class="ch">§34</span></li>
           </ul>
           <button class="transit-btn" data-id="d4-midtown">🚇 Getting here</button>
           </div>
         </article>
         <article class="hood r-midtown" id="d4-culture">
           <div class="hood-inner">
-          <div class="region-tag">📍 Midtown North — Museum Row</div>
+          <div class="region-tag">📍 Midtown North — Theater District</div>
           <h3>Times Square / Broadway evening</h3>
           <ul>
-            <li><span class="badge nice">nice-to-see</span><strong>Times Square + Fifth Avenue</strong> evening walk <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Times+Square+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a></li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span><strong>Another Times Square loop</strong> — Day 1 already covers it; go directly to dinner and the theatre <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Times+Square+New+York+NY" target="_blank" rel="noreferrer">🗺 map</a></li>
             <li><span class="badge nice">nice-to-see</span>Dinner near the Theater District before the show</li>
             <li><span class="badge must">must-see</span>🎭 <strong>Broadway show</strong> — choose and pre-book in advance <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Broadway+Theatre+District+New+York+NY" target="_blank" rel="noreferrer">🗺 district</a></li>
-            <li><span class="badge nice">nice-to-see</span>😂 Optional late stand-up set: Comedy Cellar / Gotham / Stand Up NY (reserve in advance; arrive early)</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>😂 Late stand-up after Broadway — too much for one day, and venue age rules vary</li>
           </ul>
           <button class="transit-btn" data-id="d4-culture">🚇 Getting here</button>
           </div>
+        </article>
+        <article class="guide-notes">
+          <h3>Friend Guide Notes</h3>
+          <ul>
+            <li>The PDF's Midtown route runs Central Park → Fifth Avenue → St. Patrick's → Rockefeller → Grand Central → Bryant Park / NYPL → NoMad / Flatiron. Our schedule uses the same spine, with Central Park moved to Day 5.</li>
+            <li>Grand Central is not just a transit stop here; the guide highlights it as a movie-icon stop, so keep a little time for the main hall and Whispering Gallery.</li>
+            <li><strong>Urbanspace Vanderbilt</strong>, <strong>Eataly Flatiron</strong>, and <strong>Anita</strong> gelato are the friend-guide food breaks that fit the route without much backtracking.</li>
+            <li>SUMMIT One Vanderbilt and MoMA remain good ideas in isolation, but they compete with Top of the Rock and Broadway on this day.</li>
+            <li>Bryant Park movie nights can be excellent in late summer if the schedule lines up, but Broadway should stay the fixed evening anchor.</li>
+          </ul>
         </article>
         <article class="food">
           <h3>Food</h3>
@@ -742,11 +821,12 @@
             <div class="food-col r-midtown">
               <h4>Lunch (Midtown South / Midtown North)</h4>
               <ul>
-                <li>Urban Hawker — 135 W 50th St, New York, NY 10020</li>
                 <li>Adel's Famous Halal Food — W 49th St & 6th Ave, New York, NY 10020</li>
                 <li>Margon — 136 W 46th St, New York, NY 10036</li>
                 <li>Tacombi Flatiron — 30 W 24th St, New York, NY 10010<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Tacombi+30+W+24th+St+New+York+NY+10010" target="_blank" rel="noreferrer">🗺 map</a></li>
-                <li>JoJu — 185 W 38th St, New York, NY 10018</li>
+                <li><strong>Eataly Flatiron</strong> — 200 5th Ave, New York, NY 10010</li>
+                <li><strong>Urbanspace Vanderbilt</strong> — 230 Park Ave, New York, NY 10169</li>
+                <li>Los Tacos No. 1 — 229 W 43rd St, New York, NY 10036</li>
                 <li>Toasties — 1369 6th Ave, New York, NY 10019</li>
               </ul>
             </div>
@@ -758,7 +838,8 @@
                 <li>Woorijip — 12 W 32nd St, New York, NY 10001</li>
                 <li>BCD Tofu House — 5 W 32nd St, New York, NY 10001</li>
                 <li>Turntable Chicken Jazz — 20 W 33rd St, New York, NY 10001</li>
-                <li>99 Favor Taste — 285 7th Ave, New York, NY 10001</li>
+                <li><strong>Anita La Mamma del Gelato</strong> — 1141 Broadway, New York, NY 10001</li>
+                <li class="suggested-skip"><span class="badge skip">suggested skip</span>99 Favor Taste — better for a long, relaxed meal than a pre-Broadway dinner</li>
                 <li><strong>Ellen's Stardust Diner</strong> — 1650 Broadway, New York, NY 10019<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Ellens+Stardust+Diner+1650+Broadway+New+York+NY+10019" target="_blank" rel="noreferrer">🗺 map</a></li>
               </ul>
             </div>
@@ -768,13 +849,13 @@
     </section>
 
     <section class="day" id="d5" role="tabpanel">
-      <h2>Day 5 — UES + Central Park bike loop + UWS + Harlem</h2>
+      <h2>Day 5 — Central Park bike loop + The Met + UWS / Harlem evening</h2>
       <ul class="timeline">
         <li>08:00 <strong>Hotel → first stop</strong> (estimated 25–35 min): walk about 3 minutes to 3 Av–149 St and take the <strong>5 train</strong> downtown directly to 86 St–Lexington Av, then walk west toward The Met / Museum Mile</li>
         <li>09:00–13:30 — <strong>Central Park by Citi Bike</strong> (full loop ≈ 1.5h, with time for Bethesda Terrace, Bow Bridge, Sheep Meadow, Strawberry Fields, and The Mall)</li>
-        <li>13:30–16:30 — <strong>Upper East Side museums</strong>: The Metropolitan Museum of Art (The Met), with optional Guggenheim Museum or Frick Collection</li>
-        <li>16:30–20:30 — Choose one evening plan: <strong>Alternative 1: UWS / Harlem</strong> or <strong>Alternative 2: Weehawken ferry skyline trip</strong></li>
-        <li>20:30–21:15 — <strong>Last stop → Hotel</strong>: from the UWS or west Harlem, take the <strong>2 train</strong> uptown to 3 Av–149 St. From east Harlem, take the <strong>5 train</strong> to 3 Av–149 St or the <strong>4 train</strong> to 149 St–Grand Concourse. The <strong>3 train does not enter the Bronx</strong>. From Weehawken, take the ferry back to Midtown first, then use the subway.</li>
+        <li>13:30–16:30 — <strong>Upper East Side museum block:</strong> The Metropolitan Museum of Art (The Met)</li>
+        <li>16:30–20:30 — Choose one relaxed evening area: <strong>UWS around Lincoln Center / Columbus Circle</strong> or <strong>Harlem around 125th St / Apollo Theater</strong></li>
+        <li>20:30–21:15 — <strong>Last stop → Hotel</strong>: from the UWS or west Harlem, take the <strong>2 train</strong> uptown to 3 Av–149 St. From east Harlem, take the <strong>5 train</strong> to 3 Av–149 St or the <strong>4 train</strong> to 149 St–Grand Concourse. The <strong>3 train does not enter the Bronx</strong>.</li>
       </ul>
       <div class="grid">
         <article class="hood r-uptown" id="d5-uptown">
@@ -785,6 +866,7 @@
             <li><span class="badge must">must-see</span>Central Park core loop by bike (Bethesda, Bow Bridge, Sheep Meadow) <span class="ch">§37</span></li>
             <li><span class="badge must">must-see</span>Strawberry Fields + The Mall/Literary Walk while crossing the park</li>
             <li><span class="badge nice">nice-to-see</span>Belvedere Castle / Conservatory Water if you have extra park time</li>
+            <li><span class="badge nice">nice-to-see</span>Loeb Boathouse rowboats or a Tavern on the Green drink only if the weather is excellent and the bike loop is running ahead of schedule</li>
           </ul>
           <button class="transit-btn" data-id="d5-uptown">🚇 Getting here</button>
           </div>
@@ -795,8 +877,8 @@
           <h3>Upper East Side museums</h3>
           <ul>
             <li><span class="badge must">must-see</span><strong>The Metropolitan Museum of Art (The Met)</strong></li>
-            <li><span class="badge nice">nice-to-see</span><strong>Guggenheim Museum</strong> or <strong>Frick Collection</strong> if museum energy remains</li>
-            <li><span class="badge nice">nice-to-see</span>Silk Stocking District avenue walk (Madison / Park blocks)</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span><strong>Guggenheim Museum</strong> or <strong>Frick Collection</strong> after The Met — a second museum will be rushed before closing; choose one museum only</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Silk Stocking District avenue walk — low priority after Central Park and The Met</li>
           </ul>
           <button class="transit-btn" data-id="d5-uptown">🚇 Getting here</button>
           </div>
@@ -806,36 +888,47 @@
           <div class="region-tag">📍 Uptown Manhattan — UWS / Harlem</div>
           <h3>Evening alternatives</h3>
           <ul>
-            <li><span class="badge nice">nice-to-see</span><strong>Alternative 1 — UWS / Harlem:</strong> Lincoln Center + Columbus Circle + Broadway-to-Riverside walk, then Harlem / Washington Heights (125th St, Apollo Theater, Hamilton Heights) if energy remains</li>
-            <li><span class="badge nice">nice-to-see</span><strong>Alternative 2 — Weehawken ferry:</strong> NY Waterway from Midtown / West 39th Street to Port Imperial, Weehawken, for Manhattan skyline views; walk the waterfront or continue by taxi to Hamilton Park</li>
+            <li><span class="badge nice">nice-to-see</span><strong>Recommended evening — choose one area:</strong> either UWS around Lincoln Center / Columbus Circle, or Harlem around 125th St / Apollo Theater</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Washington Heights / Hamilton Heights extension — too far after a full Central Park and museum day</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span><strong>Weehawken ferry skyline trip</strong> — a substantial New Jersey detour when the itinerary already includes several skyline viewpoints</li>
             <li><span class="badge nice">nice-to-see</span>Dinner on the UWS, in Harlem, or along the Manhattan waterfront before returning to the hotel</li>
           </ul>
           <button class="transit-btn" data-id="d5-evening">🚇 Getting here / returning</button>
           </div>
         </article>
+        <article class="guide-notes">
+          <h3>Friend Guide Notes</h3>
+          <ul>
+            <li>The PDF suggests Central Park as a day to slow down: walking, boating in good weather, or picnic provisions from <strong>Zabar's</strong> on the west side or <strong>Butterfield Market</strong> on the east side.</li>
+            <li>For museums, the guide lists The Met, AMNH, and Guggenheim. The schedule keeps The Met as the main museum so the day does not become three separate museum visits.</li>
+            <li>Loeb Boathouse and Tavern on the Green are best treated as weather-and-energy options, not fixed reservations.</li>
+            <li>The PDF's Harlem gospel idea is most relevant on a Sunday morning, so it does not fit this Thursday plan. Harlem still works as an evening choice around 125th Street / Apollo Theater.</li>
+            <li>Lincoln Center ballet is a strong cultural backup if there is a performance that beats the UWS/Harlem wandering plan.</li>
+          </ul>
+        </article>
         <article class="food">
           <h3>Food</h3>
           <div class="food-columns">
             <div class="food-col r-uptown">
-              <h4>Lunch (UWS / UES)</h4>
+              <h4>Lunch (near The Met / Central Park)</h4>
               <ul>
-                <li>Gray's Papaya — 2090 Broadway, New York, NY 10023</li>
-                <li>Absolute Bagels — 2788 Broadway, New York, NY 10025</li>
-                <li>Mama's TOO! — 2750 Broadway, New York, NY 10025</li>
-                <li>Dig — 2884 Broadway, New York, NY 10025</li>
                 <li>Lenwich — 1218 Lexington Ave, New York, NY 10028</li>
-                <li>Shake Shack UWS — 366 Columbus Ave, New York, NY 10024</li>
+                <li>Shake Shack Upper East Side — 154 E 86th St, New York, NY 10028</li>
+                <li>H&amp;H Bagels Upper East Side — 1551 2nd Ave, New York, NY 10028</li>
+                <li><strong>Butterfield Market</strong> — 1150 Madison Ave, New York, NY 10028; picnic provisions near The Met</li>
+                <li><strong>Zabar's</strong> — 2245 Broadway, New York, NY 10024; picnic provisions if finishing the park on the west side</li>
+                <li class="suggested-skip"><span class="badge skip">suggested skip unless finishing west</span>Mama's TOO! / Absolute Bagels / Gray's Papaya — good UWS options, but awkward before The Met</li>
               </ul>
             </div>
             <div class="food-col r-bronx">
               <h4>Dinner (UWS / Harlem or quick Midtown return)</h4>
               <ul>
+                <li>Jacob's Pickles — 680 Columbus Ave, New York, NY 10025</li>
                 <li>Mama's TOO! — 2750 Broadway, New York, NY 10025</li>
                 <li>Gray's Papaya — 2090 Broadway, New York, NY 10023</li>
                 <li>Shake Shack UWS — 366 Columbus Ave, New York, NY 10024</li>
-                <li>Veselka — 144 2nd Ave, New York, NY 10003</li>
-                <li>Woorijip — 12 W 32nd St, New York, NY 10001</li>
-                <li>Tacombi (Midtown / Downtown locations)</li>
+                <li>Sylvia's — 328 Malcolm X Blvd, New York, NY 10027</li>
+                <li class="suggested-skip"><span class="badge skip">suggested skip</span>Veselka / Woorijip / Tacombi — good places, wrong geography for this evening</li>
               </ul>
             </div>
           </div>
@@ -844,12 +937,12 @@
     </section>
 
     <section class="day" id="d6" role="tabpanel">
-      <h2>Day 6 — Seaport / DUMBO + Brooklyn neighborhoods (11 Sep: avoid Financial District)</h2>
+      <h2>Day 6 — Seaport / Brooklyn Bridge / DUMBO + Williamsburg / Greenpoint (11 Sep)</h2>
       <ul class="timeline">
         <li>08:00 <strong>Hotel → Seaport</strong> (estimated 35–45 min): walk about 3 minutes to 3 Av–149 St, take the <strong>5 train</strong> downtown to Fulton St, then walk about 8–10 minutes east toward South Street Seaport</li>
-        <li>09:00–13:00 — <strong>Seaport → Brooklyn Bridge → DUMBO / Brooklyn Heights → Downtown Brooklyn</strong> (walk or rent a bike for the Brooklyn Bridge crossing; continue through Brooklyn Bridge Park and the Downtown Brooklyn area; Juliana’s Pizza is an optional DUMBO lunch stop)</li>
-        <li>13:00–14:00 — Optional short extension toward <strong>Clinton Hill, Park Slope, or Carroll Gardens</strong> only if you are ahead of schedule; otherwise go directly to Williamsburg</li>
-        <li>14:00–17:00 — <strong>Williamsburg</strong> waterfront, Domino Park, Bedford Avenue, and local streets; optional Williamsburg Bridge walk or bike crossing from the Lower East Side into Williamsburg</li>
+        <li>09:00–13:00 — <strong>Seaport → Brooklyn Bridge → DUMBO / Brooklyn Heights</strong> (cross the bridge on foot or by bike, continue through Brooklyn Bridge Park and the Promenade; Juliana's Pizza is an optional DUMBO lunch stop)</li>
+        <li>13:00–14:00 — Transit / buffer from DUMBO or Brooklyn Heights toward Williamsburg</li>
+        <li>14:00–17:00 — <strong>Williamsburg</strong> waterfront, Domino Park, Bedford Avenue, and local streets</li>
         <li>17:00–21:30 — <strong>Greenpoint</strong> waterfront, cafes, and sunset</li>
         <li>21:30–22:30 — <strong>Last stop → Hotel</strong> (estimated 45–60 min): from Greenpoint take the <strong>G train to Court Sq, transfer to the 7 train to Times Sq–42 St, then take the 2 train uptown</strong> to 3 Av–149 St; walk about 3 minutes to the hotel</li>
       </ul>
@@ -861,8 +954,9 @@
           <ul>
             <li><span class="badge must">must-see</span><strong>South Street Seaport</strong> + Pier 15 / Pier 16 <span class="ch">§08</span></li>
             <li><span class="badge must">must-see</span><strong>Brooklyn Bridge</strong> crossing on foot or by bike → <strong>DUMBO / Brooklyn Heights</strong>: Washington St view, Brooklyn Bridge Park, and Promenade <span class="ch">§09, §51–52</span></li>
-            <li><span class="badge must">must-see</span>Downtown Brooklyn</li>
-            <li><span class="badge nice">nice-to-see</span>Clinton Hill + Park Slope + Carroll Gardens neighborhood sweep, only if time and energy remain after Downtown Brooklyn</li>
+            <li><span class="badge nice">nice-to-see</span>Brooklyn Heights brownstone streets and the waterfront piers; strongest at sunset, but still worthwhile after the bridge crossing</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Downtown Brooklyn as a destination — use it only as a transit connection between DUMBO and Williamsburg</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Clinton Hill + Park Slope + Carroll Gardens sweep — three extra neighborhoods would consume the Williamsburg / Greenpoint afternoon</li>
             <li><span class="badge nice">nice-to-see</span>Juliana's Pizza in DUMBO for lunch or an early dinner</li>
           </ul>
           <button class="transit-btn" data-id="d6-seaport">🚇 Getting here</button>
@@ -875,8 +969,9 @@
           <ul>
             <li><span class="badge must">must-see</span><strong>Williamsburg waterfront</strong> + Domino Park <span class="ch">§55</span></li>
             <li><span class="badge must">must-see</span>Bedford Avenue and the neighborhood streets</li>
-            <li><span class="badge nice">nice-to-see</span><strong>Williamsburg Bridge</strong> walk or bike crossing from the Lower East Side into Williamsburg</li>
-            <li><span class="badge nice">nice-to-see</span>Prospect Park + Grand Army Plaza only if you want more green space</li>
+            <li><span class="badge nice">nice-to-see</span>Vintage/homeware browsing in Williamsburg if the group wants the more local Brooklyn feel from the PDF</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span><strong>Williamsburg Bridge</strong> crossing — Brooklyn Bridge already supplies the bridge walk, and this would require backtracking to Manhattan</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Prospect Park + Grand Army Plaza — a major southward detour and unnecessary after Central Park</li>
           </ul>
           <button class="transit-btn" data-id="d6-williamsburg">🚇 Getting here</button>
           </div>
@@ -893,6 +988,16 @@
           <button class="transit-btn" data-id="d6-greenpoint">🚇 Getting here</button>
           </div>
         </article>
+        <article class="guide-notes">
+          <h3>Friend Guide Notes</h3>
+          <ul>
+            <li>The PDF pairs Brooklyn Bridge, DUMBO, and Brooklyn Heights with waterfront views and piers. In our plan, that becomes the first half of Day 6.</li>
+            <li>The guide says the DUMBO/Brooklyn Heights food scene is not the strongest, so lunch there should stay simple unless you intentionally book <strong>The River Cafe</strong> or <strong>The Fulton</strong> as a splurge.</li>
+            <li>Williamsburg is framed as more local, alternative, and weekend-friendly, with vintage/homeware browsing and skyline views. That matches the afternoon/evening slot well.</li>
+            <li><strong>Misi</strong> is the standout PDF dinner recommendation for Williamsburg. Book ahead, or try the early walk-in/bar-seat approach if reservations are gone.</li>
+            <li>Smorgasburg is a good weather/weekend idea, but check the current season and location before planning around it.</li>
+          </ul>
+        </article>
         <article class="food">
           <h3>Food</h3>
           <div class="food-columns">
@@ -900,6 +1005,8 @@
               <h4>Lunch / early dinner (DUMBO / Williamsburg / Greenpoint)</h4>
               <ul>
                 <li><strong>Juliana's Pizza</strong> — 19 Old Fulton St, Brooklyn, NY 11201 <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Julianas+Pizza+19+Old+Fulton+St+Brooklyn+NY+11201" target="_blank" rel="noreferrer">🗺 map</a></li>
+                <li><strong>Industry Kitchen</strong> — 70 South St, New York, NY 10038; Seaport fallback before the bridge</li>
+                <li><strong>The Fulton</strong> — 89 South St, New York, NY 10038; reserve if choosing a Seaport splurge</li>
                 <li>L'Industrie Pizzeria — 254 S 2nd St, Brooklyn, NY 11211</li>
                 <li>Taqueria Ramirez — 94 Franklin St, Brooklyn, NY 11222</li>
                 <li>Birria-Landia — 77 N 10th St, Brooklyn, NY 11249</li>
@@ -912,10 +1019,11 @@
               <h4>Dinner (Brooklyn)</h4>
               <ul>
                 <li>L'Industrie Pizzeria — 254 S 2nd St, Brooklyn, NY 11211</li>
-                <li>Time Out Market — 55 Water St, Brooklyn, NY 11201</li>
+                <li><strong>Misi</strong> — 329 Kent Ave, Brooklyn, NY 11249; reserve ahead or try an early bar seat</li>
+                <li><strong>Sunday in Brooklyn</strong> — 348 Wythe Ave, Brooklyn, NY 11249</li>
+                <li class="suggested-skip"><span class="badge skip">suggested skip for dinner</span>Time Out Market — useful near DUMBO, but it sends you backward if dinner is in Williamsburg / Greenpoint</li>
                 <li>Paulie Gee's Slice Shop — 110 Franklin St, Brooklyn, NY 11222</li>
-                <li>Tacombi (Brooklyn locations)</li>
-                <li>Front Street Pizza — 80 Front St, Brooklyn, NY 11201</li>
+                <li class="suggested-skip"><span class="badge skip">suggested skip for dinner</span>Front Street Pizza — fine near DUMBO, but backward if you finish in Williamsburg / Greenpoint</li>
               </ul>
             </div>
           </div>
@@ -940,8 +1048,8 @@
           <h3>Recommended approach</h3>
           <ul>
             <li><span class="badge must">must-see</span>Yankee Stadium exterior + 161st Street as a short final visit near the hotel</li>
-            <li><span class="badge skip">could-skip</span>Staten Island Ferry (time-heavy and low value this late in trip)</li>
-            <li><span class="badge skip">could-skip</span>Any timed museum/attraction today</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Staten Island Ferry — time-heavy and low value this late in the trip</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Any timed museum or attraction today</li>
           </ul>
           <button class="transit-btn" data-id="d7-battery">🚇 Getting here</button>
           </div>
@@ -952,9 +1060,17 @@
           <h3>Alternative ultra-safe option</h3>
           <ul>
             <li><span class="badge nice">nice-to-see</span>If you prefer Manhattan, do one short revisit near Penn Station instead of Yankee Stadium</li>
-            <li><span class="badge skip">could-skip</span>Cross-borough deep detours before flight</li>
+            <li class="suggested-skip"><span class="badge skip">suggested skip</span>Cross-borough deep detours before the flight</li>
           </ul>
           </div>
+        </article>
+        <article class="guide-notes">
+          <h3>Friend Guide Notes</h3>
+          <ul>
+            <li>The PDF's general advice matters most today: leave extra time, avoid ambitious detours, and keep the meal simple before the airport transfer.</li>
+            <li>Use Uber/Lyft or a yellow cab only as a fallback if luggage, weather, or subway disruption makes the train plan unpleasant.</li>
+            <li>Tip service workers on the pre-tax amount, and do not plan a reservation lunch that could make the Newark transfer stressful.</li>
+          </ul>
         </article>
         <article class="food">
           <h3>Food</h3>
@@ -962,12 +1078,11 @@
             <div class="food-col r-lower">
               <h4>Lunch (simple, near transit)</h4>
               <ul>
-                <li>Leo's Bagels — 3 Hanover Sq, New York, NY 10004</li>
-                <li>Pisillo Italian Panini — 97 Nassau St, New York, NY 10038</li>
-                <li>Xi'an Famous Foods — 8 Liberty Pl, New York, NY 10038</li>
-                <li>Nish Nush — 88 Reade St, New York, NY 10013</li>
-                <li>Urban Hawker — 135 W 50th St, New York, NY 10020</li>
-                <li>Tacombi (Midtown / Downtown locations)</li>
+                <li>NY Pizza Suprema — 413 8th Ave, New York, NY 10001</li>
+                <li>Los Tacos No. 1 — 229 W 43rd St, New York, NY 10036</li>
+                <li>Woorijip — 12 W 32nd St, New York, NY 10001</li>
+                <li>Shake Shack Herald Square — 1333 Broadway, New York, NY 10018</li>
+                <li>Best Bagel &amp; Coffee — 225 W 35th St A, New York, NY 10001</li>
               </ul>
             </div>
             <div class="food-col r-queens">
@@ -987,15 +1102,15 @@
       <section class="mapbox">
       <h2>Google My Maps — one CSV per day</h2>
       <p>
-        These seven files were rebuilt from the current itinerary. Each file contains the activities for that day
-        plus the food and restaurant suggestions for the same day.
+        These seven files were rebuilt from the reviewed itinerary. Each file contains the day's active pins,
+        retained suggested-skip pins, and food suggestions.
       </p>
       <ul>
         <li><a href="nyc_google_mymaps_day1_sep6_sep12_2026.csv" download><strong>Day 1 — Arrival, Hudson Yards, Chelsea, Little Island and Times Square</strong></a></li>
-        <li><a href="nyc_google_mymaps_day2_sep6_sep12_2026.csv" download><strong>Day 2 — Statue of Liberty, Governors Island, Financial District and Tribeca</strong></a></li>
+        <li><a href="nyc_google_mymaps_day2_sep6_sep12_2026.csv" download><strong>Day 2 — Statue of Liberty, Ellis Island, Financial District and Tribeca</strong></a></li>
         <li><a href="nyc_google_mymaps_day3_sep6_sep12_2026.csv" download><strong>Day 3 — SoHo, Chinatown, LES, East Village and the Villages</strong></a></li>
         <li><a href="nyc_google_mymaps_day4_sep6_sep12_2026.csv" download><strong>Day 4 — Midtown South, Midtown North and Broadway</strong></a></li>
-        <li><a href="nyc_google_mymaps_day5_sep6_sep12_2026.csv" download><strong>Day 5 — Central Park, Upper East Side, UWS, Harlem and Weehawken alternative</strong></a></li>
+        <li><a href="nyc_google_mymaps_day5_sep6_sep12_2026.csv" download><strong>Day 5 — Central Park, The Met, UWS and Harlem</strong></a></li>
         <li><a href="nyc_google_mymaps_day6_sep6_sep12_2026.csv" download><strong>Day 6 — Seaport, Brooklyn Bridge, DUMBO, Williamsburg and Greenpoint</strong></a></li>
         <li><a href="nyc_google_mymaps_day7_sep6_sep12_2026.csv" download><strong>Day 7 — Yankee Stadium or Penn Station alternative and Newark Airport</strong></a></li>
       </ul>
@@ -1042,9 +1157,55 @@
       });
     });
 
-    document.querySelectorAll(".food-col li").forEach((li) => {
-      const query = li.textContent.trim();
-      if (!query) return;
+    const hasGoogleMapsLink = (li) =>
+      Array.from(li.querySelectorAll("a")).some((a) => a.href.includes("google.com/maps"));
+    const mapQueryOverrides = [
+      [/Meatpacking District|Gansevoort Street/i, "Gansevoort St & Washington St, New York, NY 10014"],
+      [/Broadway theaters exterior loop|Theater District/i, "Broadway & W 45th St, New York, NY 10036"],
+      [/Financial District.*Wall Street|Wall Street.*NYSE|Charging Bull/i, "Wall Street & Broad Street, New York, NY 10005"],
+      [/Stone Street/i, "Stone St & Hanover Sq, New York, NY 10004"],
+      [/Financial District waterfront/i, "Pier 15, East River Esplanade, New York, NY 10038"],
+      [/Tribeca.*Staple Street|Hudson River Park.*Staple Street/i, "Staple St & Jay St, New York, NY 10013"],
+      [/Chinatown.*Doyers|Mott\/Pell/i, "Doyers St & Pell St, New York, NY 10013"],
+      [/Little Italy.*Mulberry/i, "Mulberry St & Grand St, New York, NY 10013"],
+      [/SoHo.*Greene|cast-iron/i, "Greene St & Prince St, New York, NY 10012"],
+      [/Elizabeth St, Spring St, Mott St, Prince St, and Wooster St/i, "Elizabeth St & Prince St, New York, NY 10012"],
+      [/Lower East Side.*Essex|Essex Market/i, "Essex St & Delancey St, New York, NY 10002"],
+      [/East Village.*Astor|St\. Mark/i, "Astor Pl & Lafayette St, New York, NY 10003"],
+      [/Greenwich Village.*Washington Square/i, "Washington Square Arch, New York, NY 10012"],
+      [/West Village.*Stonewall|Christopher Park/i, "Christopher St & 7th Ave S, New York, NY 10014"],
+      [/Union Square.*Strand/i, "Union Square E & E 14th St, New York, NY 10003"],
+      [/Ladies' Mile|Herald Square/i, "W 23rd St & 5th Ave, New York, NY 10010"],
+      [/Grand Central Terminal|Whispering Gallery/i, "Grand Central Terminal, 89 E 42nd St, New York, NY 10017"],
+      [/Fifth Avenue/i, "5th Ave & E 50th St, New York, NY 10022"],
+      [/Central Park core loop|Bethesda|Bow Bridge|Sheep Meadow/i, "Bethesda Terrace, Central Park, New York, NY 10024"],
+      [/Strawberry Fields|The Mall\/Literary Walk/i, "Strawberry Fields, Central Park, New York, NY 10023"],
+      [/Belvedere Castle|Conservatory Water/i, "Belvedere Castle, Central Park, New York, NY 10024"],
+      [/Lincoln Center|Columbus Circle/i, "Lincoln Center Plaza, New York, NY 10023"],
+      [/125th St|Apollo Theater/i, "Apollo Theater, 253 W 125th St, New York, NY 10027"],
+      [/South Street Seaport|Pier 15|Pier 16/i, "South Street Seaport, 19 Fulton St, New York, NY 10038"],
+      [/Brooklyn Bridge.*DUMBO|Brooklyn Bridge crossing/i, "Brooklyn Bridge Pedestrian Entrance, Centre St, New York, NY 10013"],
+      [/Brooklyn Heights brownstone|waterfront piers|Promenade/i, "Brooklyn Heights Promenade, Brooklyn, NY 11201"],
+      [/Williamsburg waterfront|Domino Park/i, "Domino Park, Brooklyn, NY 11249"],
+      [/Bedford Avenue/i, "Bedford Ave & N 7th St, Brooklyn, NY 11211"],
+      [/Greenpoint.*Franklin|Greenpoint waterfront/i, "Franklin St & Greenpoint Ave, Brooklyn, NY 11222"],
+      [/Yankee Stadium|161st Street/i, "Yankee Stadium, 1 E 161st St, Bronx, NY 10451"]
+    ];
+    const mapQueryFromListItem = (li) => {
+      const clone = li.cloneNode(true);
+      clone.querySelectorAll("a, .badge, .ch").forEach((node) => node.remove());
+      const text = clone.textContent
+        .replace(/\s+/g, " ")
+        .replace(/^[-–—]\s*/, "")
+        .trim();
+      const override = mapQueryOverrides.find(([pattern]) => pattern.test(text));
+      return override ? override[1] : text;
+    };
+
+    document.querySelectorAll(".hood li, .food-col li").forEach((li) => {
+      if (hasGoogleMapsLink(li)) return;
+      const query = mapQueryFromListItem(li);
+      if (!query || query.length < 3) return;
       const map = document.createElement("a");
       map.className = "map-link";
       map.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
@@ -1197,10 +1358,10 @@
         `
       },
       "d4-culture": {
-        title: "Rockefeller / MoMA → Times Square",
+        title: "Rockefeller / Fifth Avenue → Broadway",
         body: `
-          <p class="step"><strong>Start:</strong> finish MoMA / Rockefeller area.</p>
-          <p class="step"><strong>Walk:</strong> 12-18 min to Times Square and the Broadway district for evening plans.</p>
+          <p class="step"><strong>Start:</strong> finish Rockefeller Center / Fifth Avenue.</p>
+          <p class="step"><strong>Walk:</strong> 12-18 min to the Broadway district for dinner and the evening show.</p>
         `
       },
       "d5-uptown": {
@@ -1220,11 +1381,10 @@
         `
       },
       "d5-evening": {
-        title: "UWS / Harlem / Weehawken → Hotel",
+        title: "UWS / Harlem → Hotel",
         body: `
           <p class="step"><strong>From the UWS or west Harlem:</strong> take an uptown ${L2} train from a convenient Broadway / Seventh Avenue Line station and exit at ${S_3Av149}. Do not take the ${L3}; it terminates in Manhattan and does not enter the Bronx.</p>
           <p class="step"><strong>From east Harlem:</strong> take ${L5} from 125 St directly to ${S_3Av149}, or take ${L4} to ${S_149Grand}.</p>
-          <p class="step"><strong>From Weehawken:</strong> return by ferry to Midtown / West 39th Street, use the free NY Waterway shuttle toward Midtown or walk to ${S_34Penn}, then take ${L2} uptown to ${S_3Av149}.</p>
         `
       },
       "d6-brooklyn": {
@@ -1246,7 +1406,7 @@
         `
       },
       "d6-williamsburg": {
-        title: "Downtown Brooklyn → Williamsburg",
+        title: "DUMBO / Brooklyn Heights → Williamsburg",
         body: `
           <p class="step"><strong>Best scenic option from DUMBO:</strong> take NYC Ferry from DUMBO / Fulton Ferry to North or South Williamsburg. Check whether the A or B branch serves your preferred landing.</p>
           <p class="step"><strong>Subway option:</strong> from Hoyt–Schermerhorn take the Queens-bound ${LG} to ${S_Lorimer}; walk to Williamsburg, or transfer through the connected Lorimer St passage and take the Manhattan-bound ${LL} one stop to ${S_Bedford}.</p>
@@ -1261,11 +1421,11 @@
         `
       },
       "d6-queens": {
-        title: "Brooklyn neighborhood extension (instead of LIC/Astoria)",
+        title: "Williamsburg / Greenpoint focus",
         body: `
-          <p class="step"><strong>Route:</strong> continue Brooklyn-only: Williamsburg → Greenpoint → Downtown Brooklyn / Clinton Hill / Park Slope / Carroll Gardens.</p>
-          <p class="step"><strong>Transit spine:</strong> use ${LG} for Greenpoint, Clinton Hill and the Carroll Gardens / Park Slope edge, with short walks or buses between the selected neighborhoods. The ${LL} is useful within Williamsburg but does not serve Downtown Brooklyn, Park Slope or Carroll Gardens.</p>
-          <p class="step"><strong>Return:</strong> from Downtown Brooklyn, take ${L2} uptown from Borough Hall or Nevins St directly to ${S_3Av149}. From Greenpoint, use the Court Sq / Times Square route described above.</p>
+          <p class="step"><strong>Route:</strong> keep the afternoon north Brooklyn only: Williamsburg waterfront → Bedford Avenue → Greenpoint.</p>
+          <p class="step"><strong>Transit spine:</strong> use the ${LG} around Greenpoint and the ${LL} around Williamsburg; the ${LL} does not serve DUMBO or Downtown Brooklyn.</p>
+          <p class="step"><strong>Return:</strong> from Greenpoint, use the Court Sq / Times Square route described above.</p>
         `
       },
       "d7-battery": {
